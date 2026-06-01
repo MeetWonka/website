@@ -5,9 +5,29 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const siteUrl = getSiteUrl();
   const lastModified = new Date();
   return [
-    { url: siteUrl, lastModified },
-    { url: `${siteUrl}/terms`, lastModified },
-    { url: `${siteUrl}/privacy`, lastModified },
-    { url: `${siteUrl}/cookies`, lastModified },
+    {
+      url: siteUrl,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 1.0,
+    },
+    {
+      url: `${siteUrl}/terms`,
+      lastModified,
+      changeFrequency: "yearly",
+      priority: 0.2,
+    },
+    {
+      url: `${siteUrl}/privacy`,
+      lastModified,
+      changeFrequency: "yearly",
+      priority: 0.2,
+    },
+    {
+      url: `${siteUrl}/cookies`,
+      lastModified,
+      changeFrequency: "yearly",
+      priority: 0.1,
+    },
   ];
 }
