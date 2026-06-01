@@ -34,7 +34,7 @@ export function buildMetadata(
     title,
     description,
     alternates: {
-      canonical: path,
+      canonical: `${getSiteUrl()}${path}`,
     },
     openGraph: {
       type: "website",
