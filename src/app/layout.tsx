@@ -11,10 +11,11 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     metadataBase: new URL(getSiteUrl()),
     title: {
-      default: "Wonka - Leave no human behind",
-      template: "%s - Wonka",
+      default: "Wonka AI – AI-Powered LinkedIn Prospecting & Sales Automation",
+      template: "%s – Wonka AI",
     },
-    description: "Your whole team working at full potential.",
+    description:
+      "Wonka AI automates LinkedIn prospecting and sales outreach with AI. Help your whole team prospect smarter, book more meetings, and close more deals.",
     robots: {
       index: true,
       follow: true,
