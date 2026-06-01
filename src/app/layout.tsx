@@ -59,6 +59,15 @@ export async function generateMetadata(): Promise<Metadata> {
       index: true,
       follow: true,
     },
+    alternates: {
+      canonical: SITE_URL,
+      languages: {
+        "en-US": SITE_URL,
+        "fr-BE": SITE_URL,
+        "fr-FR": SITE_URL,
+        "x-default": SITE_URL,
+      },
+    },
   };
 }
 
@@ -68,7 +77,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" dir="ltr">
       <body className={fontVariables}>
         {GTM_ID && (
           <>
