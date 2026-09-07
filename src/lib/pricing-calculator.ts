@@ -5,12 +5,8 @@ export interface PricingBandBreakdown {
   subtotal: number;
 }
 
-export const ANNUAL_BILLING_MONTHS = 12;
-export const ANNUAL_FREE_MONTHS = 1;
-export const ANNUAL_PAID_MONTHS = ANNUAL_BILLING_MONTHS - ANNUAL_FREE_MONTHS;
-/** Effective monthly rate when annual billing includes one free month. */
-export const ANNUAL_EFFECTIVE_MONTHLY_FACTOR =
-  ANNUAL_PAID_MONTHS / ANNUAL_BILLING_MONTHS;
+/** Annual billing discount (20% off list monthly). */
+export const ANNUAL_DISCOUNT_FACTOR = 0.8;
 
 export interface PricingResult {
   bands: PricingBandBreakdown[];
@@ -60,12 +56,12 @@ export function getPricingTierCatalog(
   annual: boolean,
   aiModelsIncluded: boolean,
 ) {
-  const factor = annual ? ANNUAL_EFFECTIVE_MONTHLY_FACTOR : 1;
+  const discount = annual ? ANNUAL_DISCOUNT_FACTOR : 1;
 
   return TIER_LABELS.slice(0, 3).map((label, index) => ({
     label,
     tierSeats: TIER_CAPACITIES[index],
-    ratePerSeat: rateForTier(index, aiModelsIncluded) * factor,
+    ratePerSeat: rateForTier(index, aiModelsIncluded) * discount,
   }));
 }
 
@@ -91,13 +87,11 @@ export function calculatePricing(
     .filter((band): band is PricingBandBreakdown => band !== null);
 
   const listMonthly = bands.reduce((sum, band) => sum + band.subtotal, 0);
-  const payableMonthly = annual
-    ? listMonthly * ANNUAL_EFFECTIVE_MONTHLY_FACTOR
-    : listMonthly;
-  const acv = annual ? listMonthly * ANNUAL_PAID_MONTHS : listMonthly * 12;
+  const payableMonthly = annual ? listMonthly * ANNUAL_DISCOUNT_FACTOR : listMonthly;
+  const acv = payableMonthly * 12;
   const perSeatPerYear = seats > 0 ? acv / seats : 0;
   const perSeatMonth = seats > 0 ? payableMonthly / seats : 0;
-  const annualSaving = annual ? listMonthly * ANNUAL_FREE_MONTHS : 0;
+  const annualSaving = annual ? (listMonthly - payableMonthly) * 12 : 0;
 
   return {
     bands,
