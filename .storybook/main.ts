@@ -15,6 +15,12 @@ const config: StorybookConfig = {
   docs: {
     autodocs: "tag",
   },
+  refs: {
+    "wonkachat-product": {
+      title: "WonkaChat Product",
+      url: "https://wonkachat.wonka-ai.com",
+    },
+  },
   viteFinal: async (viteConfig) => ({
     ...viteConfig,
     // Storybook's staticDirs owns this copy. Leaving Vite's publicDir enabled

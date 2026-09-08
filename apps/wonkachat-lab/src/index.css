@@ -1,0 +1,408 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Design tokens ported verbatim (values + var names) from WonkaChat's
+ * client/src/style.css, so ported components look pixel-correct without
+ * pulling in the whole product app. See README.md for provenance notes.
+ */
+:root {
+  --white: #fff;
+  --black: #000;
+  --color-white: #fff;
+  --color-black: #000;
+  --gray-20: #ececf1;
+  --gray-50: #f7f7f8;
+  --gray-100: #ececec;
+  --gray-200: #e3e3e3;
+  --gray-300: #cdcdcd;
+  --gray-400: #999696;
+  --gray-500: #595959;
+  --gray-600: #424242;
+  --gray-700: #2f2f2f;
+  --gray-800: #212121;
+  --gray-850: #171717;
+  --gray-900: #0d0d0d;
+  --green-50: #ecfdf5;
+  --green-100: #d1fae5;
+  --green-200: #a7f3d0;
+  --green-300: #6ee7b7;
+  --green-400: #34d399;
+  --green-500: #10b981;
+  --green-600: #059669;
+  --green-700: #047857;
+  --green-800: #065f46;
+  --green-900: #064e3b;
+  --red-50: #fef2f2;
+  --red-100: #fee2e2;
+  --red-200: #fecaca;
+  --red-300: #fca5a5;
+  --red-400: #f87171;
+  --red-500: #ef4444;
+  --red-600: #dc2626;
+  --red-700: #b91c1c;
+  --red-800: #991b1b;
+  --red-900: #7f1d1d;
+  --amber-50: #fffbeb;
+  --amber-500: #f59e0b;
+  --amber-600: #d97706;
+
+  /* WonkaChat brand blue used by MCP status icons / links / Button "default" variant */
+  --color-blue-300: #a8c4f0;
+  --color-blue-400: #6693ea;
+  --color-blue-500: #4a7fe5;
+  --color-blue-600: #2f6de0;
+  --color-blue-700: #2457b3;
+  --color-blue-900: #16336b;
+  --color-green-700: #3f9d64;
+
+  --radius-xs: 0.25rem;
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-full: 9999px;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+
+  --shadow-subtle: 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-subtle-hover: 0 4px 16px rgba(0, 0, 0, 0.12);
+
+  /* Ported from client/src/wonka-design-system.css (`--ds-color-brand-*-rgb`,
+   * `--color-mid-gray`) — used verbatim by the real Nav.tsx (sidebar row
+   * hover) and ChatForm.tsx/ConnectAppsMenu.tsx (composer border/shadow,
+   * brand-tinted focus rings). Not re-defined under `.dark` in the source
+   * either, so kept single-valued here too. */
+  --color-mid-gray: #f0eeea;
+  --ds-layout-sidebar-hover: var(--color-mid-gray);
+  --ds-component-connect-apps-radius: var(--radius-md);
+  --ds-component-connect-apps-shadow: 0 20px 60px rgba(14, 26, 22, 0.14);
+}
+
+html {
+  --presentation: var(--white);
+  --text-primary: var(--gray-800);
+  --text-secondary: var(--gray-600);
+  --text-secondary-alt: var(--gray-500);
+  --text-tertiary: var(--gray-500);
+  --text-warning: var(--amber-500);
+  --ring-primary: var(--gray-500);
+  --header-primary: var(--white);
+  --header-hover: var(--gray-50);
+  --header-button-hover: var(--gray-50);
+  --surface-active: var(--gray-100);
+  --surface-active-alt: var(--gray-200);
+  --surface-hover: var(--gray-200);
+  --surface-hover-alt: var(--gray-300);
+  --surface-primary: var(--white);
+  --surface-primary-alt: var(--gray-50);
+  --surface-primary-contrast: var(--gray-100);
+  --surface-secondary: var(--gray-50);
+  --surface-secondary-alt: var(--gray-200);
+  --surface-tertiary: var(--gray-100);
+  --surface-tertiary-alt: var(--white);
+  --surface-dialog: var(--white);
+  --surface-submit: var(--green-700);
+  --surface-submit-hover: var(--green-800);
+  --surface-destructive: var(--red-700);
+  --surface-destructive-hover: var(--red-800);
+  --surface-chat: var(--white);
+  --border-light: var(--gray-200);
+  --border-medium-alt: var(--gray-300);
+  --border-medium: var(--gray-300);
+  --border-heavy: var(--gray-400);
+  --border-xheavy: var(--gray-500);
+
+  --background: 0 0% 100%;
+  --foreground: 0 0% 3.9%;
+  --primary: 0 0% 9%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 0 0% 96.1%;
+  --secondary-foreground: 0 0% 9%;
+  --muted: 0 0% 96.1%;
+  --muted-foreground: 0 0% 45.1%;
+  --accent: 0 0% 96.1%;
+  --accent-foreground: 0 0% 9%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 0 0% 89.8%;
+  --input: 0 0% 89.8%;
+  --ring: 0 0% 3.9%;
+  --radius: 0.5rem;
+  --switch-unchecked: 0 0% 58%;
+}
+
+.dark {
+  --presentation: var(--gray-800);
+  --text-primary: var(--gray-100);
+  --text-secondary: var(--gray-300);
+  --text-secondary-alt: var(--gray-400);
+  --text-tertiary: var(--gray-500);
+  --text-warning: var(--amber-500);
+  --header-primary: var(--gray-700);
+  --header-hover: var(--gray-600);
+  --header-button-hover: var(--gray-700);
+  --surface-active: var(--gray-500);
+  --surface-active-alt: var(--gray-700);
+  --surface-hover: var(--gray-600);
+  --surface-hover-alt: var(--gray-600);
+  --surface-primary: var(--gray-900);
+  --surface-primary-alt: var(--gray-850);
+  --surface-primary-contrast: var(--gray-850);
+  --surface-secondary: var(--gray-800);
+  --surface-secondary-alt: var(--gray-800);
+  --surface-tertiary: var(--gray-700);
+  --surface-tertiary-alt: var(--gray-700);
+  --surface-dialog: var(--gray-850);
+  --surface-submit: var(--green-700);
+  --surface-submit-hover: var(--green-800);
+  --surface-destructive: var(--red-800);
+  --surface-destructive-hover: var(--red-900);
+  --surface-chat: var(--gray-700);
+  --border-light: var(--gray-700);
+  --border-medium-alt: var(--gray-600);
+  --border-medium: var(--gray-600);
+  --border-heavy: var(--gray-500);
+  --border-xheavy: var(--gray-400);
+
+  --background: 0 0% 7%;
+  --foreground: 0 0% 98%;
+  --primary: 0 0% 98%;
+  --primary-foreground: 0 0% 9%;
+  --secondary: 0 0% 14.9%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 0 0% 14.9%;
+  --muted-foreground: 0 0% 63.9%;
+  --accent: 0 0% 14.9%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 40.6%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 0 0% 14.9%;
+  --input: 0 0% 14.9%;
+  --ring: 0 0% 83.1%;
+  --switch-unchecked: 0 0% 40%;
+}
+
+body {
+  margin: 0;
+  background: var(--surface-secondary);
+  color: var(--text-primary);
+  font-family: 'Inter Display', Inter, ui-sans-serif, system-ui, sans-serif;
+}
+
+/* wonka-signal-button: the shared "primary CTA" gradient look used by
+ * Button's `default`/`submit` variants across WonkaChat. */
+.wonka-signal-button {
+  background: linear-gradient(135deg, var(--color-blue-600), var(--color-blue-900));
+  color: var(--white);
+}
+.wonka-signal-button:hover {
+  filter: brightness(1.08);
+}
+
+/*
+ * wonka-agent-card*: ported from WonkaChat/client/src/wonka-design-system.css.
+ * The source references generated `--ds-component-*` design-system tokens
+ * (created client-side by createTailwindColors(), see README "Tailwind
+ * reconciliation notes"); this substitutes the closest concrete color this
+ * lab already defines, the same simplification `wonka-signal-button` above
+ * already makes.
+ */
+.wonka-agent-card {
+  container: wonka-agent-card / inline-size;
+  min-height: 10rem;
+}
+
+.wonka-agent-card--pinned {
+  border-color: var(--color-blue-600);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--color-blue-400) 40%, transparent);
+}
+
+.wonka-agent-card--pinned:hover {
+  border-color: var(--color-blue-600);
+  box-shadow: 0 0 10px color-mix(in srgb, var(--color-blue-600) 8%, transparent);
+}
+
+.wonka-agent-card__actions {
+  display: flex;
+  align-items: stretch;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.wonka-agent-card__primary-action {
+  min-width: 0;
+  flex: 1 1 auto;
+  border: 1px solid var(--border-medium);
+  background: var(--white);
+  background-image: none;
+  box-shadow: none;
+  color: var(--black);
+}
+
+.wonka-agent-card__primary-action:hover {
+  background: var(--gray-100);
+  background-image: none;
+  color: var(--black);
+  transform: none;
+}
+
+@media (max-width: 639px) {
+  .wonka-agent-card {
+    min-height: 9.5rem;
+  }
+}
+
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/*
+ * Streaming-message cursor, ported verbatim from
+ * WonkaChat/client/src/style.css (`.submitting`, `.result-streaming`,
+ * `.result-thinking`, `@keyframes pulseSize`). MessageBubble.tsx toggles
+ * these classes exactly as `MessageContent.tsx` does in the real app.
+ */
+@keyframes pulseSize {
+  0%,
+  to {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scale3d(1.25, 1.25, 1);
+  }
+}
+
+.submitting .result-thinking:empty:last-child:after {
+  -webkit-font-smoothing: subpixel-antialiased;
+  animation: pulseSize 1.25s ease-in-out infinite;
+  backface-visibility: hidden;
+  background-color: var(--text-primary);
+  border-radius: 50%;
+  box-sizing: border-box;
+  content: ' ';
+  display: block;
+  height: 12px;
+  position: absolute;
+  top: -11px;
+  transform: translateZ(0);
+  transform-origin: center;
+  width: 12px;
+  will-change: transform;
+}
+
+.result-streaming > :not(ol):not(ul):not(pre):last-child:after,
+.result-streaming > pre:last-child code:after {
+  display: inline-block;
+  content: '⬤';
+  width: 12px;
+  height: 12px;
+  font-family: system-ui, Inter, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;
+  line-height: normal;
+  margin-left: 0.25rem;
+  vertical-align: middle;
+  font-size: 0.5rem;
+}
+
+/*
+ * Composer.tsx / ConnectAppsMenu.tsx marker classes, ported verbatim from
+ * client/src/wonka-design-system.css. Same simplification `wonka-agent-card*`
+ * above already makes: the source's `--ds-component-connect-apps-*` tokens
+ * are defined in :root above (concrete values, not the generated
+ * `createTailwindColors()` scale).
+ */
+.wonka-integration-icon {
+  display: flex;
+  width: 2.5rem;
+  height: 2.5rem;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-sm);
+  background: var(--white);
+}
+
+.wonka-connect-apps-dialog {
+  border: 1px solid var(--border-medium);
+  border-radius: var(--ds-component-connect-apps-radius);
+  background: var(--surface-primary);
+  box-shadow: var(--ds-component-connect-apps-shadow);
+}
+
+/*
+ * Ariakit `Select` popover chrome, ported verbatim from `client/src/style.css`
+ * (`.popover-ui`, `.select-item`). Used by Nav's `AccountSettings.tsx` — the
+ * only ported component so far on Ariakit's `Select` (Tooltip.tsx already
+ * uses Ariakit, but its own popover, not this shared one).
+ */
+.popover-ui {
+  display: flex;
+  max-height: min(var(--popover-available-height, 1700px), 1700px);
+  flex-direction: column;
+  overflow: auto;
+  overscroll-behavior: contain;
+  border-radius: 1rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--border-light);
+  background-color: var(--surface-primary);
+  padding: 0.5rem;
+  color: var(--text-primary);
+  box-shadow:
+    0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+  transform-origin: top;
+  opacity: 0;
+  transition-property: opacity, scale, translate;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  scale: 0.95;
+  translate: 0 -0.5rem;
+  margin-top: 4px;
+  margin-right: -2px;
+}
+
+.popover-ui[data-enter] {
+  opacity: 1;
+  scale: 1;
+  translate: 0;
+}
+
+.select-item {
+  display: flex;
+  cursor: pointer;
+  scroll-margin: 0.5rem;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  outline: none !important;
+}
+
+.select-item[data-active-item] {
+  background-color: var(--surface-hover);
+  color: var(--text-primary);
+}
+
+/* Ported verbatim from client/src/wonka-design-system.css — the empty-chat
+ * landing headline's serif treatment (EmptyStateLanding.tsx). */
+.wonka-editorial {
+  font-family: 'GT Sectra', ui-serif, Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.038em;
+}
+
+/* Remove cursors when streaming is complete */
+.result-streaming:not(.submitting) :is(ul, ol) li:after {
+  display: none !important;
+}
