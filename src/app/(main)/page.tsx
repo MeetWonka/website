@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
+import { getLocale } from "next-intl/server";
 import { sanityFetch } from "@sanity/lib/live";
-import { HOMEPAGE_CONTENT_QUERY, SITE_SETTINGS_QUERY } from "@sanity/lib/queries";
+import {
+  HOMEPAGE_CONTENT_QUERY,
+  SITE_SETTINGS_QUERY,
+} from "@sanity/lib/queries";
 import type { HomepageContent, SiteSettings } from "@/lib/types";
 import { buildMetadata } from "@/lib/seo";
-import { Hero } from "@/components/sections/hero";
+import { resolveMeetingUrl } from "@/lib/resolve-meeting-url";
+import { HomepageHeroExperiment } from "@/components/sections/homepage-hero-experiment";
 import { Problem } from "@/components/sections/problem";
 import { Solution } from "@/components/sections/solution";
-import { Visual } from "@/components/sections/visual";
 import { HowItWorks } from "@/components/sections/how-it-works";
 import { Stats } from "@/components/sections/stats";
 import { UseCases } from "@/components/sections/use-cases";
@@ -28,8 +32,16 @@ async function getSiteSettings() {
 }
 
 export async function generateMetadata(): Promise<Metadata> {
-  const content = await getHomepageContent();
-  return buildMetadata(content?.seo ?? null, { path: "/" });
+  const [content, locale] = await Promise.all([
+    getHomepageContent(),
+    getLocale(),
+  ]);
+  const path = locale === "en" ? "/" : `/${locale}`;
+  return buildMetadata(content?.seo ?? null, {
+    path,
+    locale,
+    hreflang: "home",
+  });
 }
 
 export default async function Home() {
@@ -37,20 +49,41 @@ export default async function Home() {
     getHomepageContent(),
     getSiteSettings(),
   ]);
-  const meetingUrl = settings?.sharedLinks?.meetingUrl ?? null;
+  const sharedLinks = settings?.sharedLinks ?? null;
+  const meetingUrl = resolveMeetingUrl(sharedLinks, "default");
+  const meetingLabel = sharedLinks?.meetingLabel ?? null;
+
   return (
     <>
-      <Hero meetingUrl={meetingUrl} />
+      <HomepageHeroExperiment
+        data={content?.hero ?? null}
+        meetingUrl={meetingUrl}
+        meetingLabel={meetingLabel}
+      />
       <Problem id="problem" />
-      <Visual />
       <Solution id="solution" data={content?.solution ?? null} />
       <Stats id="stats" />
-      <HowItWorks id="how-it-works" />
+      <HowItWorks
+        id="how-it-works"
+        data={content?.whatWeDo ?? null}
+        sharedLinks={sharedLinks}
+      />
       <UseCases id="use-cases" data={content?.useCases ?? null} />
-      <HowToStart id="how-to-start" meetingUrl={meetingUrl} />
-      <Security id="security" />
+      <HowToStart
+        id="how-to-start"
+        data={content?.howToStart ?? null}
+        meetingUrl={meetingUrl}
+        meetingLabel={meetingLabel}
+      />
+      <Security id="security" data={content?.security ?? null} />
       <Testimonials id="testimonials" />
-      <Cta id="get-started" meetingUrl={meetingUrl} />
+      <Cta
+        id="get-started"
+        data={content?.cta ?? null}
+        meetingUrl={meetingUrl}
+        meetingLabel={meetingLabel}
+        meetingTrackType="general"
+      />
     </>
   );
 }

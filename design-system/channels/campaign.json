@@ -1,0 +1,60 @@
+{
+  "$schema": "../schemas/channel.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "channel.campaign",
+  "name": "Campaign",
+  "description": "Paid, organic, event, and launch creative that remains recognisably Wonka at multiple aspect ratios.",
+  "aliases": ["campaign"],
+  "lifecycle": "review_required",
+  "stability": "experimental",
+  "introducedIn": "0.2.0",
+  "allowedThemes": ["light", "dark"],
+  "distribution": "external",
+  "tokenSets": [
+    "color",
+    "semantic.color",
+    "typography",
+    "motion",
+    "radius",
+    "component"
+  ],
+  "compatibleAssetIds": [
+    "asset.logo.wordmark",
+    "asset.logo.mark",
+    "asset.font.inter-display",
+    "asset.font.gt-sectra"
+  ],
+  "constraints": [
+    {
+      "id": "deterministic-brand-layer",
+      "value": "Render logos, copy, prices, CTAs, and legal text deterministically after any generative background step.",
+      "level": "required",
+      "enforcement": "human_review"
+    },
+    {
+      "id": "claim-approval",
+      "value": "Claims and offer terms require explicit human approval before publication.",
+      "level": "required",
+      "enforcement": "human_review"
+    },
+    {
+      "id": "adaptation",
+      "value": "Preserve hierarchy and safe zones when adapting 1:1, 4:5, 9:16, and 16:9 formats.",
+      "level": "required",
+      "enforcement": "contract"
+    },
+    {
+      "id": "signature",
+      "value": "Use the signal-cut geometry once as the expressive brand gesture; avoid generic decorative gradients.",
+      "level": "recommended",
+      "enforcement": "human_review"
+    }
+  ],
+  "exportTargets": ["png", "jpg", "mp4", "html"],
+  "provenance": {
+    "source": "Wonka Brand DNA and AI Creative Studio contracts",
+    "owner": "Wonka Design System",
+    "approvedBy": null,
+    "approvedAt": null
+  }
+}

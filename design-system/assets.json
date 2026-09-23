@@ -1,0 +1,169 @@
+{
+  "$schema": "./schemas/asset-catalog.schema.json",
+  "schemaVersion": "1.0.0",
+  "version": "0.3.0",
+  "assets": [
+    {
+      "id": "asset.logo.wordmark",
+      "name": "Wonka wordmark",
+      "kind": "logo",
+      "lifecycle": "review_required",
+      "stability": "beta",
+      "files": [
+        {
+          "path": "public/images/brand/wonka-logo-black.svg",
+          "mimeType": "image/svg+xml",
+          "theme": "light"
+        },
+        {
+          "path": "public/images/brand/wonka-logo-white.svg",
+          "mimeType": "image/svg+xml",
+          "theme": "dark"
+        },
+        {
+          "path": "public/images/brand/wonka-logo-mask.png",
+          "mimeType": "image/png",
+          "theme": "all"
+        }
+      ],
+      "usage": {
+        "allowed": [
+          "Primary brand identification on approved light or dark backgrounds.",
+          "The monochrome mask may inherit an approved semantic foreground token."
+        ],
+        "forbidden": [
+          "Stretching, rotating, outlining, or reconstructing the wordmark.",
+          "Applying colors outside approved semantic foreground tokens."
+        ],
+        "clearspace": "Keep clear space equal to at least the height of the lowercase o.",
+        "minSize": "120px wide for digital use."
+      },
+      "rights": {
+        "owner": "Wonka AI",
+        "license": "verification_required",
+        "expiresAt": null
+      },
+      "provenance": {
+        "source": "Existing website brand assets",
+        "owner": "Wonka AI",
+        "approvedBy": null,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "asset.logo.mark",
+      "name": "Wonka logo mark",
+      "kind": "logo",
+      "lifecycle": "review_required",
+      "stability": "beta",
+      "files": [
+        {
+          "path": "public/images/brand/wonka-logo-mark-transparent.png",
+          "mimeType": "image/png",
+          "theme": "light"
+        },
+        {
+          "path": "public/images/brand/wonka-logo-mark-white-transparent.png",
+          "mimeType": "image/png",
+          "theme": "dark"
+        }
+      ],
+      "usage": {
+        "allowed": [
+          "Compact brand identification when the full wordmark does not fit."
+        ],
+        "forbidden": [
+          "Using the mark as a decorative pattern without brand approval."
+        ],
+        "clearspace": "Keep clear space equal to one quarter of the mark width.",
+        "minSize": "24px wide for digital use."
+      },
+      "rights": {
+        "owner": "Wonka AI",
+        "license": "verification_required",
+        "expiresAt": null
+      },
+      "provenance": {
+        "source": "Existing website brand assets",
+        "owner": "Wonka AI",
+        "approvedBy": null,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "asset.font.inter-display",
+      "name": "Inter Display",
+      "kind": "font",
+      "lifecycle": "review_required",
+      "stability": "beta",
+      "files": [
+        {
+          "path": "public/fonts/InterDisplay-Regular.woff2",
+          "mimeType": "font/woff2",
+          "theme": "all"
+        },
+        {
+          "path": "public/fonts/InterDisplay-Medium.woff2",
+          "mimeType": "font/woff2",
+          "theme": "all"
+        }
+      ],
+      "usage": {
+        "allowed": [
+          "Wonka product, web, campaign, and presentation typography after license verification."
+        ],
+        "forbidden": [
+          "Redistribution outside approved Wonka artifacts before license verification."
+        ],
+        "clearspace": null,
+        "minSize": null
+      },
+      "rights": {
+        "owner": "External type foundry",
+        "license": "verification_required",
+        "expiresAt": null
+      },
+      "provenance": {
+        "source": "Existing website font files",
+        "owner": "Wonka AI",
+        "approvedBy": null,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "asset.font.gt-sectra",
+      "name": "GT Sectra",
+      "kind": "font",
+      "lifecycle": "review_required",
+      "stability": "beta",
+      "files": [
+        {
+          "path": "public/fonts/GT-Sectra-Regular.woff2",
+          "mimeType": "font/woff2",
+          "theme": "all"
+        }
+      ],
+      "usage": {
+        "allowed": [
+          "Restrained editorial display typography after license verification."
+        ],
+        "forbidden": [
+          "Redistribution or embedding in external templates before license verification."
+        ],
+        "clearspace": null,
+        "minSize": null
+      },
+      "rights": {
+        "owner": "Grilli Type",
+        "license": "verification_required",
+        "expiresAt": null
+      },
+      "provenance": {
+        "source": "Existing website font file",
+        "owner": "Wonka AI",
+        "approvedBy": null,
+        "approvedAt": null
+      }
+    }
+  ]
+}

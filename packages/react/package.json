@@ -1,0 +1,25 @@
+{
+  "name": "@wonka/react",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": "./src/index.ts",
+    "./button": "./src/button.tsx",
+    "./badge": "./src/badge.tsx",
+    "./eyebrow": "./src/eyebrow.tsx",
+    "./section": "./src/section.tsx",
+    "./surface": "./src/surface.tsx",
+    "./design-tokens": "./src/design-tokens.ts"
+  },
+  "peerDependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "dependencies": {
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.5.0"
+  }
+}

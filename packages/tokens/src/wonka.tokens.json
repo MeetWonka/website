@@ -1,0 +1,556 @@
+{
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$name": "Wonka design tokens",
+  "$version": "0.3.0",
+  "$description": "Canonical, channel-neutral design decisions for Wonka products, campaigns, presentations, and agent-generated artifacts.",
+  "color": {
+    "$type": "color",
+    "blue": {
+      "100": {
+        "$value": "#e7effd",
+        "$description": "Light blue wash for quiet branded surfaces."
+      },
+      "200": { "$value": "#c9dafb" },
+      "300": { "$value": "#a9c3f8" },
+      "400": {
+        "$value": "#75a3fd",
+        "$description": "Primary luminous Wonka blue."
+      },
+      "500": { "$value": "#4d86f5" },
+      "600": { "$value": "#2f6de0" },
+      "700": { "$value": "#1e54c2" },
+      "800": { "$value": "#123e9a" },
+      "900": {
+        "$value": "#082c72",
+        "$description": "Deep brand blue for high-contrast surfaces."
+      }
+    },
+    "green": {
+      "100": { "$value": "#eaf6ee" },
+      "200": { "$value": "#d6f0dd" },
+      "300": { "$value": "#bee6c4" },
+      "400": { "$value": "#9fd9ad" },
+      "500": { "$value": "#7bcb93" },
+      "600": { "$value": "#57b87a" },
+      "700": { "$value": "#3f9d64" },
+      "800": { "$value": "#2a6f4f" },
+      "900": {
+        "$value": "#173630",
+        "$description": "Deep green used for sovereign and secure product contexts."
+      }
+    },
+    "orange": {
+      "300": {
+        "$value": "#fde6c1",
+        "$description": "Soft waiting-state background."
+      },
+      "900": {
+        "$value": "#e89c32",
+        "$description": "Waiting and caution state foreground."
+      }
+    },
+    "neutral": {
+      "white": { "$value": "#ffffff" },
+      "light-gray": { "$value": "#f7f7f7" },
+      "gray": { "$value": "#f6f6f4" },
+      "mid-gray": { "$value": "#f0eeea" },
+      "dark-gray": { "$value": "#d9d9d5" },
+      "light-brown": { "$value": "#76766b" },
+      "dark-brown": { "$value": "#3b2929" },
+      "black": {
+        "$value": "#0e1a16",
+        "$description": "Wonka near-black with a green undertone."
+      }
+    },
+    "status": {
+      "success": {
+        "$value": "#5eb064",
+        "$description": "Solid success/confirmation state."
+      },
+      "success-surface": {
+        "$value": "#edf7ef",
+        "$description": "Light success wash for banners and toasts."
+      },
+      "warning": {
+        "$value": "#e39938",
+        "$description": "Solid warning/caution state."
+      },
+      "warning-surface": {
+        "$value": "#fef8ec",
+        "$description": "Light warning wash for banners and toasts."
+      },
+      "danger": {
+        "$value": "#df5c30",
+        "$description": "Solid destructive/error state."
+      },
+      "danger-surface": {
+        "$value": "#fbedea",
+        "$description": "Light error wash for banners and toasts."
+      },
+      "info-surface": {
+        "$value": "#e7efff",
+        "$description": "Light info wash for banners and toasts."
+      }
+    }
+  },
+  "radius": {
+    "$type": "dimension",
+    "xs": {
+      "$value": "0.25rem",
+      "$description": "Compact callouts and utility controls."
+    },
+    "sm": {
+      "$value": "0.5rem",
+      "$description": "Default cards, panels, and banners."
+    },
+    "md": { "$value": "0.75rem" },
+    "lg": { "$value": "1rem" },
+    "button": {
+      "$value": "1rem",
+      "$description": "Fallback radius for button hit areas; shaped variants use their SVG silhouette."
+    },
+    "full": {
+      "$value": "9999px",
+      "$description": "Pills, chips, and avatars."
+    }
+  },
+  "shadow": {
+    "$type": "shadow",
+    "subtle": {
+      "$value": "0 1px 1px rgba(0, 0, 0, 0.08)",
+      "$description": "Default low-elevation surface."
+    },
+    "subtle-hover": {
+      "$value": "0 2px 6px rgba(0, 0, 0, 0.12)",
+      "$description": "Hover elevation for interactive surfaces."
+    }
+  },
+  "font": {
+    "family": {
+      "$type": "fontFamily",
+      "sans": {
+        "$value": [
+          "Inter Display",
+          "ui-sans-serif",
+          "system-ui",
+          "sans-serif"
+        ],
+        "$description": "Product, body, and utility typography."
+      },
+      "serif": {
+        "$value": [
+          "GT Sectra",
+          "ui-serif",
+          "Georgia",
+          "serif"
+        ],
+        "$description": "Editorial display typography."
+      },
+      "mono": {
+        "$value": [
+          "Cascadia Mono",
+          "Segoe UI Mono",
+          "ui-monospace",
+          "monospace"
+        ],
+        "$description": "Tokens, code, identifiers, and data."
+      }
+    },
+    "weight": {
+      "$type": "fontWeight",
+      "regular": { "$value": 400 },
+      "medium": { "$value": 500 },
+      "semibold": { "$value": 600 }
+    }
+  },
+  "typography": {
+    "$type": "typography",
+    "h1": {
+      "$value": {
+        "fontFamily": "{font.family.sans}",
+        "fontWeight": "{font.weight.regular}",
+        "fontSize": {
+          "mobile": "4.5rem",
+          "tablet": "5.5rem",
+          "desktop": "5.5rem"
+        },
+        "lineHeight": {
+          "mobile": "1",
+          "tablet": "4.25rem",
+          "desktop": "4.25rem"
+        },
+        "letterSpacing": "-0.028em"
+      },
+      "$description": "Large sans-serif campaign or product hero."
+    },
+    "h2": {
+      "$value": {
+        "fontFamily": "{font.family.serif}",
+        "fontWeight": "{font.weight.regular}",
+        "fontSize": {
+          "mobile": "2.5rem",
+          "tablet": "3.25rem",
+          "desktop": "4rem"
+        },
+        "lineHeight": {
+          "mobile": "1.1",
+          "tablet": "1",
+          "desktop": "1"
+        },
+        "letterSpacing": "-0.047em"
+      }
+    },
+    "h3": {
+      "$value": {
+        "fontFamily": "{font.family.serif}",
+        "fontWeight": "{font.weight.regular}",
+        "fontSize": {
+          "mobile": "3.5rem",
+          "tablet": "3.75rem",
+          "desktop": "5rem"
+        },
+        "lineHeight": {
+          "mobile": "1",
+          "tablet": "0.95",
+          "desktop": "0.9"
+        },
+        "letterSpacing": "-0.041em"
+      }
+    },
+    "h4": {
+      "$value": {
+        "fontFamily": "{font.family.serif}",
+        "fontWeight": "{font.weight.regular}",
+        "fontSize": {
+          "mobile": "2.5rem",
+          "tablet": "2.625rem",
+          "desktop": "3.25rem"
+        },
+        "lineHeight": {
+          "mobile": "1.125",
+          "tablet": "1.12",
+          "desktop": "1.115"
+        },
+        "letterSpacing": "-0.038em"
+      }
+    },
+    "h5": {
+      "$value": {
+        "fontFamily": "{font.family.serif}",
+        "fontWeight": "{font.weight.regular}",
+        "fontSize": {
+          "mobile": "1.75rem",
+          "tablet": "2rem",
+          "desktop": "2.25rem"
+        },
+        "lineHeight": {
+          "mobile": "1.214",
+          "tablet": "1.1875",
+          "desktop": "1.222"
+        },
+        "letterSpacing": "-0.028em"
+      }
+    },
+    "h6": {
+      "$value": {
+        "fontFamily": "{font.family.serif}",
+        "fontWeight": "{font.weight.regular}",
+        "fontSize": {
+          "mobile": "1.375rem",
+          "tablet": "1.5rem",
+          "desktop": "1.75rem"
+        },
+        "lineHeight": {
+          "mobile": "1.273",
+          "tablet": "1.25",
+          "desktop": "1.143"
+        },
+        "letterSpacing": "-0.036em"
+      }
+    },
+    "body": {
+      "$value": {
+        "fontFamily": "{font.family.sans}",
+        "fontWeight": "{font.weight.regular}",
+        "fontSize": "1rem",
+        "lineHeight": "1.75rem",
+        "letterSpacing": "0"
+      }
+    },
+    "paragraph-m": {
+      "$value": {
+        "fontFamily": "{font.family.sans}",
+        "fontWeight": "{font.weight.regular}",
+        "fontSize": "0.875rem",
+        "lineHeight": "1.5rem",
+        "letterSpacing": "0"
+      }
+    },
+    "paragraph-m-bold": {
+      "$value": {
+        "fontFamily": "{font.family.sans}",
+        "fontWeight": "{font.weight.medium}",
+        "fontSize": "0.875rem",
+        "lineHeight": "1.5rem",
+        "letterSpacing": "0"
+      }
+    },
+    "paragraph-s": {
+      "$value": {
+        "fontFamily": "{font.family.sans}",
+        "fontWeight": "{font.weight.medium}",
+        "fontSize": "0.75rem",
+        "lineHeight": "1.25rem",
+        "letterSpacing": "0"
+      }
+    },
+    "eyebrow": {
+      "$value": {
+        "fontFamily": "{font.family.sans}",
+        "fontWeight": "{font.weight.medium}",
+        "fontSize": "0.625rem",
+        "lineHeight": "1rem",
+        "letterSpacing": "0.07em",
+        "textTransform": "uppercase"
+      }
+    }
+  },
+  "motion": {
+    "duration": {
+      "$type": "duration",
+      "fast": { "$value": "150ms" },
+      "normal": { "$value": "200ms" },
+      "expressive": { "$value": "450ms" }
+    },
+    "easing": {
+      "$type": "cubicBezier",
+      "standard": { "$value": [0.22, 1, 0.36, 1] },
+      "out": { "$value": [0.165, 0.84, 0.44, 1] }
+    }
+  },
+  "semantic": {
+    "color": {
+      "$type": "color",
+      "background": {
+        "$value": "{color.neutral.white}",
+        "$description": "Default page background.",
+        "$extensions": {
+          "com.wonka.modes": {
+            "light": "{color.neutral.white}",
+            "dark": "{color.neutral.black}"
+          }
+        }
+      },
+      "text": {
+        "$value": "{color.neutral.black}",
+        "$description": "Default readable foreground.",
+        "$extensions": {
+          "com.wonka.modes": {
+            "light": "{color.neutral.black}",
+            "dark": "{color.neutral.white}"
+          }
+        }
+      },
+      "surface": {
+        "$value": "{color.neutral.white}",
+        "$extensions": {
+          "com.wonka.modes": {
+            "light": "{color.neutral.white}",
+            "dark": "{color.neutral.black}"
+          }
+        }
+      },
+      "surface-muted": {
+        "$value": "{color.neutral.gray}",
+        "$extensions": {
+          "com.wonka.modes": {
+            "light": "{color.neutral.gray}",
+            "dark": "{color.neutral.dark-brown}"
+          }
+        }
+      },
+      "border": {
+        "$value": "{color.neutral.dark-gray}",
+        "$extensions": {
+          "com.wonka.modes": {
+            "light": "{color.neutral.dark-gray}",
+            "dark": "{color.neutral.light-brown}"
+          }
+        }
+      },
+      "accent": {
+        "$value": "{color.blue.900}",
+        "$extensions": {
+          "com.wonka.modes": {
+            "light": "{color.blue.900}",
+            "dark": "{color.blue.900}"
+          }
+        }
+      },
+      "accent-dark": {
+        "$value": "{color.blue.400}",
+        "$extensions": {
+          "com.wonka.modes": {
+            "light": "{color.blue.400}",
+            "dark": "{color.blue.400}"
+          }
+        }
+      },
+      "success": {
+        "$value": "{color.status.success}",
+        "$extensions": {
+          "com.wonka.modes": {
+            "light": "{color.status.success}",
+            "dark": "{color.status.success}"
+          }
+        }
+      },
+      "success-surface": {
+        "$value": "{color.status.success-surface}",
+        "$extensions": {
+          "com.wonka.modes": {
+            "light": "{color.status.success-surface}",
+            "dark": "{color.neutral.dark-brown}"
+          }
+        }
+      },
+      "warning": {
+        "$value": "{color.status.warning}",
+        "$extensions": {
+          "com.wonka.modes": {
+            "light": "{color.status.warning}",
+            "dark": "{color.status.warning}"
+          }
+        }
+      },
+      "warning-surface": {
+        "$value": "{color.status.warning-surface}",
+        "$extensions": {
+          "com.wonka.modes": {
+            "light": "{color.status.warning-surface}",
+            "dark": "{color.neutral.dark-brown}"
+          }
+        }
+      },
+      "danger": {
+        "$value": "{color.status.danger}",
+        "$description": "Destructive actions and error states.",
+        "$extensions": {
+          "com.wonka.modes": {
+            "light": "{color.status.danger}",
+            "dark": "{color.status.danger}"
+          }
+        }
+      },
+      "danger-surface": {
+        "$value": "{color.status.danger-surface}",
+        "$extensions": {
+          "com.wonka.modes": {
+            "light": "{color.status.danger-surface}",
+            "dark": "{color.neutral.dark-brown}"
+          }
+        }
+      },
+      "info": {
+        "$value": "{color.blue.400}",
+        "$extensions": {
+          "com.wonka.modes": {
+            "light": "{color.blue.400}",
+            "dark": "{color.blue.300}"
+          }
+        }
+      },
+      "info-surface": {
+        "$value": "{color.status.info-surface}",
+        "$extensions": {
+          "com.wonka.modes": {
+            "light": "{color.status.info-surface}",
+            "dark": "{color.neutral.dark-brown}"
+          }
+        }
+      }
+    }
+  },
+  "component": {
+    "button": {
+      "primary": {
+        "background": {
+          "$type": "color",
+          "$value": "{color.blue.600}",
+          "$description": "Accessible primary action blue with white text."
+        },
+        "foreground": {
+          "$type": "color",
+          "$value": "{color.neutral.white}"
+        }
+      },
+      "secondary": {
+        "background": {
+          "$type": "color",
+          "$value": "{color.neutral.white}"
+        },
+        "foreground": {
+          "$type": "color",
+          "$value": "{color.neutral.black}"
+        }
+      },
+      "destructive": {
+        "background": {
+          "$type": "color",
+          "$value": "#c04622",
+          "$description": "Destructive/delete actions. Tuned for 4.5:1 contrast with white label text."
+        },
+        "foreground": {
+          "$type": "color",
+          "$value": "{color.neutral.white}"
+        }
+      },
+      "outline": {
+        "background": {
+          "$type": "color",
+          "$value": "{semantic.color.surface}"
+        },
+        "foreground": {
+          "$type": "color",
+          "$value": "{semantic.color.text}"
+        },
+        "border": {
+          "$type": "color",
+          "$value": "{semantic.color.border}"
+        }
+      },
+      "ghost": {
+        "foreground": {
+          "$type": "color",
+          "$value": "{semantic.color.text}"
+        },
+        "background-hover": {
+          "$type": "color",
+          "$value": "{semantic.color.surface-muted}"
+        }
+      },
+      "effect": {
+        "drop-shadow": {
+          "$type": "shadow",
+          "$value": "0 1px 0.5px rgba(0, 0, 0, 0.12)",
+          "$description": "Optical lift for the signal-cut button silhouette."
+        },
+        "highlight": {
+          "$type": "string",
+          "$value": "radial-gradient(ellipse 70% 110% at 65% 115%, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0) 65%)",
+          "$description": "Subtle highlight contained by the primary button mask."
+        }
+      }
+    },
+    "focus-ring": {
+      "color": {
+        "$type": "color",
+        "$value": "{semantic.color.info}"
+      },
+      "width": {
+        "$type": "dimension",
+        "$value": "0.125rem"
+      }
+    }
+  }
+}

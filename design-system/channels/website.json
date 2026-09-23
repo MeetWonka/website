@@ -1,0 +1,68 @@
+{
+  "$schema": "../schemas/channel.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "channel.website",
+  "name": "Website",
+  "description": "Editorial and conversion-oriented browser experiences built from Wonka’s shared foundations.",
+  "aliases": ["website", "web"],
+  "lifecycle": "review_required",
+  "stability": "beta",
+  "introducedIn": "0.2.0",
+  "allowedThemes": ["light", "dark"],
+  "distribution": "external",
+  "tokenSets": [
+    "color",
+    "semantic.color",
+    "radius",
+    "shadow",
+    "typography",
+    "motion",
+    "component"
+  ],
+  "compatibleAssetIds": [
+    "asset.logo.wordmark",
+    "asset.logo.mark",
+    "asset.font.inter-display",
+    "asset.font.gt-sectra"
+  ],
+  "constraints": [
+    {
+      "id": "responsive",
+      "value": "Support 320px through large desktop layouts without horizontal scrolling.",
+      "level": "required",
+      "enforcement": "contract"
+    },
+    {
+      "id": "accessibility",
+      "value": "Text and visible focus indicators meet their WCAG 2.2 AA contrast thresholds.",
+      "level": "required",
+      "enforcement": "automated",
+      "ruleId": "rule.contrast-aa"
+    },
+    {
+      "id": "keyboard",
+      "value": "Every interactive flow remains operable with a keyboard and retains visible focus.",
+      "level": "required",
+      "enforcement": "contract"
+    },
+    {
+      "id": "reduced-motion",
+      "value": "Non-essential motion respects the user’s reduced-motion preference.",
+      "level": "required",
+      "enforcement": "contract"
+    },
+    {
+      "id": "explicit-actions",
+      "value": "Use real product language and explicit action labels.",
+      "level": "required",
+      "enforcement": "human_review"
+    }
+  ],
+  "exportTargets": ["react", "css", "html", "png", "pdf"],
+  "provenance": {
+    "source": "Wonka website primitives",
+    "owner": "Wonka Design System",
+    "approvedBy": null,
+    "approvedAt": null
+  }
+}

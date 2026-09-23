@@ -1,244 +1,73 @@
 @import "tailwindcss";
+@import "@wonka/tokens/tailwind.css";
+@plugin "@tailwindcss/typography";
 
 @source "../**/*.tsx";
+@source "../../packages/react/src/**/*.{ts,tsx}";
+
+@theme inline {
+  --font-sans: var(--font-wonka-sans), var(--ds-font-family-sans);
+  --font-serif: var(--font-wonka-serif), var(--ds-font-family-serif);
+  --font-mono: var(--ds-font-family-mono);
+}
 
 @theme {
-  --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
-  --font-serif: var(--font-serif), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  --font-mono: ui-monospace, "Cascadia Mono", "Segoe UI Mono", monospace;
-
-  /* Reset Tailwind's default color palette — we ship our own */
-  --color-*: initial;
-  --color-transparent: transparent;
-  --color-current: currentColor;
-  --color-inherit: inherit;
-
-  /* Primary — Blue */
-  --color-blue-100: #e7effd;
-  --color-blue-200: #c9dafb;
-  --color-blue-300: #a9c3f8;
-  --color-blue-400: #75a3fd;
-  --color-blue-500: #4d86f5;
-  --color-blue-600: #2f6de0;
-  --color-blue-700: #1e54c2;
-  --color-blue-800: #123e9a;
-  --color-blue-900: #082c72;
-
-  /* Secondary — Green */
-  --color-green-100: #eaf6ee;
-  --color-green-200: #d6f0dd;
-  --color-green-300: #bee6c4;
-  --color-green-400: #9fd9ad;
-  --color-green-500: #7bcb93;
-  --color-green-600: #57b87a;
-  --color-green-700: #3f9d64;
-  --color-green-800: #2a6f4f;
-  --color-green-900: #173630;
-
-  /* Orange (waiting / pause state) */
-  --color-orange-300: #fde6c1;
-  --color-orange-900: #e89c32;
-
-  /* Neutral */
-  --color-white: #ffffff;
-  --color-light-gray: #f7f7f7;
-  --color-gray: #f6f6f4;
-  --color-mid-gray: #f0eeea;
-  --color-dark-gray: #d9d9d5;
-  --color-light-brown: #76766b;
-  --color-dark-brown: #3b2929;
-  --color-black: #0e1a16;
-
-  --radius-sm: 0.5rem;
-  --radius-md: 0.75rem;
-  --radius-lg: 1rem;
-  --radius-button: 1rem;
-
-  --shadow-subtle: 0px 1px 1px 0px rgba(0, 0, 0, 0.08);
-  --shadow-subtle-hover: 0px 2px 6px 0px rgba(0, 0, 0, 0.12);
-
   --animate-marquee: marquee 50s linear infinite;
 }
 
 @keyframes marquee {
-  from {
-    transform: translateX(0);
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@keyframes award-glow {
+  0%, 100% {
+    box-shadow:
+      0 0 5px 0 rgba(219, 161, 43, 0.26),
+      0 0 16px -10px rgba(255, 220, 120, 0.65),
+      inset 0 1px 0 rgba(255, 255, 255, 0.16),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.78);
   }
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-/* Semantic theme tokens — resolve at use-time so switching [data-theme] re-themes the page */
-@theme inline {
-  --color-background: var(--background);
-  --color-text: var(--text);
-  --color-border: var(--border);
-  --color-accent: var(--accent);
-  --color-accent-dark: var(--accent-dark);
-}
-
-:root {
-  /* Light theme (default) */
-  --background: var(--color-white);
-  --text: var(--color-black);
-  --border: var(--color-dark-gray);
-  --accent: var(--color-blue-900);
-  --accent-dark: var(--color-blue-400);
-}
-
-[data-theme="dark"] {
-  --background: var(--color-black);
-  --text: var(--color-white);
-  --border: var(--color-light-brown);
-  --accent: var(--color-blue-900);
-  --accent-dark: var(--color-blue-400);
-}
-
-/* Typography — Wonka design system. Use `type-*` (not `text-*`) to avoid clashing with Tailwind's text-{color} utilities. */
-
-@utility type-h1 {
-  font-family: var(--font-sans);
-  font-weight: 400;
-  font-size: 4.5rem;
-  line-height: 1;
-  letter-spacing: -0.028em;
-
-  @media (width >= 48rem) {
-    font-size: 5.5rem;
-    line-height: 4.25rem;
+  50% {
+    box-shadow:
+      0 0 8px 0 rgba(219, 161, 43, 0.42),
+      0 0 24px -10px rgba(255, 220, 120, 0.78),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.78);
   }
 }
 
-@utility type-h2 {
-  font-family: var(--font-serif);
-  font-weight: 400;
-  font-size: 2.5rem;
-  line-height: 1.1;
-  letter-spacing: -0.047em;
-
-  @media (width >= 48rem) {
-    font-size: 3.25rem;
-    line-height: 1;
-  }
-
-  @media (width >= 64rem) {
-    font-size: 4rem;
-    line-height: 1;
-  }
+.award-marble-badge {
+  background:
+    radial-gradient(120% 180% at 16% -40%, rgba(255, 255, 255, 0.14), transparent 38%),
+    radial-gradient(90% 160% at 88% 120%, rgba(255, 255, 255, 0.08), transparent 44%),
+    linear-gradient(118deg, rgba(255, 255, 255, 0.04) 0 13%, transparent 16% 31%, rgba(255, 255, 255, 0.08) 33%, transparent 39% 58%, rgba(255, 255, 255, 0.05) 60%, transparent 72%),
+    linear-gradient(180deg, #202020 0%, #111 52%, #191817 100%);
 }
 
-@utility type-h3 {
-  font-family: var(--font-serif);
-  font-weight: 400;
-  font-size: 3.5rem;
-  line-height: 1;
-  letter-spacing: -0.041em;
-
-  @media (width >= 48rem) {
-    font-size: 3.75rem;
-    line-height: 0.95;
-  }
-
-  @media (width >= 64rem) {
-    font-size: 5rem;
-    line-height: 0.9;
-  }
+.award-marble-badge::before,
+.award-marble-badge::after {
+  content: "";
+  position: absolute;
+  inset: -45%;
+  pointer-events: none;
 }
 
-@utility type-h4 {
-  font-family: var(--font-serif);
-  font-weight: 400;
-  font-size: 2.5rem;
-  line-height: 1.125;
-  letter-spacing: -0.038em;
-
-  @media (width >= 48rem) {
-    font-size: 2.625rem;
-    line-height: 1.12;
-  }
-
-  @media (width >= 64rem) {
-    font-size: 3.25rem;
-    line-height: 1.115;
-  }
+.award-marble-badge::before {
+  opacity: 0.42;
+  background:
+    linear-gradient(24deg, transparent 0 22%, rgba(255, 255, 255, 0.16) 23%, transparent 25% 43%, rgba(194, 139, 34, 0.16) 44%, transparent 47% 100%),
+    linear-gradient(151deg, transparent 0 35%, rgba(255, 255, 255, 0.13) 36%, transparent 39% 68%, rgba(255, 255, 255, 0.08) 69%, transparent 72%);
+  filter: blur(9px);
+  transform: rotate(-3deg);
 }
 
-@utility type-h5 {
-  font-family: var(--font-serif);
-  font-weight: 400;
-  font-size: 1.75rem;
-  line-height: 1.214;
-  letter-spacing: -0.028em;
-
-  @media (width >= 48rem) {
-    font-size: 2rem;
-    line-height: 1.1875;
-  }
-
-  @media (width >= 64rem) {
-    font-size: 2.25rem;
-    line-height: 1.222;
-  }
-}
-
-@utility type-h6 {
-  font-family: var(--font-serif);
-  font-weight: 400;
-  font-size: 1.375rem;
-  line-height: 1.273;
-  letter-spacing: -0.036em;
-
-  @media (width >= 48rem) {
-    font-size: 1.5rem;
-    line-height: 1.25;
-  }
-
-  @media (width >= 64rem) {
-    font-size: 1.75rem;
-    line-height: 1.143;
-  }
-}
-
-@utility type-body {
-  font-family: var(--font-sans);
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.75rem;
-  letter-spacing: 0;
-}
-
-@utility type-paragraph-m {
-  font-family: var(--font-sans);
-  font-weight: 400;
-  font-size: 0.875rem;
-  line-height: 1.5rem;
-  letter-spacing: 0;
-}
-
-@utility type-paragraph-m-bold {
-  font-family: var(--font-sans);
-  font-weight: 500;
-  font-size: 0.875rem;
-  line-height: 1.5rem;
-  letter-spacing: 0;
-}
-
-@utility type-paragraph-s {
-  font-family: var(--font-sans);
-  font-weight: 500;
-  font-size: 0.75rem;
-  line-height: 1.25rem;
-  letter-spacing: 0;
-}
-
-@utility type-eyebrow {
-  font-family: var(--font-sans);
-  font-weight: 500;
-  font-size: 0.625rem;
-  line-height: 1rem;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
+.award-marble-badge::after {
+  inset: 0;
+  opacity: 0.32;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.18), transparent 30%),
+    radial-gradient(70% 85% at 50% -30%, rgba(255, 225, 150, 0.24), transparent 62%);
 }
 
 @layer base {
@@ -413,5 +242,142 @@
   .btn-arrow-out,
   .btn-arrow-in {
     transition-duration: 0.01ms !important;
+  }
+}
+
+/* ─── Prose — Wonka content pages (blog, glossary, comparisons…) ─── */
+.prose {
+  --tw-prose-body:          var(--color-black);
+  --tw-prose-headings:      var(--color-black);
+  --tw-prose-lead:          color-mix(in srgb, var(--color-black) 70%, transparent);
+  --tw-prose-links:         var(--color-blue-600);
+  --tw-prose-bold:          var(--color-black);
+  --tw-prose-counters:      color-mix(in srgb, var(--color-black) 50%, transparent);
+  --tw-prose-bullets:       color-mix(in srgb, var(--color-black) 35%, transparent);
+  --tw-prose-hr:            var(--color-dark-gray);
+  --tw-prose-quotes:        var(--color-black);
+  --tw-prose-quote-borders: var(--color-blue-500);
+  --tw-prose-captions:      color-mix(in srgb, var(--color-black) 55%, transparent);
+  --tw-prose-code:          var(--color-black);
+  --tw-prose-pre-code:      var(--color-white);
+  --tw-prose-pre-bg:        var(--color-black);
+  --tw-prose-th-borders:    var(--color-dark-gray);
+  --tw-prose-td-borders:    color-mix(in srgb, var(--color-dark-gray) 60%, transparent);
+
+  /* Base */
+  font-family:  var(--font-sans);
+  font-size:    1rem;
+  line-height:  1.75rem;
+  color:        var(--color-black);
+
+  /* Headings → GT Sectra via next/font variable on html */
+  h1, h2, h3, h4, h5, h6 {
+    font-family:    var(--font-wonka-serif, var(--font-serif, var(--ds-font-family-serif)));
+    font-weight:    400;
+    letter-spacing: -0.03em;
+    color:          var(--color-black);
+    scroll-margin-top: 6rem;
+  }
+
+  h2 {
+    font-size:   2rem;
+    line-height: 1.15;
+    margin-top:  2.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  h3 {
+    font-size:   1.5rem;
+    line-height: 1.25;
+    margin-top:  2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h4 {
+    font-size:   1.125rem;
+    line-height: 1.4;
+    font-family: var(--font-sans);
+    font-weight: 500;
+    letter-spacing: 0;
+    margin-top:  1.75rem;
+    margin-bottom: 0.4rem;
+  }
+
+  /* Body */
+  p {
+    margin-top:    1rem;
+    margin-bottom: 1rem;
+    line-height:   1.8;
+  }
+
+  /* Lead paragraph */
+  > p:first-of-type {
+    font-size:   1.125rem;
+    line-height: 1.75;
+    color: color-mix(in srgb, var(--color-black) 75%, transparent);
+  }
+
+  /* Links */
+  a {
+    color:            var(--color-blue-600);
+    text-decoration:  underline;
+    text-underline-offset: 3px;
+    transition:       color 0.15s ease;
+    &:hover { color: var(--color-blue-800); }
+  }
+
+  /* Lists */
+  ul, ol {
+    padding-left: 1.4rem;
+    margin-top:   0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  li {
+    margin-top:    0.35rem;
+    margin-bottom: 0.35rem;
+    line-height:   1.65;
+  }
+
+  /* Blockquote */
+  blockquote {
+    border-left-width: 3px;
+    border-left-color: var(--color-blue-500);
+    padding-left:     1.25rem;
+    margin-left:      0;
+    font-style:       normal;
+    color:            color-mix(in srgb, var(--color-black) 70%, transparent);
+    font-size:        1.1rem;
+    line-height:      1.7;
+    background:       var(--color-blue-100);
+    border-radius:    0 0.5rem 0.5rem 0;
+    padding:          1rem 1.25rem;
+  }
+
+  /* HR */
+  hr {
+    border-color: var(--color-dark-gray);
+    margin-top:   2rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Code inline */
+  :not(pre) > code {
+    background:    var(--color-mid-gray);
+    border-radius: 0.25rem;
+    padding:       0.1em 0.35em;
+    font-size:     0.875em;
+    font-weight:   500;
+  }
+
+  /* Strong */
+  strong {
+    font-weight: 600;
+  }
+}
+
+@layer utilities {
+  :is(.type-h2, .type-h3, .type-h4, .type-h5, .type-h6, .font-serif) {
+    font-family: var(--font-wonka-serif, var(--font-serif, var(--ds-font-family-serif)));
   }
 }

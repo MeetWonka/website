@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wonka-ai.com/design-system/schemas/component-catalog.schema.json",
+  "title": "Wonka Component Catalog",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "version", "components"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schemaVersion": { "type": "string" },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "components": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "name",
+          "status",
+          "source",
+          "storyId",
+          "exports",
+          "channels",
+          "variants",
+          "tokens",
+          "accessibility",
+          "usage"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^component\\.[a-z0-9]+(?:[.-][a-z0-9]+)*$"
+          },
+          "name": { "type": "string" },
+          "status": {
+            "enum": ["draft", "beta", "stable", "deprecated", "retired"]
+          },
+          "source": { "type": "string" },
+          "storyId": { "type": "string" },
+          "exports": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "channels": {
+            "type": "array",
+            "items": {
+              "enum": ["product", "website", "campaign", "presentation"]
+            }
+          },
+          "variants": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "tokens": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "assets": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^asset\\.[a-z0-9]+(?:[.-][a-z0-9]+)*$"
+            }
+          },
+          "accessibility": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "usage": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["do", "dont"],
+            "properties": {
+              "do": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "dont": {
+                "type": "array",
+                "items": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

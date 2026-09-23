@@ -22,12 +22,63 @@ export const siteSettings = defineType({
       fields: [
         defineField({
           name: "meetingUrl",
-          title: "Schedule a call URL",
+          title: "Team booking URL (default)",
           type: "url",
           description:
-            "Used by every meeting / contact CTA on the site (e.g. Schedule a call, Book a 30 min call, Let's talk, Become AI-native). Typically a Calendly or Cal.com link.",
+            "Default booking link for the homepage, contact page, blog, and other non-product pages. Product pages use their own URLs below, falling back to this when unset.",
           validation: (Rule) =>
             Rule.uri({ scheme: ["http", "https", "mailto", "tel"] }),
+        }),
+        defineField({
+          name: "startAiMeetingUrl",
+          title: "Start AI booking URL",
+          type: "url",
+          description: "Used by “Book a 30 min call” CTAs on the Start AI page.",
+          validation: (Rule) =>
+            Rule.uri({ scheme: ["http", "https", "mailto", "tel"] }),
+        }),
+        defineField({
+          name: "wonkaBuildMeetingUrl",
+          title: "Wonka Build booking URL",
+          type: "url",
+          description:
+            "Used by “Book a 30 min call” CTAs on the Wonka Build page.",
+          validation: (Rule) =>
+            Rule.uri({ scheme: ["http", "https", "mailto", "tel"] }),
+        }),
+        defineField({
+          name: "wonkaChatMeetingUrl",
+          title: "WonkaChat booking URL",
+          type: "url",
+          description:
+            "Used by “Book a 30 min call” CTAs on the WonkaChat page.",
+          validation: (Rule) =>
+            Rule.uri({ scheme: ["http", "https", "mailto", "tel"] }),
+        }),
+        defineField({
+          name: "meetingLabel",
+          title: "Schedule a call button label",
+          type: "string",
+          description:
+            "Label for booking CTAs site-wide (hero, header-adjacent sections, footer CTA). Falls back to “Book a 30 min call” when empty.",
+        }),
+        defineField({
+          name: "startAiUrl",
+          title: "Start AI page URL",
+          type: "string",
+          description: "Relative path or full URL for Start AI product links.",
+        }),
+        defineField({
+          name: "wonkaBuildUrl",
+          title: "Wonka Build page URL",
+          type: "string",
+          description: "Relative path or full URL for Wonka Build product links.",
+        }),
+        defineField({
+          name: "wonkaChatUrl",
+          title: "WonkaChat page URL",
+          type: "string",
+          description: "Relative path or full URL for WonkaChat product links.",
         }),
       ],
     }),

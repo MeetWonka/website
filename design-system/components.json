@@ -1,0 +1,280 @@
+{
+  "$schema": "./schemas/component-catalog.schema.json",
+  "schemaVersion": "1.0.0",
+  "version": "0.3.0",
+  "components": [
+    {
+      "id": "component.button",
+      "name": "Button",
+      "status": "beta",
+      "source": "packages/react/src/button.tsx",
+      "storyId": "actions-button",
+      "exports": [
+        "Button",
+        "ButtonLink",
+        "buttonVariants"
+      ],
+      "channels": [
+        "product",
+        "website",
+        "campaign"
+      ],
+      "variants": [
+        "primary",
+        "secondary",
+        "underline",
+        "destructive",
+        "outline",
+        "ghost",
+        "link"
+      ],
+      "tokens": [
+        "radius.button",
+        "radius.sm",
+        "component.button.destructive.background",
+        "component.button.destructive.foreground",
+        "component.button.outline.background",
+        "component.button.outline.foreground",
+        "component.button.outline.border",
+        "component.button.ghost.foreground",
+        "component.button.ghost.background-hover",
+        "typography.paragraph-m-bold",
+        "typography.paragraph-s",
+        "motion.duration.normal",
+        "semantic.color.text",
+        "component.button.primary.background",
+        "component.button.primary.foreground",
+        "component.button.secondary.background",
+        "component.button.secondary.foreground",
+        "component.button.effect.drop-shadow",
+        "component.button.effect.highlight",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Use Button for actions and ButtonLink for navigation.",
+        "Always provide a visible text label.",
+        "The focus ring must remain visible on every background.",
+        "Do not disable focus-visible styling."
+      ],
+      "usage": {
+        "do": [
+          "Use one primary action per decision area.",
+          "Keep action labels short and explicit."
+        ],
+        "dont": [
+          "Use raw hex values to recolor a variant.",
+          "Use ButtonLink for form submission."
+        ]
+      }
+    },
+    {
+      "id": "component.badge",
+      "name": "Badge",
+      "status": "beta",
+      "source": "packages/react/src/badge.tsx",
+      "storyId": "data-display-badge",
+      "exports": [
+        "Badge"
+      ],
+      "channels": [
+        "product",
+        "website",
+        "campaign",
+        "presentation"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": [
+        "radius.full",
+        "semantic.color.surface-muted",
+        "semantic.color.text"
+      ],
+      "accessibility": [
+        "Badges communicate metadata, never the only indication of a critical status."
+      ],
+      "usage": {
+        "do": [
+          "Use concise noun phrases."
+        ],
+        "dont": [
+          "Use a badge as an interactive control."
+        ]
+      }
+    },
+    {
+      "id": "component.section",
+      "name": "Section",
+      "status": "beta",
+      "source": "packages/react/src/section.tsx",
+      "storyId": "layout-section",
+      "exports": [
+        "Section"
+      ],
+      "channels": [
+        "website",
+        "campaign"
+      ],
+      "variants": [
+        "default",
+        "wide",
+        "fluid"
+      ],
+      "tokens": [],
+      "accessibility": [
+        "Choose the semantic as prop that matches the document structure."
+      ],
+      "usage": {
+        "do": [
+          "Use the default container for narrative page sections."
+        ],
+        "dont": [
+          "Nest main landmarks."
+        ]
+      }
+    },
+    {
+      "id": "component.surface",
+      "name": "Surface",
+      "status": "beta",
+      "source": "packages/react/src/surface.tsx",
+      "storyId": "layout-surface",
+      "exports": [
+        "Surface",
+        "WidePanel"
+      ],
+      "channels": [
+        "product",
+        "website",
+        "campaign",
+        "presentation"
+      ],
+      "variants": [
+        "card",
+        "panel",
+        "callout",
+        "pill"
+      ],
+      "tokens": [
+        "radius.xs",
+        "radius.sm",
+        "radius.full"
+      ],
+      "accessibility": [
+        "Surface is visual grouping only; add a landmark or heading when structure requires one."
+      ],
+      "usage": {
+        "do": [
+          "Select the variant from the content role."
+        ],
+        "dont": [
+          "Add arbitrary border radii in consuming code."
+        ]
+      }
+    },
+    {
+      "id": "component.eyebrow",
+      "name": "Eyebrow",
+      "status": "beta",
+      "source": "packages/react/src/eyebrow.tsx",
+      "storyId": "data-display-eyebrow",
+      "exports": [
+        "Eyebrow"
+      ],
+      "channels": [
+        "product",
+        "website",
+        "campaign",
+        "presentation"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": [
+        "semantic.color.border",
+        "semantic.color.text",
+        "typography.eyebrow"
+      ],
+      "accessibility": [
+        "Eyebrow text names a real section or category and is never decorative filler."
+      ],
+      "usage": {
+        "do": [
+          "Use before a heading when it improves information scent."
+        ],
+        "dont": [
+          "Repeat the heading in different words."
+        ]
+      }
+    },
+    {
+      "id": "component.logo",
+      "name": "Logo",
+      "status": "beta",
+      "source": "src/components/ui/logo.tsx",
+      "storyId": "assets-logo",
+      "exports": [
+        "Logo"
+      ],
+      "channels": [
+        "product",
+        "website",
+        "campaign",
+        "presentation"
+      ],
+      "variants": [
+        "wordmark"
+      ],
+      "tokens": [],
+      "assets": [
+        "asset.logo.wordmark"
+      ],
+      "accessibility": [
+        "Decorative logo instances stay hidden from assistive technology; linked home logos require an accessible link label."
+      ],
+      "usage": {
+        "do": [
+          "Select the treatment for the actual background."
+        ],
+        "dont": [
+          "Stretch, recolor, rotate, or rebuild the logo."
+        ]
+      }
+    },
+    {
+      "id": "component.logo-mark",
+      "name": "Logo mark",
+      "status": "beta",
+      "source": "src/components/ui/logo-mark.tsx",
+      "storyId": "assets-logo",
+      "exports": [
+        "LogoMark"
+      ],
+      "channels": [
+        "product",
+        "website",
+        "campaign",
+        "presentation"
+      ],
+      "variants": [
+        "dark",
+        "light"
+      ],
+      "tokens": [],
+      "assets": [
+        "asset.logo.mark"
+      ],
+      "accessibility": [
+        "Decorative marks stay hidden from assistive technology; meaningful linked marks require an accessible link label."
+      ],
+      "usage": {
+        "do": [
+          "Select the dark or light treatment for the actual background."
+        ],
+        "dont": [
+          "Stretch, recolor, rotate, or rebuild the mark."
+        ]
+      }
+    }
+  ]
+}

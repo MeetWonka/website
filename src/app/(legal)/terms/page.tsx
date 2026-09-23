@@ -17,10 +17,14 @@ async function getTermsContent() {
 
 export async function generateMetadata(): Promise<Metadata> {
   const content = await getTermsContent();
-  return buildMetadata(content?.seo ?? null, {
+  const metadata = buildMetadata(content?.seo ?? null, {
     path: "/terms",
     fallbackTitle: "Terms of Use",
   });
+  return {
+    ...metadata,
+    robots: { index: false, follow: true },
+  };
 }
 
 export default async function TermsPage() {

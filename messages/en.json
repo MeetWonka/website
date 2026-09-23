@@ -1,0 +1,40 @@
+{
+  "blog": {
+    "title": "Blog",
+    "description": "Insights on enterprise AI, automation, and deployment.",
+    "readMore": "Read more",
+    "publishedOn": "Published on",
+    "allPosts": "All posts",
+    "category": "Category"
+  },
+  "glossary": {
+    "title": "AI Glossary",
+    "description": "Key concepts in enterprise AI, clearly explained.",
+    "allTerms": "All terms"
+  },
+  "comparisons": {
+    "title": "Comparisons",
+    "description": "How Wonka AI compares to other enterprise AI solutions.",
+    "allComparisons": "All comparisons"
+  },
+  "connectors": {
+    "title": "Connectors",
+    "description": "Connect your tools to Wonka AI. One platform, all your data.",
+    "allConnectors": "All connectors",
+    "useCases": "Use cases",
+    "bookDemo": "Book a demo"
+  },
+  "caseStudies": {
+    "title": "Case Studies",
+    "description": "How our clients deploy AI across their organizations.",
+    "allCaseStudies": "All case studies"
+  },
+  "common": {
+    "backToHome": "Back to home",
+    "publishedOn": "Published on",
+    "lastUpdated": "Last updated",
+    "faq": "Frequently asked questions",
+    "bookDemo": "Book a demo",
+    "learnMore": "Learn more"
+  }
+}

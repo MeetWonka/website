@@ -1,0 +1,40 @@
+{
+  "blog": {
+    "title": "Blog",
+    "description": "Décryptage de l'IA en entreprise, de l'automatisation et du déploiement.",
+    "readMore": "Lire la suite",
+    "publishedOn": "Publié le",
+    "allPosts": "Tous les articles",
+    "category": "Catégorie"
+  },
+  "glossary": {
+    "title": "Glossaire IA",
+    "description": "Les concepts clés de l'IA en entreprise, expliqués clairement.",
+    "allTerms": "Tous les termes"
+  },
+  "comparisons": {
+    "title": "Comparaisons",
+    "description": "Comment Wonka AI se compare aux autres solutions d'IA pour entreprise.",
+    "allComparisons": "Toutes les comparaisons"
+  },
+  "connectors": {
+    "title": "Connecteurs",
+    "description": "Connectez vos outils à Wonka AI. Une plateforme, toutes vos données.",
+    "allConnectors": "Tous les connecteurs",
+    "useCases": "Cas d'usage",
+    "bookDemo": "Réserver une démo"
+  },
+  "caseStudies": {
+    "title": "Cas clients",
+    "description": "Comment nos clients déploient l'IA dans leur organisation.",
+    "allCaseStudies": "Tous les cas clients"
+  },
+  "common": {
+    "backToHome": "Retour à l'accueil",
+    "publishedOn": "Publié le",
+    "lastUpdated": "Mis à jour le",
+    "faq": "Questions fréquentes",
+    "bookDemo": "Réserver une démo",
+    "learnMore": "En savoir plus"
+  }
+}

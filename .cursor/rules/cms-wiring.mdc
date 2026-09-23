@@ -1,0 +1,59 @@
+---
+description: Preserve Sanity CMS variables when refactoring marketing sections
+alwaysApply: true
+---
+
+# CMS wiring — never break the content layer
+
+When editing marketing sections, homepage copy, CTAs, or navigation, preserve CMS-driven values. Visual and layout refactors are fine; disconnecting Sanity is not.
+
+## Golden rule
+
+Never remove or bypass CMS variables while hardcoding replacement copy in components. If copy or links are editable in Sanity Studio, the component must still read them.
+
+## Content sources
+
+| Source | Document | Use for |
+|--------|----------|---------|
+| Site-wide | `siteSettings` | Nav, footer, `headerCta`, `sharedLinks` (booking URLs per page, product page URLs, meeting label) |
+| Page-specific | Page singletons (`homepageContent`, `startAiContent`, `wonkaBuildContent`, `wonkaChatContent`, `contactPageContent`, …) | Section copy, arrays, images for that page |
+| Collections | `testimonial`, blog, etc. | Shared lists reused across pages |
+
+PageLayout forwards `siteSettings` to Header/Footer only. Page routes fetch their own content and pass props into sections.
+
+## Reusable section pattern (product pages)
+
+1. **Sanity object type** in `sanity/schemas/objects/` (e.g. `sectionHeader`, `productHero`, `faqSection`)
+2. **Page document** references those objects in grouped fields
+3. **GROQ query** with shared field fragments in `sanity/lib/queries.ts`
+4. **TypeScript types** in `src/lib/types/page-sections.ts`
+5. **Code defaults** in `src/lib/page-defaults/` + merge via `resolve-pages.ts`
+6. **Section component** in `src/components/sections/` — UI shell, receives resolved `data` prop
+7. **Page route** — `sanityFetch` + `resolve*Content()` + compose sections
+
+Shared sections used across pages: `Security`, `UseCases`, `Testimonials`, `Cta`. Product-specific layouts use the reusable primitives (`ProductHero`, `LogoStrip`, `SplitContent`, `StickyFeatures`, etc.).
+
+## Hardcoding is allowed only as fallbacks
+
+```tsx
+const content = resolveStartAiContent(cms);
+const label = meetingLabel ?? DEFAULT_MEETING_LABEL;
+```
+
+Defaults live in `src/lib/page-defaults/`. Components render CMS values when present, otherwise fall back to defaults — never the other way around.
+
+## Adding a new marketing page
+
+1. Create page singleton schema under `sanity/schemas/documents/`
+2. Register in `sanity/schemas/index.ts` + Studio structure in `sanity.config.ts`
+3. Add `*_CONTENT_QUERY` with shared GROQ fragments
+4. Add types + defaults + `resolve*Content()` helper
+5. Compose existing section components in the page route
+6. Use `buildMetadata()` with page `seo` field
+
+## Anti-patterns
+
+- Page routes with large inline copy/constants instead of CMS + defaults
+- Duplicate section UI per page when a shared component already exists
+- Hardcoding meeting labels instead of `sharedLinks.meetingLabel`
+- Product URLs inline when they belong in `sharedLinks`

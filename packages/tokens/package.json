@@ -1,0 +1,18 @@
+{
+  "name": "@wonka/tokens",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "import": "./src/index.ts"
+    },
+    "./tailwind.css": "./src/generated/tokens.css",
+    "./tokens.json": "./src/wonka.tokens.json",
+    "./catalog.json": "./src/generated/catalog.json"
+  }
+}

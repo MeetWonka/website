@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 90" fill="none">
+  <!-- Icon: circle + signal bars -->
+  <circle cx="28" cy="22" r="13" stroke="#1d6475" stroke-width="4" fill="none"/>
+  <!-- 3 signal bars below circle (curved arcs) -->
+  <path d="M14 44 Q28 52 42 44" stroke="#1d6475" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <path d="M9 54 Q28 65 47 54" stroke="#1d6475" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <path d="M4 64 Q28 78 52 64" stroke="#1d6475" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <!-- ODOVIA text -->
+  <text x="62" y="34" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="30" fill="#1d6475" letter-spacing="1">ODOVIA</text>
+  <!-- INTEGRATION badge -->
+  <rect x="62" y="46" width="130" height="26" rx="5" fill="#1d6475"/>
+  <text x="127" y="64" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="13" fill="white" letter-spacing="2" text-anchor="middle">INTEGRATION</text>
+</svg>

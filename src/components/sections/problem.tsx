@@ -38,6 +38,8 @@ interface Item {
   content: ReactNode;
 }
 
+export type { Item as ProblemItem };
+
 const ITEMS: Item[] = [
   {
     tag: "h2",
@@ -62,7 +64,8 @@ const ITEMS: Item[] = [
   },
 ];
 
-export function Problem({ id }: { id?: string }) {
+export function Problem({ id, items: itemsProp }: { id?: string; items?: Item[] }) {
+  const items = itemsProp ?? ITEMS;
   const [activeIndex, setActiveIndex] = useState(0);
   const itemRefs = useRef<Array<HTMLElement | null>>([]);
 
@@ -99,16 +102,16 @@ export function Problem({ id }: { id?: string }) {
       window.removeEventListener("resize", onScroll);
       cancelAnimationFrame(raf);
     };
-  }, []);
+  }, [items.length]);
 
   return (
     <Section
       id={id}
-      className="bg-background pt-[15vh] pb-[20vh] md:pt-[30vh] md:pb-[25vh]"
+      className="bg-background pt-[15vh] pb-[14vh] md:pt-[30vh] md:pb-[18vh]"
       containerClassName="flex max-w-[42.3125rem] flex-col gap-6 md:gap-8"
       aria-label="Problem"
     >
-      {ITEMS.map((item, i) => {
+      {items.map((item, i) => {
         const isActive = i === activeIndex;
         const className = cn(
           "type-h2 w-full text-text transition-opacity duration-300 ease-out",

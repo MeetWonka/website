@@ -1,0 +1,276 @@
+{
+  "$schema": "../schemas/rule-catalog.schema.json",
+  "schemaVersion": "1.0.0",
+  "version": "0.3.0",
+  "rules": [
+    {
+      "id": "rule.no-raw-color",
+      "name": "No embedded hex or functional colors",
+      "description": "New design-system code must reference approved tokens instead of embedding hex values or CSS color-function values.",
+      "lifecycle": "review_required",
+      "stability": "beta",
+      "introducedIn": "0.2.0",
+      "severity": "error",
+      "channelIds": [
+        "channel.product",
+        "channel.website",
+        "channel.campaign",
+        "channel.presentation"
+      ],
+      "scope": {
+        "include": [
+          "packages/react/src/**/*.tsx",
+          "src/app/design-system/**/*.tsx",
+          "src/design-system/**/*.tsx"
+        ],
+        "exclude": [
+          "**/generated/**"
+        ]
+      },
+      "validator": {
+        "kind": "raw_color",
+        "pattern": "#(?:[0-9a-f]{3}|[0-9a-f]{4}|[0-9a-f]{6}|[0-9a-f]{8})(?![0-9a-f])|(?:rgba?|hsla?|hwb|lab|lch|oklab|oklch|color|device-cmyk)\\s*\\(",
+        "flags": "i"
+      },
+      "rationale": "A single canonical token source prevents channel and theme drift.",
+      "exceptionsAllowed": true,
+      "provenance": {
+        "source": "Wonka design-system production hardening",
+        "owner": "Wonka Design System",
+        "approvedBy": null,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "rule.approved-radius",
+      "name": "No oversized generic radius utilities",
+      "description": "New surfaces avoid Tailwind xl, 2xl, and 3xl radius utilities in favor of the restrained Wonka radius scale.",
+      "lifecycle": "review_required",
+      "stability": "beta",
+      "introducedIn": "0.2.0",
+      "severity": "error",
+      "channelIds": [
+        "channel.product",
+        "channel.website",
+        "channel.campaign",
+        "channel.presentation"
+      ],
+      "scope": {
+        "include": [
+          "packages/react/src/**/*.tsx",
+          "src/app/design-system/**/*.tsx",
+          "src/design-system/**/*.tsx"
+        ],
+        "exclude": [
+          "**/generated/**"
+        ]
+      },
+      "validator": {
+        "kind": "forbidden_pattern",
+        "pattern": "\\brounded-(?:xl|2xl|3xl)\\b"
+      },
+      "rationale": "Shape consistency is one of the clearest signals that outputs belong to the same brand.",
+      "exceptionsAllowed": true,
+      "provenance": {
+        "source": "Existing homepage design contract",
+        "owner": "Wonka Design System",
+        "approvedBy": null,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "rule.contrast-aa",
+      "name": "WCAG AA component contrast",
+      "description": "Text and visible focus states meet their WCAG 2.2 AA contrast thresholds in every supported theme.",
+      "lifecycle": "review_required",
+      "stability": "beta",
+      "introducedIn": "0.1.0",
+      "severity": "error",
+      "channelIds": [
+        "channel.product",
+        "channel.website",
+        "channel.campaign",
+        "channel.presentation"
+      ],
+      "scope": {
+        "include": [
+          "packages/tokens/src/**/*.json"
+        ],
+        "exclude": []
+      },
+      "validator": {
+        "kind": "contrast",
+        "pairs": [
+          {
+            "id": "component.button.primary",
+            "foreground": "component.button.primary.foreground",
+            "background": "component.button.primary.background",
+            "minimum": 4.5
+          },
+          {
+            "id": "component.button.secondary",
+            "foreground": "component.button.secondary.foreground",
+            "background": "component.button.secondary.background",
+            "minimum": 4.5
+          },
+          {
+            "id": "component.badge",
+            "foreground": "semantic.color.text",
+            "background": "semantic.color.surface-muted",
+            "minimum": 4.5
+          },
+          {
+            "id": "component.focus-ring",
+            "foreground": "component.focus-ring.color",
+            "background": "semantic.color.background",
+            "minimum": 3
+          }
+        ]
+      },
+      "rationale": "Brand expression must remain usable for people with low vision and in constrained display conditions.",
+      "exceptionsAllowed": false,
+      "provenance": {
+        "source": "WCAG 2.2 AA",
+        "owner": "Wonka Design System",
+        "approvedBy": null,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "rule.asset-rights",
+      "name": "Verified asset rights",
+      "description": "Only assets with verified rights may become active or ship in generated artifacts.",
+      "lifecycle": "review_required",
+      "stability": "beta",
+      "introducedIn": "0.1.0",
+      "severity": "error",
+      "channelIds": [
+        "channel.product",
+        "channel.website",
+        "channel.campaign",
+        "channel.presentation"
+      ],
+      "scope": {
+        "include": [
+          "design-system/assets.json"
+        ],
+        "exclude": []
+      },
+      "validator": {
+        "kind": "asset_rights"
+      },
+      "rationale": "Agents must not turn an unverified font or logo file into an approved distribution right.",
+      "exceptionsAllowed": false,
+      "provenance": {
+        "source": "Wonka Brand DNA governance",
+        "owner": "Wonka Design System",
+        "approvedBy": null,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "rule.generated-no-drift",
+      "name": "Generated artifacts stay in sync",
+      "description": "Committed CSS, TypeScript, public catalogs, and package exports must match their canonical sources.",
+      "lifecycle": "review_required",
+      "stability": "beta",
+      "introducedIn": "0.1.0",
+      "severity": "error",
+      "channelIds": [
+        "channel.product",
+        "channel.website",
+        "channel.campaign",
+        "channel.presentation"
+      ],
+      "scope": {
+        "include": [
+          "design-system/**/*.json",
+          "design-system/**/*.txt"
+        ],
+        "exclude": []
+      },
+      "validator": {
+        "kind": "generated_drift"
+      },
+      "rationale": "Humans and agents must see the same version of every approved decision.",
+      "exceptionsAllowed": false,
+      "provenance": {
+        "source": "Wonka design-system build contract",
+        "owner": "Wonka Design System",
+        "approvedBy": null,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "rule.lifecycle-approval",
+      "name": "Human approval before activation",
+      "description": "A rule, channel, asset, or brand version cannot become active without named human approval and a timestamp.",
+      "lifecycle": "review_required",
+      "stability": "beta",
+      "introducedIn": "0.2.0",
+      "severity": "error",
+      "channelIds": [
+        "channel.product",
+        "channel.website",
+        "channel.campaign",
+        "channel.presentation"
+      ],
+      "scope": {
+        "include": [
+          "design-system/**/*.json",
+          "packages/*/package.json"
+        ],
+        "exclude": []
+      },
+      "validator": {
+        "kind": "lifecycle_approval"
+      },
+      "rationale": "Automation may prepare and validate decisions, but it cannot grant brand or publication authority.",
+      "exceptionsAllowed": false,
+      "provenance": {
+        "source": "Wonka design-system governance",
+        "owner": "Wonka Design System",
+        "approvedBy": null,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "rule.agent-traceability",
+      "name": "Agent output traceability",
+      "description": "Agent-generated artifacts report the exact system, channel, tokens, components, and assets used.",
+      "lifecycle": "review_required",
+      "stability": "beta",
+      "introducedIn": "0.2.0",
+      "severity": "error",
+      "channelIds": [
+        "channel.product",
+        "channel.website",
+        "channel.campaign",
+        "channel.presentation"
+      ],
+      "scope": {
+        "include": [
+          "agent-output/**/*"
+        ],
+        "exclude": []
+      },
+      "validator": {
+        "kind": "manual",
+        "checklist": [
+          "Report designSystemVersion and brandVersionId.",
+          "Report the selected channel id and theme.",
+          "Report every token id, component id, and asset path used.",
+          "Report unresolved review_required decisions."
+        ]
+      },
+      "rationale": "A deterministic trace lets humans and downstream agents reproduce, review, and safely revise generated work.",
+      "exceptionsAllowed": false,
+      "provenance": {
+        "source": "Wonka AI-native design-system contract",
+        "owner": "Wonka Design System",
+        "approvedBy": null,
+        "approvedAt": null
+      }
+    }
+  ]
+}

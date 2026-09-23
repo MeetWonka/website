@@ -1,0 +1,343 @@
+{
+  "$schema": "/design-system/schemas/channel-catalog.schema.json",
+  "schemaVersion": "1.0.0",
+  "version": "0.3.0",
+  "brandVersionId": "wonka-brand-v0.1.0",
+  "channels": [
+    {
+      "$schema": "/design-system/schemas/channel.schema.json",
+      "schemaVersion": "1.0.0",
+      "id": "channel.product",
+      "name": "Product",
+      "description": "Task-oriented interfaces for Wonka products, internal tools, and agent workspaces.",
+      "aliases": [
+        "product",
+        "app"
+      ],
+      "lifecycle": "review_required",
+      "stability": "beta",
+      "introducedIn": "0.2.0",
+      "allowedThemes": [
+        "light",
+        "dark"
+      ],
+      "distribution": "external",
+      "tokenSets": [
+        "color",
+        "semantic.color",
+        "radius",
+        "shadow",
+        "typography",
+        "motion",
+        "component"
+      ],
+      "compatibleAssetIds": [
+        "asset.logo.wordmark",
+        "asset.logo.mark",
+        "asset.font.inter-display",
+        "asset.font.gt-sectra"
+      ],
+      "constraints": [
+        {
+          "id": "responsive",
+          "value": "Support 320px through large desktop layouts without horizontal scrolling.",
+          "level": "required",
+          "enforcement": "contract"
+        },
+        {
+          "id": "accessibility",
+          "value": "Text and visible focus indicators meet their WCAG 2.2 AA contrast thresholds.",
+          "level": "required",
+          "enforcement": "automated",
+          "ruleId": "rule.contrast-aa"
+        },
+        {
+          "id": "keyboard",
+          "value": "Every interactive flow remains operable with a keyboard and retains visible focus.",
+          "level": "required",
+          "enforcement": "contract"
+        },
+        {
+          "id": "reduced-motion",
+          "value": "Non-essential motion respects the user’s reduced-motion preference.",
+          "level": "required",
+          "enforcement": "contract"
+        },
+        {
+          "id": "interface-states",
+          "value": "Interactive elements define loading, empty, error, disabled, focus, and success states where applicable.",
+          "level": "required",
+          "enforcement": "contract"
+        },
+        {
+          "id": "distribution",
+          "value": "Treat Product as externally distributed by default. Internal-only surfaces require a dedicated channel before verified_internal assets can be selected.",
+          "level": "required",
+          "enforcement": "contract"
+        }
+      ],
+      "exportTargets": [
+        "react",
+        "css",
+        "html"
+      ],
+      "provenance": {
+        "source": "Wonka product primitives",
+        "owner": "Wonka Design System",
+        "approvedBy": null,
+        "approvedAt": null
+      },
+      "compatibleComponentIds": [
+        "component.button",
+        "component.badge",
+        "component.surface",
+        "component.eyebrow",
+        "component.logo",
+        "component.logo-mark"
+      ]
+    },
+    {
+      "$schema": "/design-system/schemas/channel.schema.json",
+      "schemaVersion": "1.0.0",
+      "id": "channel.website",
+      "name": "Website",
+      "description": "Editorial and conversion-oriented browser experiences built from Wonka’s shared foundations.",
+      "aliases": [
+        "website",
+        "web"
+      ],
+      "lifecycle": "review_required",
+      "stability": "beta",
+      "introducedIn": "0.2.0",
+      "allowedThemes": [
+        "light",
+        "dark"
+      ],
+      "distribution": "external",
+      "tokenSets": [
+        "color",
+        "semantic.color",
+        "radius",
+        "shadow",
+        "typography",
+        "motion",
+        "component"
+      ],
+      "compatibleAssetIds": [
+        "asset.logo.wordmark",
+        "asset.logo.mark",
+        "asset.font.inter-display",
+        "asset.font.gt-sectra"
+      ],
+      "constraints": [
+        {
+          "id": "responsive",
+          "value": "Support 320px through large desktop layouts without horizontal scrolling.",
+          "level": "required",
+          "enforcement": "contract"
+        },
+        {
+          "id": "accessibility",
+          "value": "Text and visible focus indicators meet their WCAG 2.2 AA contrast thresholds.",
+          "level": "required",
+          "enforcement": "automated",
+          "ruleId": "rule.contrast-aa"
+        },
+        {
+          "id": "keyboard",
+          "value": "Every interactive flow remains operable with a keyboard and retains visible focus.",
+          "level": "required",
+          "enforcement": "contract"
+        },
+        {
+          "id": "reduced-motion",
+          "value": "Non-essential motion respects the user’s reduced-motion preference.",
+          "level": "required",
+          "enforcement": "contract"
+        },
+        {
+          "id": "explicit-actions",
+          "value": "Use real product language and explicit action labels.",
+          "level": "required",
+          "enforcement": "human_review"
+        }
+      ],
+      "exportTargets": [
+        "react",
+        "css",
+        "html",
+        "png",
+        "pdf"
+      ],
+      "provenance": {
+        "source": "Wonka website primitives",
+        "owner": "Wonka Design System",
+        "approvedBy": null,
+        "approvedAt": null
+      },
+      "compatibleComponentIds": [
+        "component.button",
+        "component.badge",
+        "component.section",
+        "component.surface",
+        "component.eyebrow",
+        "component.logo",
+        "component.logo-mark"
+      ]
+    },
+    {
+      "$schema": "/design-system/schemas/channel.schema.json",
+      "schemaVersion": "1.0.0",
+      "id": "channel.campaign",
+      "name": "Campaign",
+      "description": "Paid, organic, event, and launch creative that remains recognisably Wonka at multiple aspect ratios.",
+      "aliases": [
+        "campaign"
+      ],
+      "lifecycle": "review_required",
+      "stability": "experimental",
+      "introducedIn": "0.2.0",
+      "allowedThemes": [
+        "light",
+        "dark"
+      ],
+      "distribution": "external",
+      "tokenSets": [
+        "color",
+        "semantic.color",
+        "typography",
+        "motion",
+        "radius",
+        "component"
+      ],
+      "compatibleAssetIds": [
+        "asset.logo.wordmark",
+        "asset.logo.mark",
+        "asset.font.inter-display",
+        "asset.font.gt-sectra"
+      ],
+      "constraints": [
+        {
+          "id": "deterministic-brand-layer",
+          "value": "Render logos, copy, prices, CTAs, and legal text deterministically after any generative background step.",
+          "level": "required",
+          "enforcement": "human_review"
+        },
+        {
+          "id": "claim-approval",
+          "value": "Claims and offer terms require explicit human approval before publication.",
+          "level": "required",
+          "enforcement": "human_review"
+        },
+        {
+          "id": "adaptation",
+          "value": "Preserve hierarchy and safe zones when adapting 1:1, 4:5, 9:16, and 16:9 formats.",
+          "level": "required",
+          "enforcement": "contract"
+        },
+        {
+          "id": "signature",
+          "value": "Use the signal-cut geometry once as the expressive brand gesture; avoid generic decorative gradients.",
+          "level": "recommended",
+          "enforcement": "human_review"
+        }
+      ],
+      "exportTargets": [
+        "png",
+        "jpg",
+        "mp4",
+        "html"
+      ],
+      "provenance": {
+        "source": "Wonka Brand DNA and AI Creative Studio contracts",
+        "owner": "Wonka Design System",
+        "approvedBy": null,
+        "approvedAt": null
+      },
+      "compatibleComponentIds": [
+        "component.button",
+        "component.badge",
+        "component.section",
+        "component.surface",
+        "component.eyebrow",
+        "component.logo",
+        "component.logo-mark"
+      ]
+    },
+    {
+      "$schema": "/design-system/schemas/channel.schema.json",
+      "schemaVersion": "1.0.0",
+      "id": "channel.presentation",
+      "name": "Presentation",
+      "description": "Executive, sales, workshop, and product decks that share the same tokens and branded hierarchy.",
+      "aliases": [
+        "presentation"
+      ],
+      "lifecycle": "review_required",
+      "stability": "experimental",
+      "introducedIn": "0.2.0",
+      "allowedThemes": [
+        "light",
+        "dark"
+      ],
+      "distribution": "external",
+      "tokenSets": [
+        "color",
+        "semantic.color",
+        "typography",
+        "radius",
+        "component"
+      ],
+      "compatibleAssetIds": [
+        "asset.logo.wordmark",
+        "asset.logo.mark",
+        "asset.font.inter-display",
+        "asset.font.gt-sectra"
+      ],
+      "constraints": [
+        {
+          "id": "canvas",
+          "value": "Use a 16:9 widescreen canvas unless the destination requires another format.",
+          "level": "required",
+          "enforcement": "contract"
+        },
+        {
+          "id": "minimum-type",
+          "value": "Use at least 18pt body text and 12pt source or footnote text.",
+          "level": "required",
+          "enforcement": "contract"
+        },
+        {
+          "id": "one-idea",
+          "value": "Each slide carries one decision, argument, or evidence unit.",
+          "level": "recommended",
+          "enforcement": "human_review"
+        },
+        {
+          "id": "editable",
+          "value": "Keep text, charts, logos, and legal content editable and deterministic.",
+          "level": "required",
+          "enforcement": "human_review"
+        }
+      ],
+      "exportTargets": [
+        "pptx",
+        "pdf",
+        "png"
+      ],
+      "provenance": {
+        "source": "Wonka deck and website shared-system goal",
+        "owner": "Wonka Design System",
+        "approvedBy": null,
+        "approvedAt": null
+      },
+      "compatibleComponentIds": [
+        "component.badge",
+        "component.surface",
+        "component.eyebrow",
+        "component.logo",
+        "component.logo-mark"
+      ]
+    }
+  ]
+}

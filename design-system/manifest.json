@@ -1,0 +1,111 @@
+{
+  "$schema": "./schemas/manifest.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "wonka-design-system",
+  "name": "Wonka Design System",
+  "version": "0.3.0",
+  "brandVersionId": "wonka-brand-v0.1.0",
+  "status": "beta",
+  "approval": {
+    "status": "review_required",
+    "approvedBy": null,
+    "approvedAt": null
+  },
+  "description": "The canonical brand and interface system for Wonka products, campaigns, presentations, and agent-generated artifacts.",
+  "principles": [
+    {
+      "id": "sovereign-clarity",
+      "name": "Sovereign clarity",
+      "description": "Make complex enterprise AI feel controlled, legible, and calm."
+    },
+    {
+      "id": "editorial-precision",
+      "name": "Editorial precision",
+      "description": "Pair an editorial display voice with disciplined product typography."
+    },
+    {
+      "id": "useful-motion",
+      "name": "Useful motion",
+      "description": "Motion explains state and hierarchy; it never competes with the task."
+    },
+    {
+      "id": "machine-readable",
+      "name": "Machine-readable by default",
+      "description": "Every approved rule has a stable identifier, version, description, and structured representation."
+    }
+  ],
+  "themes": [
+    {
+      "id": "light",
+      "label": "Light",
+      "selector": "[data-theme=\"light\"]",
+      "status": "stable"
+    },
+    {
+      "id": "dark",
+      "label": "Dark",
+      "selector": "[data-theme=\"dark\"]",
+      "status": "stable"
+    }
+  ],
+  "channels": ["product", "website", "campaign", "presentation"],
+  "sources": {
+    "tokens": "packages/tokens/src/wonka.tokens.json",
+    "components": "design-system/components.json",
+    "assets": "design-system/assets.json",
+    "rules": "design-system/rules/catalog.json",
+    "exceptions": "design-system/rules/exceptions.json",
+    "patterns": "design-system/patterns.json",
+    "channels": "design-system/channels"
+  },
+  "generated": {
+    "css": "packages/tokens/src/generated/tokens.css",
+    "typescript": "packages/tokens/src/generated/tokens.ts",
+    "tokenCatalog": "public/design-system/tokens.json",
+    "componentCatalog": "public/design-system/components.json",
+    "assetCatalog": "public/design-system/assets.json",
+    "ruleCatalog": "public/design-system/rules.json",
+    "exceptionCatalog": "public/design-system/exceptions.json",
+    "patternCatalog": "public/design-system/patterns.json",
+    "channelCatalog": "public/design-system/channels.json",
+    "contractTypescript": "src/design-system/generated/contracts.ts",
+    "manifest": "public/design-system/manifest.json",
+    "agentGuide": "public/design-system/llms.txt",
+    "discovery": "public/.well-known/design-system.json"
+  },
+  "interfaces": {
+    "storybook": {
+      "script": "bun run storybook",
+      "buildScript": "bun run storybook:build",
+      "publicUrl": "https://design-system.wonka-ai.com",
+      "runtimeStoryPathTemplate": "/?path=/story/{storyId}"
+    },
+    "agentCli": {
+      "script": "bun run ds:query --",
+      "commands": [
+        "manifest",
+        "tokens",
+        "token <id> [--theme light|dark]",
+        "components",
+        "component <id>",
+        "assets",
+        "asset <id>",
+        "rules",
+        "rule <id>",
+        "exceptions",
+        "patterns [--channel <id|alias>]",
+        "pattern <id>",
+        "channels",
+        "channel <id|alias>",
+        "policy --channel <id|alias>",
+        "search <query>"
+      ]
+    }
+  },
+  "governance": {
+    "lifecycle": ["draft", "beta", "stable", "deprecated", "retired"],
+    "breakingChangesRequireMajorVersion": true,
+    "humanApprovalRequired": true,
+    "rawValuesAllowedInConsumers": false
+  }
+}

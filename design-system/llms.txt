@@ -1,0 +1,73 @@
+# Wonka Design System
+
+Version: 0.3.0
+Brand version: wonka-brand-v0.1.0
+Status: beta
+
+## Purpose
+
+Use this system to create Wonka product interfaces, websites, campaigns, presentations, and other branded artifacts. Structured files are authoritative. Storybook is the human-facing documentation.
+
+## Read order
+
+1. `/design-system/manifest.json`
+2. `/design-system/tokens.json`
+3. `/design-system/components.json`
+4. `/design-system/assets.json`
+5. `/design-system/rules.json`
+6. `/design-system/patterns.json`
+7. `/design-system/channels.json`
+8. The relevant Storybook foundation, component, or composition page
+
+Repository-local equivalents live under `design-system/`.
+
+## Required behavior
+
+- Use stable token IDs. Do not invent color, typography, radius, shadow, or motion values.
+- Prefer semantic tokens over primitives.
+- Use component tokens when a component contract defines them.
+- Respect the requested channel and theme.
+- Query the complete channel policy before creating an artifact.
+- Select a compatible pattern before composing; follow its slots, required dependencies, and agent trace contract.
+- Use only entries returned under `policy.tokens`, `policy.components`, `policy.assets`, and `policy.patterns` for effective output.
+- Candidate or blocked tokens, components, rules, assets, and patterns require human review.
+- Use only assets returned under `policy.assets`; `candidateAssets` and `blockedAssets` require human approval.
+- Preserve visible focus, sufficient contrast, keyboard access, and reduced-motion behavior.
+- Return the canonical trace fields: `designSystemVersion`, `brandVersionId`, `channel`, `theme`, `policyStatus`, exact `tokens`, `components`, `assets`, `patterns`, and `unresolvedDecisions`.
+- Report exact stable IDs; never use wildcards or silently omit an unresolved review.
+- Treat `beta`, `deprecated`, and `retired` statuses as meaningful constraints.
+- Never activate or publish a new brand version without human approval.
+- Treat `review_required` as unapproved; do not present it as an active brand decision.
+- Never broaden a rule exception beyond its exact approved finding fingerprint.
+
+## Query interface
+
+```bash
+bun run ds:query -- manifest
+bun run ds:query -- tokens
+bun run ds:query -- token semantic.color.background --theme dark
+bun run ds:query -- components
+bun run ds:query -- component component.button
+bun run ds:query -- asset asset.logo.wordmark
+bun run ds:query -- rule rule.no-raw-color
+bun run ds:query -- patterns
+bun run ds:query -- pattern pattern.presentation.decision-slide
+bun run ds:query -- channel presentation
+bun run ds:query -- policy --channel campaign
+bun run ds:query -- search focus
+```
+
+Commands emit JSON so agents can consume them without scraping rendered documentation.
+
+## Core visual direction
+
+- Near-black `color.neutral.black` carries a green undertone associated with secure, sovereign enterprise AI.
+- Luminous `color.blue.400` is the primary branded action color.
+- GT Sectra is the restrained editorial display voice.
+- Inter Display carries product, body, and utility text.
+- Custom slanted button silhouettes are a signature element. Do not reproduce the silhouette as a generic rounded rectangle.
+- Decoration stays quiet. Motion explains state or hierarchy.
+
+## Canonical positioning
+
+Wonka AI helps European companies deploy private AI agents connected to their existing tools and data, with GDPR, data sovereignty, and enterprise access control built in.

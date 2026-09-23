@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wonka-ai.com/design-system/schemas/rule-exceptions.schema.json",
+  "title": "Wonka Design System Rule Exceptions",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "version", "exceptions"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schemaVersion": { "const": "1.0.0" },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "exceptions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "ruleId",
+          "lifecycle",
+          "scope",
+          "reason",
+          "owner",
+          "approvedBy",
+          "approvedAt",
+          "expiresAt",
+          "migration"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^exception\\.[a-z0-9-]+$"
+          },
+          "ruleId": {
+            "type": "string",
+            "pattern": "^rule\\.[a-z0-9-]+$"
+          },
+          "lifecycle": {
+            "enum": ["requested", "approved", "expired", "revoked"]
+          },
+          "scope": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["kind", "path", "fingerprint"],
+            "properties": {
+              "kind": { "const": "finding" },
+              "path": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))[^*?{}]+$"
+              },
+              "fingerprint": {
+                "type": "string",
+                "pattern": "^sha256:[a-f0-9]{64}$"
+              }
+            }
+          },
+          "reason": { "type": "string", "minLength": 1 },
+          "owner": { "type": "string", "minLength": 1 },
+          "approvedBy": { "type": ["string", "null"] },
+          "approvedAt": {
+            "type": ["string", "null"],
+            "format": "date-time"
+          },
+          "expiresAt": { "type": "string", "format": "date" },
+          "migration": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  }
+}
