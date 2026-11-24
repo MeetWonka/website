@@ -1,0 +1,268 @@
+[
+  {
+    "slug": "gmail",
+    "name": "Gmail",
+    "hex": "#EA4335",
+    "bgMode": "white",
+    "file": "gmail.svg"
+  },
+  {
+    "slug": "googlecalendar",
+    "name": "Google Calendar",
+    "hex": "#4285F4",
+    "bgMode": "white",
+    "file": "googlecalendar.svg"
+  },
+  {
+    "slug": "googledocs",
+    "name": "Google Docs",
+    "hex": "#4285F4",
+    "bgMode": "white",
+    "file": "googledocs.svg"
+  },
+  {
+    "slug": "googledrive",
+    "name": "Google Drive",
+    "hex": "#4285F4",
+    "bgMode": "white",
+    "file": "googledrive.svg"
+  },
+  {
+    "slug": "googlesheets",
+    "name": "Google Sheets",
+    "hex": "#34A853",
+    "bgMode": "white",
+    "file": "googlesheets.svg"
+  },
+  {
+    "slug": "linkedin",
+    "name": "LinkedIn",
+    "hex": "#0A66C2",
+    "bgMode": "brand",
+    "file": "linkedin.svg"
+  },
+  {
+    "slug": "teams",
+    "name": "Microsoft Teams",
+    "hex": "#6264A7",
+    "bgMode": "white",
+    "file": "teams.svg"
+  },
+  {
+    "slug": "excel",
+    "name": "Excel",
+    "hex": "#217346",
+    "bgMode": "white",
+    "file": "excel.svg"
+  },
+  {
+    "slug": "word",
+    "name": "Word",
+    "hex": "#2B579A",
+    "bgMode": "white",
+    "file": "word.svg"
+  },
+  {
+    "slug": "powerpoint",
+    "name": "PowerPoint",
+    "hex": "#B7472A",
+    "bgMode": "white",
+    "file": "powerpoint.svg"
+  },
+  {
+    "slug": "onedrive",
+    "name": "OneDrive",
+    "hex": "#0364B8",
+    "bgMode": "white",
+    "file": "onedrive.svg"
+  },
+  {
+    "slug": "outlook",
+    "name": "Outlook",
+    "hex": "#0078D4",
+    "bgMode": "white",
+    "file": "outlook.svg"
+  },
+  {
+    "slug": "odoo",
+    "name": "Odoo",
+    "hex": "#714B67",
+    "bgMode": "brand",
+    "file": "odoo.svg"
+  },
+  {
+    "slug": "slack",
+    "name": "Slack",
+    "hex": "#4A154B",
+    "bgMode": "white",
+    "file": "slack.svg"
+  },
+  {
+    "slug": "aircall",
+    "name": "Aircall",
+    "hex": "#00B388",
+    "bgMode": "brand",
+    "file": "aircall.svg"
+  },
+  {
+    "slug": "airtable",
+    "name": "Airtable",
+    "hex": "#18BFFF",
+    "bgMode": "white",
+    "file": "airtable.svg"
+  },
+  {
+    "slug": "apollo",
+    "name": "Apollo",
+    "hex": "#F1F72B",
+    "bgMode": "brand",
+    "file": "apollo.svg"
+  },
+  {
+    "slug": "asana",
+    "name": "Asana",
+    "hex": "#F06A6A",
+    "bgMode": "white",
+    "file": "asana.svg"
+  },
+  {
+    "slug": "attio",
+    "name": "Attio",
+    "hex": "#000000",
+    "bgMode": "white",
+    "file": "attio.svg"
+  },
+  {
+    "slug": "box",
+    "name": "Box",
+    "hex": "#0061D5",
+    "bgMode": "brand",
+    "file": "box.svg"
+  },
+  {
+    "slug": "caldotcom",
+    "name": "Cal.com",
+    "hex": "#292929",
+    "bgMode": "brand",
+    "file": "caldotcom.svg"
+  },
+  {
+    "slug": "clickup",
+    "name": "ClickUp",
+    "hex": "#7B68EE",
+    "bgMode": "white",
+    "file": "clickup.svg"
+  },
+  {
+    "slug": "close",
+    "name": "Close",
+    "hex": "#02BF87",
+    "bgMode": "white",
+    "file": "close.svg"
+  },
+  {
+    "slug": "confluence",
+    "name": "Confluence",
+    "hex": "#172B4D",
+    "bgMode": "white",
+    "file": "confluence.svg"
+  },
+  {
+    "slug": "fathom",
+    "name": "Fathom",
+    "hex": "#9187FF",
+    "bgMode": "white",
+    "file": "fathom.svg"
+  },
+  {
+    "slug": "figma",
+    "name": "Figma",
+    "hex": "#F24E1E",
+    "bgMode": "white",
+    "file": "figma.svg"
+  },
+  {
+    "slug": "github",
+    "name": "GitHub",
+    "hex": "#181717",
+    "bgMode": "white",
+    "file": "github.svg"
+  },
+  {
+    "slug": "gitlab",
+    "name": "GitLab",
+    "hex": "#FC6D26",
+    "bgMode": "white",
+    "file": "gitlab.svg"
+  },
+  {
+    "slug": "hubspot",
+    "name": "HubSpot",
+    "hex": "#FF7A59",
+    "bgMode": "brand",
+    "file": "hubspot.svg"
+  },
+  {
+    "slug": "jira",
+    "name": "Jira",
+    "hex": "#0052CC",
+    "bgMode": "white",
+    "file": "jira.svg"
+  },
+  {
+    "slug": "klaviyo",
+    "name": "Klaviyo",
+    "hex": "#FFD000",
+    "bgMode": "white",
+    "file": "klaviyo.svg"
+  },
+  {
+    "slug": "linear",
+    "name": "Linear",
+    "hex": "#222326",
+    "bgMode": "brand",
+    "file": "linear.svg"
+  },
+  {
+    "slug": "mondaydotcom",
+    "name": "Monday",
+    "hex": "#FF3D57",
+    "bgMode": "white",
+    "file": "mondaydotcom.svg"
+  },
+  {
+    "slug": "n8n",
+    "name": "n8n",
+    "hex": "#EA4B71",
+    "bgMode": "white",
+    "file": "n8n.svg"
+  },
+  {
+    "slug": "notion",
+    "name": "Notion",
+    "hex": "#000000",
+    "bgMode": "white",
+    "file": "notion.svg"
+  },
+  {
+    "slug": "salesforce",
+    "name": "Salesforce",
+    "hex": "#00A1E0",
+    "bgMode": "white",
+    "file": "salesforce.svg"
+  },
+  {
+    "slug": "supabase",
+    "name": "Supabase",
+    "hex": "#3FCF8E",
+    "bgMode": "brand",
+    "file": "supabase.svg"
+  },
+  {
+    "slug": "vercel",
+    "name": "Vercel",
+    "hex": "#000000",
+    "bgMode": "brand",
+    "file": "vercel.svg"
+  }
+]

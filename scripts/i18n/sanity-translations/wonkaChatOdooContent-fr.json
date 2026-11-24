@@ -1,0 +1,185 @@
+{
+  "_id": "wonkaChatOdooContent-fr",
+  "_type": "wonkaChatOdooContent",
+  "capabilities": {
+    "_type": "iconFeatureGridSection",
+    "header": {
+      "_type": "sectionHeader",
+      "heading": "Faites d'Odoo la colonne vertébrale de votre entreprise."
+    }
+  },
+  "contact": {
+    "_type": "contactSection",
+    "header": {
+      "_type": "sectionHeader",
+      "body": "Réservez une courte démo et nous vous montrerons comment WonkaChat se connecte à vos outils, soutient vos processus et rend l'IA accessible dans toute votre organisation.",
+      "eyebrow": "Réserver une démo",
+      "heading": "Envie de voir WonkaChat en action dans Odoo ?"
+    },
+    "personName": "Florian De Boeck",
+    "personRole": "Chief Product Officer",
+    "portrait": {
+      "_type": "imageWithAlt",
+      "alt": "Florian De Boeck - Wonka AI",
+      "asset": {
+        "_ref": "image-21172446b944d57f63dce641452f4a8f40789348-2048x1153-jpg",
+        "_type": "reference"
+      }
+    }
+  },
+  "features": {
+    "_type": "stickyFeaturesSection",
+    "features": [
+      {
+        "_key": "573252c489e8",
+        "_type": "feature",
+        "description": "WonkaChat se connecte directement à vos données Odoo et vous aide à agir dessus. Par la conversation.",
+        "image": {
+          "_type": "imageWithAlt",
+          "asset": {
+            "_ref": "image-5046243c8af993779ab81bb5a60fd6e9f60ef5f4-5280x2970-png",
+            "_type": "reference"
+          }
+        },
+        "title": "Accédez aux données Odoo et agissez instantanément"
+      },
+      {
+        "_key": "fd8df3b8e1fe",
+        "_type": "feature",
+        "description": "Les nouvelles recrues n'ont pas besoin de mémoriser quel module fait quoi. Elles demandent ce dont elles ont besoin, WonkaChat gère la navigation. Elles sont productives dès le départ.",
+        "image": {
+          "_type": "imageWithAlt",
+          "asset": {
+            "_ref": "image-507ae3706b3af96cfa069f5e1113792934d98895-5280x2970-png",
+            "_type": "reference"
+          }
+        },
+        "title": "Réduisez la formation et la complexité de navigation Odoo"
+      },
+      {
+        "_key": "78c8f9853045",
+        "_type": "feature",
+        "description": "WonkaChat centralise l'IA autour de votre environnement. Fini les 3 outils IA différents dans votre entreprise : juste WonkaChat + Odoo.",
+        "image": {
+          "_type": "imageWithAlt",
+          "asset": {
+            "_ref": "image-3cd5095442f29844fdde57ef7ac760ed88dd95aa-5280x2970-png",
+            "_type": "reference"
+          }
+        },
+        "title": "Centralisez l'IA dans votre organisation"
+      }
+    ],
+    "header": {
+      "_type": "sectionHeader",
+      "body": "WonkaChat comprend vos demandes, connecte Odoo à vos outils préférés et exécute vos tâches. Il suffit de demander en langage courant, et c'est fait.",
+      "eyebrow": "La solution",
+      "heading": "Transformez les conversations en tâches accomplies."
+    },
+    "showCta": true
+  },
+  "hero": {
+    "_type": "productHero",
+    "eyebrow": "WonkaChat pour Odoo",
+    "heroImage": {
+      "_type": "imageWithAlt",
+      "asset": {
+        "_ref": "image-dbdd8be71926c0cc7ad27231dc80975e8f57c2b8-8219x2970-png",
+        "_type": "reference"
+      }
+    },
+    "subtitle": "WonkaChat est un assistant IA qui donne à toute votre équipe un accès instantané à tout ce qu'Odoo peut faire, par simple conversation.",
+    "theme": "light",
+    "title": "L'IA numéro un pour les entreprises qui utilisent Odoo."
+  },
+  "logoStrip": {
+    "_type": "logoStrip",
+    "proofLines": [
+      "Plus de 50 entreprises en Europe nous font confiance"
+    ]
+  },
+  "problem": {
+    "_type": "problemBentoSection",
+    "header": {
+      "_type": "sectionHeader",
+      "eyebrow": "Le problème"
+    },
+    "largeCards": [
+      {
+        "_key": "e77c1e77b454",
+        "_type": "problemBentoCard",
+        "body": "Votre responsable d'entrepôt connaît son métier sur le bout des doigts. Mais vérifier les stocks implique de naviguer vers Inventaire → Produits → Stock → Filtrer par emplacement. Elle sait ce dont elle a besoin. C'est l'interface qui complique tout.",
+        "image": {
+          "_type": "imageWithAlt",
+          "asset": {
+            "_ref": "image-5f8e9157556aedf96eeff0d1fc985a2ad555fe48-3200x2000-png",
+            "_type": "reference"
+          }
+        },
+        "title": "Une navigation complexe"
+      },
+      {
+        "_key": "c7fd2a45773f",
+        "_type": "problemBentoCard",
+        "body": "Seules 2 à 3 personnes maîtrisent vraiment Odoo. Tous les autres les interrompent. Une question simple prend 30 minutes et empêche votre responsable IT de se concentrer sur des tâches à plus forte valeur.",
+        "image": {
+          "_type": "imageWithAlt",
+          "asset": {
+            "_ref": "image-e8c9d337892165ce60019a876478d0b36ae73185-3200x2000-png",
+            "_type": "reference"
+          }
+        },
+        "title": "Des experts goulets d'étranglement"
+      }
+    ],
+    "smallCards": [
+      {
+        "_key": "4eefbebaff57",
+        "_type": "problemBentoCard",
+        "body": "100 à 200 €/heure chaque fois que vous avez besoin d'un workflow sur mesure. Les coûts augmentent plus vite que la valeur obtenue. Et pas pour des personnalisations complexes, juste pour obtenir des rapports qui devraient être simples.",
+        "image": {
+          "_type": "imageWithAlt",
+          "asset": {
+            "_ref": "image-5ab0dcbdf59c41ef46f357b4c7d906a6ecc3979a-3200x2000-png",
+            "_type": "reference"
+          }
+        },
+        "title": "Dépendance aux consultants"
+      },
+      {
+        "_key": "b720e7bccd20",
+        "_type": "problemBentoCard",
+        "body": "Les outils IA génériques créent plus de confusion que de valeur. Des informations sensibles dispersées là où votre directeur IT n'a aucun contrôle. Et l'IA intégrée à Odoo est trop limitée pour vos processus.",
+        "image": {
+          "_type": "imageWithAlt",
+          "asset": {
+            "_ref": "image-6cd1953bc2278ae40373c9a0789d67f21c57ae43-3200x2000-png",
+            "_type": "reference"
+          }
+        },
+        "title": "Trop d'outils IA"
+      },
+      {
+        "_key": "70848b56d81b",
+        "_type": "problemBentoCard",
+        "body": "Chacun s'en tient aux bases apprises en formation. Le reste n'est pas utilisé, non pas parce que ce n'est pas utile, mais parce que le trouver demande un effort.",
+        "image": {
+          "_type": "imageWithAlt",
+          "asset": {
+            "_ref": "image-a5c8addcd8bb3a0793a03dedb78d658b862b8daf-3200x2000-png",
+            "_type": "reference"
+          }
+        },
+        "title": "Faible taux d'adoption"
+      }
+    ]
+  },
+  "workflowSteps": {
+    "_type": "workflowStepsSection",
+    "header": {
+      "_type": "sectionHeader",
+      "eyebrow": "Comment ça marche",
+      "heading": "WonkaChat travaille pour votre équipe en trois étapes simples."
+    }
+  }
+}

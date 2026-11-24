@@ -1,0 +1,117 @@
+{
+  "seo": {
+    "metaTitle": "AI voor bedrijven: private AI-agents | Wonka AI",
+    "metaDescription": "Private AI-agents voor uw bedrijf, gekoppeld aan Odoo, SharePoint, Salesforce en Slack. AVG-conform en gehost in Azure West Europe (Microsoft Ierland)."
+  },
+  "hero": {
+    "awardBadge": "#1 AI-START-UP VAN HET JAAR - BELGIUM STARTUP AWARDS 2026",
+    "title": "Uw AI-partner voor repetitief werk.",
+    "subtitle": "Uw team is te goed voor repetitief werk. Wij ontwerpen uw AI-strategie en bouwen daarna de applicaties en agents die dat werk overnemen.",
+    "backedBy": "Gesteund door",
+    "backedByNvidia": "Nvidia Inception en",
+    "backedByMicrosoft": "Microsoft for Startups.",
+    "productPreviewAlt": "WonkaChat-interface met een AI-assistent gekoppeld aan bedrijfstools",
+    "voicePrompt": "Maak een opportuniteit aan in Odoo.",
+    "proofEyebrow": "AI in productie",
+    "proofHeading": "Van een eerste workflow tot adoptie in het hele bedrijf.",
+    "proof": [
+      {
+        "label": "Rolden AI-agents uit over hun hele netwerk.",
+        "alt": "PWC, Engie, Buildwise en Xerius"
+      },
+      {
+        "label": "Werden versneld AI-native.",
+        "alt": "Luminus, Cambio, Zorgi en ODTH"
+      },
+      {
+        "label": "Gaven hun medewerkers AI binnen enkele weken.",
+        "alt": "Luminus, Cambio, Zorgi en ODTH"
+      }
+    ],
+    "marquee": [
+      "Schaalden AI-agents op over hun hele netwerk.",
+      "Werden versneld AI-native.",
+      "Gaven al hun medewerkers AI in enkele weken."
+    ]
+  },
+  "problem": {
+    "headingBefore": "Uw AI",
+    "headingAfter": "werkt prima.",
+    "lines": [
+      "Voor de 12 mensen die ermee kunnen werken.",
+      "Voor alle anderen loopt het werk nog zoals tien jaar geleden.",
+      "Met de hand. Uit het hoofd. Als iemand eraan denkt.",
+      "Eén persoon vindt een betere manier. Maar die blijft bij hem."
+    ]
+  },
+  "solution": {
+    "eyebrow": "Onze aanpak",
+    "heading": "Wonka AI laat AI werken voor uw hele organisatie.",
+    "body": "De meeste AI ziet er geweldig uit op de lanceringsdag en staat in week drie stof te vangen. Wij vertrekken van uw huidige processen, werken terug vanuit het dagelijkse gebruik en blijven tot uw hele team het echt gebruikt.",
+    "steps": [
+      {
+        "title": "We vertrekken van waar u staat.",
+        "body": "Sommige bedrijven komen met een duidelijke use case, andere weten alleen dat AI belangrijk is, maar niet waar het past. Hoe dan ook, wij weten hoe we verder moeten."
+      },
+      {
+        "title": "We bouwen rond hoe u echt werkt.",
+        "body": "We droppen geen generieke tool in de hoop dat die blijft plakken. We stemmen alles af op hoe uw bedrijf vandaag draait, zodat het vanaf dag één past."
+      },
+      {
+        "title": "We leggen het in de handen van uw team.",
+        "body": "Een roadmap, een maatwerkoplossing of een AI-chat die iedereen dagelijks gebruikt. We leveren precies wat uw situatie vraagt en zorgen dat het landt bij de mensen die erop rekenen."
+      },
+      {
+        "title": "We blijven tot iedereen mee is.",
+        "body": "De meeste AI-projecten mislukken op adoptie, niet op technologie. We werken mee in uw team en blijven tot mensen het echt gebruiken, niet alleen tot het live staat."
+      }
+    ]
+  },
+  "stats": {
+    "engie": "50% minder tijd voor support-e-mails bij meer dan 70 medewerkers van N-allo (Engie)",
+    "itzu": "Elke medewerker van Itzu heeft een eigen WonkaChat die hem wekelijks meerdere uren bespaart.",
+    "workday": "Met Wonka zit uw gewone werkdag er om 15 uur op."
+  },
+  "howItWorks": {
+    "eyebrow": "Wat we doen",
+    "heading": "Alles wat u nodig hebt\nom AI te laten werken.",
+    "cards": [
+      {
+        "tagline": "U weet dat AI belangrijk is, maar niet waar te beginnen?",
+        "body": "We analyseren uw processen, brengen in kaart waar AI echte waarde creëert en bouwen uw roadmap met concrete acties.",
+        "ctaLabel": "Ontdek Start AI"
+      },
+      {
+        "tagline": "Repetitief werk dat geen enkele tool lijkt op te lossen?",
+        "body": "We bouwen AI-applicaties op maat die aansluiten op uw systemen en meedraaien in uw dagelijkse werk.",
+        "ctaLabel": "Ontdek Wonka Build"
+      },
+      {
+        "tagline": "Klaar om uw hele team AI te geven?",
+        "body": "Eén plek waar iedereen met AI werkt, gekoppeld aan de tools en data van uw bedrijf.",
+        "ctaLabel": "Ontdek WonkaChat"
+      }
+    ]
+  },
+  "useCases": {
+    "eyebrow": "Use cases",
+    "heading": "Het werk dat vroeger bleef liggen, wacht niet meer. In alle teams."
+  },
+  "howToStart": {
+    "eyebrow": "Hoe te starten",
+    "heading": "Niet zeker hoe u moet beginnen?",
+    "body": "Precies daarom praten we.\nPlan een gesprek van 30 minuten. Vertel ons hoe u werkt, en wij vertellen u waar AI echt een verschil zou maken, en waar niet.",
+    "calloutHeading": "30 minuten.\nU weet of het zinvol is.",
+    "outcomesHeading": "U gaat naar huis met",
+    "outcomes": [
+      "Een beeld van wat realistisch haalbaar is, en hoe snel.",
+      "Een duidelijke volgende stap, of dat nu Start AI, Wonka Build of WonkaChat is.",
+      "Antwoorden op uw specifieke AI-vragen.",
+      "Geen verplichting, geen druk. Gewoon een helderder beeld van AI."
+    ]
+  },
+  "cta": {
+    "heading": "Uw team is te goed voor dit werk.",
+    "body": "Laten we samen bekijken waar Wonka AI het verschil kan maken."
+  }
+}

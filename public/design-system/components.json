@@ -1,0 +1,2213 @@
+{
+  "$schema": "/design-system/schemas/component-catalog.schema.json",
+  "schemaVersion": "1.0.0",
+  "version": "0.4.0",
+  "components": [
+    {
+      "id": "component.button",
+      "name": "Button",
+      "status": "beta",
+      "source": "packages/react/src/button.tsx",
+      "storyId": "actions-button",
+      "exports": [
+        "Button",
+        "ButtonLink",
+        "buttonVariants"
+      ],
+      "channels": [
+        "product",
+        "website",
+        "campaign"
+      ],
+      "variants": [
+        "primary",
+        "secondary",
+        "underline",
+        "destructive",
+        "outline",
+        "ghost",
+        "link"
+      ],
+      "tokens": [
+        "radius.button",
+        "radius.sm",
+        "component.button.destructive.background",
+        "component.button.destructive.foreground",
+        "component.button.outline.background",
+        "component.button.outline.foreground",
+        "component.button.outline.border",
+        "component.button.ghost.foreground",
+        "component.button.ghost.background-hover",
+        "typography.paragraph-m-bold",
+        "typography.paragraph-s",
+        "motion.duration.normal",
+        "semantic.color.text",
+        "component.button.primary.background",
+        "component.button.primary.foreground",
+        "component.button.secondary.background",
+        "component.button.secondary.foreground",
+        "component.button.effect.drop-shadow",
+        "component.button.effect.highlight",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Use Button for actions and ButtonLink for navigation.",
+        "Always provide a visible text label.",
+        "The focus ring must remain visible on every background.",
+        "Do not disable focus-visible styling."
+      ],
+      "usage": {
+        "do": [
+          "Use one primary action per decision area.",
+          "Keep action labels short and explicit."
+        ],
+        "dont": [
+          "Use raw hex values to recolor a variant.",
+          "Use ButtonLink for form submission."
+        ]
+      }
+    },
+    {
+      "id": "component.badge",
+      "name": "Badge",
+      "status": "beta",
+      "source": "packages/react/src/badge.tsx",
+      "storyId": "data-display-badge",
+      "exports": [
+        "Badge"
+      ],
+      "channels": [
+        "product",
+        "website",
+        "campaign",
+        "presentation"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": [
+        "radius.full",
+        "semantic.color.surface-muted",
+        "semantic.color.text"
+      ],
+      "accessibility": [
+        "Badges communicate metadata, never the only indication of a critical status."
+      ],
+      "usage": {
+        "do": [
+          "Use concise noun phrases."
+        ],
+        "dont": [
+          "Use a badge as an interactive control."
+        ]
+      }
+    },
+    {
+      "id": "component.section",
+      "name": "Section",
+      "status": "beta",
+      "source": "packages/react/src/section.tsx",
+      "storyId": "layout-section",
+      "exports": [
+        "Section"
+      ],
+      "channels": [
+        "website",
+        "campaign"
+      ],
+      "variants": [
+        "default",
+        "wide",
+        "fluid"
+      ],
+      "tokens": [],
+      "accessibility": [
+        "Choose the semantic as prop that matches the document structure."
+      ],
+      "usage": {
+        "do": [
+          "Use the default container for narrative page sections."
+        ],
+        "dont": [
+          "Nest main landmarks."
+        ]
+      }
+    },
+    {
+      "id": "component.surface",
+      "name": "Surface",
+      "status": "beta",
+      "source": "packages/react/src/surface.tsx",
+      "storyId": "layout-surface",
+      "exports": [
+        "Surface",
+        "WidePanel"
+      ],
+      "channels": [
+        "product",
+        "website",
+        "campaign",
+        "presentation"
+      ],
+      "variants": [
+        "card",
+        "panel",
+        "callout",
+        "pill"
+      ],
+      "tokens": [
+        "radius.xs",
+        "radius.sm",
+        "radius.full"
+      ],
+      "accessibility": [
+        "Surface is visual grouping only; add a landmark or heading when structure requires one."
+      ],
+      "usage": {
+        "do": [
+          "Select the variant from the content role."
+        ],
+        "dont": [
+          "Add arbitrary border radii in consuming code."
+        ]
+      }
+    },
+    {
+      "id": "component.eyebrow",
+      "name": "Eyebrow",
+      "status": "beta",
+      "source": "packages/react/src/eyebrow.tsx",
+      "storyId": "data-display-eyebrow",
+      "exports": [
+        "Eyebrow"
+      ],
+      "channels": [
+        "product",
+        "website",
+        "campaign",
+        "presentation"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": [
+        "semantic.color.border",
+        "semantic.color.text",
+        "typography.eyebrow"
+      ],
+      "accessibility": [
+        "Eyebrow text names a real section or category and is never decorative filler."
+      ],
+      "usage": {
+        "do": [
+          "Use before a heading when it improves information scent."
+        ],
+        "dont": [
+          "Repeat the heading in different words."
+        ]
+      }
+    },
+    {
+      "id": "component.logo",
+      "name": "Logo",
+      "status": "beta",
+      "source": "src/components/ui/logo.tsx",
+      "storyId": "assets-logo",
+      "exports": [
+        "Logo"
+      ],
+      "channels": [
+        "product",
+        "website",
+        "campaign",
+        "presentation"
+      ],
+      "variants": [
+        "wordmark"
+      ],
+      "tokens": [],
+      "assets": [
+        "asset.logo.wordmark"
+      ],
+      "accessibility": [
+        "Decorative logo instances stay hidden from assistive technology; linked home logos require an accessible link label."
+      ],
+      "usage": {
+        "do": [
+          "Select the treatment for the actual background."
+        ],
+        "dont": [
+          "Stretch, recolor, rotate, or rebuild the logo."
+        ]
+      }
+    },
+    {
+      "id": "component.logo-mark",
+      "name": "Logo mark",
+      "status": "beta",
+      "source": "src/components/ui/logo-mark.tsx",
+      "storyId": "assets-logo",
+      "exports": [
+        "LogoMark"
+      ],
+      "channels": [
+        "product",
+        "website",
+        "campaign",
+        "presentation"
+      ],
+      "variants": [
+        "dark",
+        "light"
+      ],
+      "tokens": [],
+      "assets": [
+        "asset.logo.mark"
+      ],
+      "accessibility": [
+        "Decorative marks stay hidden from assistive technology; meaningful linked marks require an accessible link label."
+      ],
+      "usage": {
+        "do": [
+          "Select the dark or light treatment for the actual background."
+        ],
+        "dont": [
+          "Stretch, recolor, rotate, or rebuild the mark."
+        ]
+      }
+    },
+    {
+      "id": "component.product.product-theme",
+      "name": "ProductTheme",
+      "status": "draft",
+      "source": "packages/product-ui/src/foundation.tsx",
+      "storyId": "wonkachat-product_product-foundations",
+      "exports": [
+        "ProductTheme"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "light",
+        "dark"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.action-button",
+      "name": "ActionButton",
+      "status": "draft",
+      "source": "packages/product-ui/src/foundation.tsx",
+      "storyId": "wonkachat-product_product-foundations",
+      "exports": [
+        "ActionButton"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.icon",
+      "name": "Icon",
+      "status": "draft",
+      "source": "packages/product-ui/src/foundation.tsx",
+      "storyId": "wonkachat-product_product-foundations",
+      "exports": [
+        "Icon"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.identity-avatar",
+      "name": "IdentityAvatar",
+      "status": "draft",
+      "source": "packages/product-ui/src/foundation.tsx",
+      "storyId": "wonkachat-product_product-foundations",
+      "exports": [
+        "IdentityAvatar"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.panel",
+      "name": "Panel",
+      "status": "draft",
+      "source": "packages/product-ui/src/foundation.tsx",
+      "storyId": "wonkachat-product_product-foundations",
+      "exports": [
+        "Panel"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.field",
+      "name": "Field",
+      "status": "draft",
+      "source": "packages/product-ui/src/foundation.tsx",
+      "storyId": "wonkachat-product_product-foundations",
+      "exports": [
+        "Field"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.toggle",
+      "name": "Toggle",
+      "status": "draft",
+      "source": "packages/product-ui/src/foundation.tsx",
+      "storyId": "wonkachat-product_product-foundations",
+      "exports": [
+        "Toggle"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.tag",
+      "name": "Tag",
+      "status": "draft",
+      "source": "packages/product-ui/src/foundation.tsx",
+      "storyId": "wonkachat-product_product-foundations",
+      "exports": [
+        "Tag"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.search-input",
+      "name": "SearchInput",
+      "status": "draft",
+      "source": "packages/product-ui/src/foundation.tsx",
+      "storyId": "wonkachat-product_product-foundations",
+      "exports": [
+        "SearchInput"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.state-notice",
+      "name": "StateNotice",
+      "status": "draft",
+      "source": "packages/product-ui/src/foundation.tsx",
+      "storyId": "wonkachat-product_product-foundations",
+      "exports": [
+        "StateNotice"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.product-dialog",
+      "name": "ProductDialog",
+      "status": "draft",
+      "source": "packages/product-ui/src/foundation.tsx",
+      "storyId": "wonkachat-product_product-foundations",
+      "exports": [
+        "ProductDialog"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.motion-stage",
+      "name": "MotionStage",
+      "status": "draft",
+      "source": "packages/product-ui/src/foundation.tsx",
+      "storyId": "wonkachat-product_product-motion",
+      "exports": [
+        "MotionStage"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "creation",
+        "connection",
+        "execution",
+        "sharing"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.connector-card",
+      "name": "ConnectorCard",
+      "status": "draft",
+      "source": "packages/product-ui/src/connectors.tsx",
+      "storyId": "wonkachat-product_product-connectors",
+      "exports": [
+        "ConnectorCard"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "disconnected",
+        "configuring",
+        "authorizing",
+        "connecting",
+        "connected",
+        "error",
+        "expired",
+        "managed",
+        "consume-only"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.connector-configuration",
+      "name": "ConnectorConfiguration",
+      "status": "draft",
+      "source": "packages/product-ui/src/connectors.tsx",
+      "storyId": "wonkachat-product_product-connectors",
+      "exports": [
+        "ConnectorConfiguration"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.connector-authorization",
+      "name": "ConnectorAuthorization",
+      "status": "draft",
+      "source": "packages/product-ui/src/connectors.tsx",
+      "storyId": "wonkachat-product_product-connectors",
+      "exports": [
+        "ConnectorAuthorization"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.connector-catalog",
+      "name": "ConnectorCatalog",
+      "status": "draft",
+      "source": "packages/product-ui/src/connectors.tsx",
+      "storyId": "wonkachat-product_product-connectors",
+      "exports": [
+        "ConnectorCatalog"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.template-card",
+      "name": "TemplateCard",
+      "status": "draft",
+      "source": "packages/product-ui/src/templates.tsx",
+      "storyId": "wonkachat-product_product-templates",
+      "exports": [
+        "TemplateCard"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "full",
+        "compact"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.template-gallery",
+      "name": "TemplateGallery",
+      "status": "draft",
+      "source": "packages/product-ui/src/templates.tsx",
+      "storyId": "wonkachat-product_product-templates",
+      "exports": [
+        "TemplateGallery"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "ready",
+        "loading",
+        "empty",
+        "error",
+        "disabled"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.template-detail",
+      "name": "TemplateDetail",
+      "status": "draft",
+      "source": "packages/product-ui/src/templates.tsx",
+      "storyId": "wonkachat-product_product-templates",
+      "exports": [
+        "TemplateDetail"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "draft",
+        "saving",
+        "saved",
+        "error",
+        "creation-denied"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.builder-section",
+      "name": "BuilderSection",
+      "status": "draft",
+      "source": "packages/product-ui/src/builder.tsx",
+      "storyId": "wonkachat-product_product-builder",
+      "exports": [
+        "BuilderSection"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.agent-builder-header",
+      "name": "AgentBuilderHeader",
+      "status": "draft",
+      "source": "packages/product-ui/src/builder.tsx",
+      "storyId": "wonkachat-product_product-builder",
+      "exports": [
+        "AgentBuilderHeader"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.model-picker",
+      "name": "ModelPicker",
+      "status": "draft",
+      "source": "packages/product-ui/src/builder.tsx",
+      "storyId": "wonkachat-product_product-builder",
+      "exports": [
+        "ModelPicker"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.skill-picker",
+      "name": "SkillPicker",
+      "status": "draft",
+      "source": "packages/product-ui/src/builder.tsx",
+      "storyId": "wonkachat-product_product-builder",
+      "exports": [
+        "SkillPicker"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.tool-picker",
+      "name": "ToolPicker",
+      "status": "draft",
+      "source": "packages/product-ui/src/builder.tsx",
+      "storyId": "wonkachat-product_product-builder",
+      "exports": [
+        "ToolPicker"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.knowledge-files",
+      "name": "KnowledgeFiles",
+      "status": "draft",
+      "source": "packages/product-ui/src/builder.tsx",
+      "storyId": "wonkachat-product_product-builder",
+      "exports": [
+        "KnowledgeFiles"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "empty",
+        "uploading",
+        "ready",
+        "error"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.schedule-editor",
+      "name": "ScheduleEditor",
+      "status": "draft",
+      "source": "packages/product-ui/src/builder.tsx",
+      "storyId": "wonkachat-product_product-builder",
+      "exports": [
+        "ScheduleEditor"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.version-history",
+      "name": "VersionHistory",
+      "status": "draft",
+      "source": "packages/product-ui/src/builder.tsx",
+      "storyId": "wonkachat-product_product-builder",
+      "exports": [
+        "VersionHistory"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.agent-builder",
+      "name": "AgentBuilder",
+      "status": "draft",
+      "source": "packages/product-ui/src/builder.tsx",
+      "storyId": "wonkachat-product_product-builder",
+      "exports": [
+        "AgentBuilder"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "editable",
+        "read-only",
+        "draft",
+        "saving",
+        "saved",
+        "error"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.product-shell",
+      "name": "ProductShell",
+      "status": "draft",
+      "source": "packages/product-ui/src/workspace.tsx",
+      "storyId": "wonkachat-product_product-workspace",
+      "exports": [
+        "ProductShell"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.product-agent-card",
+      "name": "ProductAgentCard",
+      "status": "draft",
+      "source": "packages/product-ui/src/workspace.tsx",
+      "storyId": "wonkachat-product_product-workspace",
+      "exports": [
+        "ProductAgentCard"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.agent-library",
+      "name": "AgentLibrary",
+      "status": "draft",
+      "source": "packages/product-ui/src/workspace.tsx",
+      "storyId": "wonkachat-product_product-workspace",
+      "exports": [
+        "AgentLibrary"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.chat-composer",
+      "name": "ChatComposer",
+      "status": "draft",
+      "source": "packages/product-ui/src/workspace.tsx",
+      "storyId": "wonkachat-product_product-workspace",
+      "exports": [
+        "ChatComposer"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "empty",
+        "filled",
+        "disabled",
+        "busy"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.execution-trace",
+      "name": "ExecutionTrace",
+      "status": "draft",
+      "source": "packages/product-ui/src/workspace.tsx",
+      "storyId": "wonkachat-product_product-workspace",
+      "exports": [
+        "ExecutionTrace"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "pending",
+        "running",
+        "complete",
+        "error"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.source-citation",
+      "name": "SourceCitation",
+      "status": "draft",
+      "source": "packages/product-ui/src/workspace.tsx",
+      "storyId": "wonkachat-product_product-workspace",
+      "exports": [
+        "SourceCitation"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.chat-message",
+      "name": "ChatMessage",
+      "status": "draft",
+      "source": "packages/product-ui/src/workspace.tsx",
+      "storyId": "wonkachat-product_product-workspace",
+      "exports": [
+        "ChatMessage"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.deliverable-preview",
+      "name": "DeliverablePreview",
+      "status": "draft",
+      "source": "packages/product-ui/src/workspace.tsx",
+      "storyId": "wonkachat-product_product-workspace",
+      "exports": [
+        "DeliverablePreview"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.sharing-panel",
+      "name": "SharingPanel",
+      "status": "draft",
+      "source": "packages/product-ui/src/workspace.tsx",
+      "storyId": "wonkachat-product_product-workspace",
+      "exports": [
+        "SharingPanel"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "draft",
+        "saving",
+        "saved",
+        "error",
+        "read-only"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.settings-navigation",
+      "name": "SettingsNavigation",
+      "status": "draft",
+      "source": "packages/product-ui/src/settings.tsx",
+      "storyId": "wonkachat-product_product-settings",
+      "exports": [
+        "SettingsNavigation"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.members-table",
+      "name": "MembersTable",
+      "status": "draft",
+      "source": "packages/product-ui/src/settings.tsx",
+      "storyId": "wonkachat-product_product-settings",
+      "exports": [
+        "MembersTable"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.resource-table",
+      "name": "ResourceTable",
+      "status": "draft",
+      "source": "packages/product-ui/src/settings.tsx",
+      "storyId": "wonkachat-product_product-settings",
+      "exports": [
+        "ResourceTable"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.usage-overview",
+      "name": "UsageOverview",
+      "status": "draft",
+      "source": "packages/product-ui/src/settings.tsx",
+      "storyId": "wonkachat-product_product-settings",
+      "exports": [
+        "UsageOverview"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.settings-panel",
+      "name": "SettingsPanel",
+      "status": "draft",
+      "source": "packages/product-ui/src/settings.tsx",
+      "storyId": "wonkachat-product_product-settings",
+      "exports": [
+        "SettingsPanel"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "draft",
+        "saving",
+        "saved",
+        "error",
+        "read-only"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.settings-workspace",
+      "name": "SettingsWorkspace",
+      "status": "draft",
+      "source": "packages/product-ui/src/settings.tsx",
+      "storyId": "wonkachat-product_product-settings",
+      "exports": [
+        "SettingsWorkspace"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.skill-card",
+      "name": "SkillCard",
+      "status": "draft",
+      "source": "packages/product-ui/src/resources.tsx",
+      "storyId": "wonkachat-product_product-resources",
+      "exports": [
+        "SkillCard"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.skill-library",
+      "name": "SkillLibrary",
+      "status": "draft",
+      "source": "packages/product-ui/src/resources.tsx",
+      "storyId": "wonkachat-product_product-resources",
+      "exports": [
+        "SkillLibrary"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.skill-detail",
+      "name": "SkillDetail",
+      "status": "draft",
+      "source": "packages/product-ui/src/resources.tsx",
+      "storyId": "wonkachat-product_product-resources",
+      "exports": [
+        "SkillDetail"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.onboarding-checklist",
+      "name": "OnboardingChecklist",
+      "status": "draft",
+      "source": "packages/product-ui/src/resources.tsx",
+      "storyId": "wonkachat-product_product-resources",
+      "exports": [
+        "OnboardingChecklist"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.approval-card",
+      "name": "ApprovalCard",
+      "status": "draft",
+      "source": "packages/product-ui/src/resources.tsx",
+      "storyId": "wonkachat-product_product-resources",
+      "exports": [
+        "ApprovalCard"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "pending",
+        "approved",
+        "rejected"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.workflow-runs",
+      "name": "WorkflowRuns",
+      "status": "draft",
+      "source": "packages/product-ui/src/resources.tsx",
+      "storyId": "wonkachat-product_product-resources",
+      "exports": [
+        "WorkflowRuns"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.prompt-library",
+      "name": "PromptLibrary",
+      "status": "draft",
+      "source": "packages/product-ui/src/resources.tsx",
+      "storyId": "wonkachat-product_product-resources",
+      "exports": [
+        "PromptLibrary"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "default"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    },
+    {
+      "id": "component.product.notification-toast",
+      "name": "NotificationToast",
+      "status": "draft",
+      "source": "packages/product-ui/src/resources.tsx",
+      "storyId": "wonkachat-product_product-resources",
+      "exports": [
+        "NotificationToast"
+      ],
+      "channels": [
+        "product",
+        "campaign"
+      ],
+      "variants": [
+        "success",
+        "error"
+      ],
+      "tokens": [
+        "semantic.color.background",
+        "semantic.color.text",
+        "semantic.color.border",
+        "component.focus-ring.color"
+      ],
+      "accessibility": [
+        "Keep visible labels, keyboard focus and semantic state announcements.",
+        "Use permissions to disable actions; enforce authorization again on the server."
+      ],
+      "usage": {
+        "do": [
+          "Render inside ProductTheme and import @wonka/product-ui/styles.css.",
+          "Supply real data and controlled callbacks in production; use isolated fixtures for motion."
+        ],
+        "dont": [
+          "Treat demo state changes as backend integrations.",
+          "Override the canonical palette with raw brand colors."
+        ]
+      }
+    }
+  ]
+}

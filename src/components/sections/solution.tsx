@@ -11,32 +11,30 @@ import {
   SolutionCardShape,
   type SolutionCardVariant,
 } from "@/components/sections/solution/card-shape";
-import { CardThreeVisual } from "@/components/sections/solution/card-3-visual";
+import { useT } from "@/i18n/use-t";
 import { cn } from "@/lib/utils";
-import type { SolutionData } from "@/lib/types";
+import { headingClass } from "@/lib/design-tokens";
+import type { SolutionData, SolutionStep } from "@/lib/types";
 
-const EYEBROW = "What we do";
-const HEADING = "Wonka makes AI work for your whole organisation.";
-const BODY =
-  "Wonka understands your business processes, connects to your tools, and gets the work done. Across systems. Automatically.";
+const SOLUTION_STEP_COUNT = 4;
 
 const CARD_VARIANTS: SolutionCardVariant[] = [
   "card-1",
   "card-2",
   "card-3",
   "card-2",
-  "card-1",
 ];
 
 type CardVisual =
-  | { kind: "image"; src: string; aspectClass: string }
+  | { kind: "image"; src: string; aspectClass: string; fit?: "cover" | "contain" }
   | { kind: "component"; component: React.ComponentType; aspectClass: string };
 
 const CARD_VISUALS: Array<CardVisual | null> = [
   {
     kind: "image",
     src: "/images/solution/card-1/card-1-visual.png",
-    aspectClass: "aspect-[3/2] md:aspect-[2640/1308]",
+    aspectClass: "aspect-[3/2] md:aspect-[1024/507]",
+    fit: "contain",
   },
   {
     kind: "image",
@@ -44,29 +42,37 @@ const CARD_VISUALS: Array<CardVisual | null> = [
     aspectClass: "aspect-[3/2] md:aspect-[1760/872]",
   },
   {
-    kind: "component",
-    component: CardThreeVisual,
-    aspectClass: "aspect-[3/2] md:aspect-[1760/872]",
+    kind: "image",
+    src: "/images/solution/card-3/card-3-visual.png",
+    aspectClass: "aspect-[3/2] md:aspect-[5280/2616]",
+    fit: "contain",
   },
   {
     kind: "image",
     src: "/images/solution/card-4/card-4-visual.png",
-    aspectClass: "aspect-[3/2] md:aspect-[1760/816]",
-  },
-  {
-    kind: "image",
-    src: "/images/solution/card-5/card-5-visual.png",
-    aspectClass: "aspect-[3/2] md:aspect-[1760/872]",
+    aspectClass: "aspect-[3/2] md:aspect-[5280/2616]",
+    fit: "contain",
   },
 ];
 
 interface SolutionProps {
-  data: SolutionData | null;
+  data?: SolutionData | null;
   id?: string;
 }
 
-export function Solution({ data, id }: SolutionProps) {
-  const steps = data?.steps ?? [];
+export function Solution({ id, data }: SolutionProps) {
+  const t = useT();
+  const eyebrow = data?.eyebrow ?? t("home.solution.eyebrow");
+  const heading = data?.heading ?? t("home.solution.heading");
+  const body = data?.body ?? t("home.solution.body");
+  const steps: SolutionStep[] =
+    data?.steps?.length === SOLUTION_STEP_COUNT
+      ? data.steps
+      : (
+          t.raw("home.solution.steps") as Array<
+            Pick<SolutionStep, "title" | "body">
+          >
+        ).map((step, i) => ({ _key: `step-${i + 1}`, ...step }));
   const [activeIndex, setActiveIndex] = useState(0);
   const cardRefs = useRef<Array<HTMLElement | null>>([]);
   const headerRef = useRef<HTMLDivElement>(null);
@@ -108,26 +114,24 @@ export function Solution({ data, id }: SolutionProps) {
     };
   }, [steps.length]);
 
-  if (!data) return null;
-
   return (
-    <Section id={id} className="py-20 md:py-30" aria-label={EYEBROW}>
+    <Section id={id} className="py-20 md:py-30" aria-label={eyebrow}>
       <div className="flex flex-col gap-16">
         <div
           ref={headerRef}
           className="flex flex-col items-center gap-6 border-b border-dashed border-border pb-10"
         >
           <FadeIn play={headerInView}>
-            <Eyebrow>{EYEBROW}</Eyebrow>
+            <Eyebrow>{eyebrow}</Eyebrow>
           </FadeIn>
           <FadeIn play={headerInView} delay={0.1}>
-            <h2 className="type-h4 max-w-[44.875rem] text-center text-text">
-              {HEADING}
+            <h2 className={cn(headingClass.section, "max-w-[44.875rem] text-center text-text")}>
+              {heading}
             </h2>
           </FadeIn>
           <FadeIn play={headerInView} delay={0.2}>
-            <p className="type-body max-w-[35.125rem] text-center text-text opacity-80">
-              {BODY}
+            <p className="type-body max-w-[44.875rem] text-center text-text opacity-80">
+              {body}
             </p>
           </FadeIn>
         </div>
@@ -205,9 +209,9 @@ export function Solution({ data, id }: SolutionProps) {
                               alt=""
                               fill
                               sizes="(min-width: 1280px) 55rem, 100vw"
-                              className="object-cover"
-                              priority={i === 0}
-                              unoptimized
+                              className={cn(
+                                visual.fit === "contain" ? "object-contain" : "object-cover",
+                              )}
                             />
                           )
                         ) : null}

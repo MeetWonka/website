@@ -1,5 +1,5 @@
 # dependencies
-/node_modules
+node_modules/
 /.pnp
 .pnp.*
 .yarn/*
@@ -17,6 +17,7 @@
 
 # production
 /build
+/storybook-static
 
 # misc
 .DS_Store
@@ -51,3 +52,9 @@ next-env.d.ts
 pnpm-lock.yaml
 package-lock.json
 yarn.lock
+.gstack/
+
+# Local TypeScript build cache
+apps/wonkachat-lab/.cache/
+# Generated from actual Wonka Chat lab components by predev/prebuild
+/public/wonkachat-preview/

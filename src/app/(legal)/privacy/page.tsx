@@ -17,10 +17,14 @@ async function getPrivacyContent() {
 
 export async function generateMetadata(): Promise<Metadata> {
   const content = await getPrivacyContent();
-  return buildMetadata(content?.seo ?? null, {
+  const metadata = buildMetadata(content?.seo ?? null, {
     path: "/privacy",
     fallbackTitle: "Privacy Policy",
   });
+  return {
+    ...metadata,
+    robots: { index: false, follow: true },
+  };
 }
 
 export default async function PrivacyPage() {

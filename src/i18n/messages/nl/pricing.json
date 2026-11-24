@@ -1,0 +1,78 @@
+{
+  "seo": {
+    "title": "Prijzen AI Workspace: prijs per gebruiker | Wonka",
+    "description": "Transparante prijzen per gebruiker voor Wonka AI Workspace: private AI, in de EU gehoste modellen en 7 dagen gratis uitproberen."
+  },
+  "header": {
+    "heading": "Eén workspace. Prijzen die meegroeien met uw team.",
+    "body": "Kies uw teamgrootte. Elke betaalde licentie bevat de beveiliging die nodig is om AI veilig op het werk te gebruiken."
+  },
+  "builder": {
+    "title": "Stel uw plan samen",
+    "viewBreakdown": "Bekijk de prijsopbouw",
+    "seats": "Licenties"
+  },
+  "billing": {
+    "ariaLabel": "Factureringscyclus",
+    "monthly": "Maandelijks",
+    "annual": "Jaarlijks",
+    "save": "-20%"
+  },
+  "trial": {
+    "title": "Gratis proef",
+    "badge": "7 DAGEN",
+    "price": "Gratis",
+    "body": "Test Wonka met een echte use case uit uw bedrijf. Geen kredietkaart nodig.",
+    "featuresTitle": "Inbegrepen in uw proefperiode",
+    "features": [
+      "Volledige toegang tot AI Workspace",
+      "Beveiligde AI-chat met bedrijfskennis",
+      "€ 5 aan inbegrepen AI-gebruik"
+    ],
+    "cta": "Aan de slag"
+  },
+  "workspace": {
+    "title": "AI Workspace",
+    "badge": "AANBEVOLEN",
+    "seatLabel": "Standaardlicentie",
+    "billingNote": "Per gebruiker / maand (excl. btw)",
+    "aiModelsToggle": "AI-modellen inbegrepen",
+    "featuresTitle": "Alles wat uw team nodig heeft",
+    "features": [
+      "Beveiligde AI-chat op basis van bedrijfskennis",
+      "Goedgekeurde tools en dataconnecties",
+      "Governance en auditlogs"
+    ],
+    "featureModelsIncluded": "In de EU gehoste AI-modellen, zonder verbruiksfacturen",
+    "featureOwnModels": "Gebruik uw eigen API-sleutel en facturatie van uw provider",
+    "cta": "Aan de slag"
+  },
+  "enterprise": {
+    "title": "Enterprise",
+    "badge": "1.000+ LICENTIES",
+    "price": "Op maat",
+    "body": "Dedicated infrastructuur en uitrol voor complexe organisaties.",
+    "featuresTitle": "Gebouwd voor uw omgeving",
+    "features": [
+      "Alles uit AI Workspace",
+      "Managed cloud, eigen cloud of on-premise",
+      "Uitrol afgestemd op uw beveiligingsvereisten",
+      "Volumeprijzen voor grote teams"
+    ],
+    "cta": "Contacteer sales"
+  },
+  "breakdown": {
+    "closeAriaLabel": "Prijsopbouw sluiten",
+    "title": "Prijsopbouw",
+    "body": "Bekijk de exacte prijsopbouw voor uw teamgrootte.",
+    "close": "Sluiten",
+    "aiModels": "AI-modellen",
+    "aiModelsTooltip": "Inclusief in de EU gehoste AI-modellen en € 7 aan AI-credits per licentie",
+    "included": "Inbegrepen",
+    "notIncluded": "Niet inbegrepen",
+    "seatsColumn": "Licenties",
+    "priceColumn": "Prijs (per standaardlicentie)",
+    "bandFirst": "Voor de eerste",
+    "bandNext": "Voor de volgende"
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "_id": "wonkaBuildContent-nl",
+  "_type": "wonkaBuildContent",
+  "contact": {
+    "header": {
+      "body": "Plan een kennismakingsgesprek van 30 minuten. Geen slides, geen pitch, gewoon een echt gesprek over uw noden en AI-ideeën.",
+      "eyebrow": "Spreek ons aan",
+      "heading": "Klaar om met AI aan de slag te gaan?"
+    },
+    "personName": "Antoine Percy",
+    "personRole": "Chief Technology Officer",
+    "portrait": {
+      "_type": "imageWithAlt",
+      "alt": "Antoine Percy - Wonka AI",
+      "asset": {
+        "_ref": "image-b57a9d4d515308b9e1f953b4baa2e118de9a6ef2-2048x1247-jpg",
+        "_type": "reference"
+      }
+    }
+  },
+  "deliverables": {
+    "heading": "Een systeem dat draait.",
+    "items": [
+      {
+        "_key": "applications",
+        "body": "Gebouwd rond uw data en uw team, geen generieke template.",
+        "title": "AI-applicaties op maat"
+      },
+      {
+        "_key": "agents",
+        "body": "Live in uw werking, echt werk van begin tot eind afhandelend.",
+        "title": "Productieklare AI-agents"
+      },
+      {
+        "_key": "integrations",
+        "body": "Gekoppeld aan de tools, data en infrastructuur die u al gebruikt.",
+        "title": "Diepe integraties"
+      },
+      {
+        "_key": "owner",
+        "body": "We scholen iemand intern op tot die het kan beheren en uitbreiden.",
+        "title": "Een eigenaar in uw team"
+      },
+      {
+        "_key": "governance",
+        "body": "Guardrails, toegangsbeheer en een AI-beleid dat past bij uw organisatie.",
+        "title": "Ingebouwde governance"
+      },
+      {
+        "_key": "hypercare",
+        "body": "We blijven na de go-live paraat om te stabiliseren en bij te sturen.",
+        "title": "Hypercare na de lancering"
+      }
+    ]
+  },
+  "faq": {
+    "header": {
+      "body": null,
+      "eyebrow": "FAQ",
+      "heading": "Veelgestelde vragen"
+    },
+    "items": [
+      {
+        "_key": "wonka-chat-vs-build",
+        "answer": "WonkaChat is ons platform: één veilige AI-werkplek die uw hele team dagelijks gebruikt. Wonka Build is onze engineering op maat: we ontwerpen en bouwen agents, applicaties en systemen specifiek voor uw bedrijf en brengen ze in productie. Veel klanten gebruiken beide.",
+        "question": "Wat is het verschil tussen Wonka Build en WonkaChat?"
+      },
+      {
+        "_key": "agents-or-apps",
+        "answer": "Beide. Van gerichte AI-agents die een workflow van begin tot eind afhandelen tot volledige maatwerkapplicaties, met de integraties en infrastructuur eronder.",
+        "question": "Wat kunt u bouwen: agents, applicaties of beide?"
+      },
+      {
+        "_key": "strategy-first",
+        "answer": "Nee. Als u het proces kent dat u geld kost, is dat genoeg om te starten. Zo niet, dan geeft Start AI u eerst duidelijkheid, en de business cases daaruit worden de blauwdruk voor uw build.",
+        "question": "Hebben we eerst een afgewerkte AI-strategie nodig?"
+      },
+      {
+        "_key": "on-premise",
+        "answer": "Ja. WonkaBuild kan volledig on-premise draaien, binnen uw netwerk, zonder dat er iets uw muren verlaat, of in een veilige Europese omgeving.",
+        "question": "Kan het op onze eigen servers draaien?"
+      },
+      {
+        "_key": "independence",
+        "answer": "Nee. We scholen iemand in uw team op om wat we bouwen te beheren, te draaien en uit te breiden. Onafhankelijkheid maakt deel uit van de oplevering.",
+        "question": "Worden we afhankelijk van Wonka om het draaiende te houden?"
+      },
+      {
+        "_key": "after-golive",
+        "answer": "We blijven paraat tijdens een hypercareperiode om te stabiliseren, bij te sturen en uw team op te leiden, voordat we het volledige eigenaarschap overdragen.",
+        "question": "Wat gebeurt er na de go-live?"
+      }
+    ]
+  },
+  "hero": {
+    "eyebrow": "Wonka Build",
+    "secondaryText": null,
+    "subtitle": "Wanneer de AI die u nodig hebt niet kant-en-klaar bestaat, bouwen wij ze, ontworpen rond uw bedrijf en in productie gebracht.",
+    "theme": "dark",
+    "title": "AI op maat. Gebouwd en opgeleverd door ons team."
+  },
+  "industries": {
+    "header": {
+      "body": "Elk WonkaBuild-traject wordt afgestemd op uw bedrijf. Hieronder de soorten systemen die we doorgaans opleveren: agents, applicaties en de infrastructuur waarmee ze echt werk aankunnen.",
+      "eyebrow": "Wat we bouwen",
+      "heading": "Van uw moeilijkste proces\nnaar productie."
+    },
+    "industries": [
+      {
+        "_key": "applications",
+        "body": "Dashboards, portalen en tools rond uw data, die uw team live inzicht en controle geven op één plek.",
+        "bullets": [
+          "Apps",
+          "AI-chats"
+        ],
+        "clients": [],
+        "label": "Interne applicaties op maat"
+      }
+    ]
+  },
+  "logoStrip": {
+    "_type": "logoStrip",
+    "proofLines": [
+      "We werkten al met meer dan 200 kmo's"
+    ]
+  },
+  "phases": {
+    "body": "Een buildtraject verloopt in vier samenhangende fases. Afgebakend als engineering, niet als workshop. Opgeleverd in uw werking, niet in een slidedeck.",
+    "eyebrow": "Hoe het werkt",
+    "heading": "Van uw proces\nnaar productie.",
+    "items": [
+      {
+        "_key": "map",
+        "body": "We duiken in uw werking en brengen in kaart hoe het werk vandaag loopt, en bakenen dan precies af wat we bouwen en waarom het zijn plaats verdient.",
+        "number": "01",
+        "subtitle": "Vertrek van uw werking, niet van een template",
+        "title": "In kaart brengen"
+      },
+      {
+        "_key": "connect",
+        "body": "We koppelen met de systemen die u al gebruikt: e-mail, ERP, CRM, documenten, databases. Het fundament waarop de build rust.",
+        "number": "02",
+        "subtitle": "Bovenop de systemen die u al gebruikt",
+        "title": "Koppelen"
+      },
+      {
+        "_key": "build-ship",
+        "body": "We bouwen uw agents en applicaties en brengen ze in productie. Echte workflows, echte randgevallen, van begin tot eind afgehandeld. Geen pilot in een sandbox.",
+        "number": "03",
+        "subtitle": "Productie, geen pilot in een sandbox",
+        "title": "Bouwen & opleveren"
+      },
+      {
+        "_key": "tune-handover",
+        "body": "We blijven na de go-live om te stabiliseren, bij te sturen en op te leiden, en tillen iemand in uw team naar een niveau waarop die eigenaar wordt, zodat u nooit van ons afhangt om het draaiende te houden.",
+        "number": "04",
+        "subtitle": "Onafhankelijkheid maakt deel uit van de oplevering",
+        "title": "Bijsturen & overdragen"
+      }
+    ]
+  },
+  "promo": {
+    "body": "Wonka is een geregistreerde dienstverlener binnen de KMO-portefeuille. De meeste Vlaamse kmo's krijgen tot 70% van de programmakost terug. Wij helpen u met het papierwerk.",
+    "eyebrow": "VLAIO KMO-portefeuille",
+    "heading": "Krijg 70% korting als Vlaamse kmo.",
+    "showCta": true,
+    "variant": "darkImage"
+  },
+  "seo": {
+    "metaDescription": "Wij bouwen AI-applicaties en AI-agents op maat voor uw bedrijf, afgestemd op uw systemen en ingezet in uw dagelijkse werk.",
+    "metaTitle": "Wonka Build · AI-applicaties op maat voor bedrijven",
+    "ogImage": null
+  },
+  "testimonials": {
+    "body": "Echte feedback van leiders die Wonka vertrouwden om hun AI-ambitie om te zetten in een concreet plan waarmee hun teams aan de slag konden.",
+    "eyebrow": "Wat klanten zeggen",
+    "heading": "Eerlijke feedback\nvan gewaardeerde mensen."
+  },
+  "whyNow": {
+    "cards": [
+      {
+        "_key": "pioneers",
+        "body": "In veel organisaties blijft de waarde van AI bij een kleine groep early adopters. Zij vinden betere manieren van werken, maar die verspreiden zich zelden over de teams.\n\nStart AI creëert de structuur om individuele experimenten om te zetten in vooruitgang voor de hele organisatie.",
+        "title": "AI mag niet bij de pioniers blijven"
+      },
+      {
+        "_key": "repetitive",
+        "body": "Uw team zou zijn beste uren niet moeten besteden aan informatie kopiëren, documenten zoeken, dezelfde antwoorden herschrijven of werk tussen systemen verplaatsen.\n\nStart AI brengt in kaart welk werk uw mensen zouden moeten stoppen — en waar AI hen eerst kan ondersteunen.",
+        "title": "Mensen zijn te goed voor repetitief werk"
+      },
+      {
+        "_key": "governance",
+        "body": "Als iedereen AI anders gebruikt, verliest de organisatie de controle. Als niemand AI gebruikt, verliest de organisatie vaart.\n\nStart AI helpt u de balans te vinden: duidelijke governance, praktische richtlijnen en een roadmap die AI bruikbaar maakt voor iedereen.",
+        "title": "Verantwoorde AI vraagt gedeelde regels"
+      }
+    ],
+    "header": {
+      "body": "AI mag niet alleen werken voor wie weet welke prompt te schrijven of welke tool te openen. Het moet de hele organisatie helpen slimmer, sneller en gerichter te werken.",
+      "eyebrow": "Waarom nu",
+      "heading": "Laat geen enkel team achter."
+    }
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wonka-ai.com/design-system/schemas/asset-catalog.schema.json",
+  "title": "Wonka Asset Catalog",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "version", "assets"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schemaVersion": { "type": "string" },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "name",
+          "kind",
+          "lifecycle",
+          "stability",
+          "files",
+          "usage",
+          "rights",
+          "provenance"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^asset\\.[a-z0-9]+(?:[.-][a-z0-9]+)*$"
+          },
+          "name": { "type": "string" },
+          "kind": { "enum": ["logo", "icon", "image", "font", "video"] },
+          "lifecycle": {
+            "enum": [
+              "draft",
+              "extracted",
+              "review_required",
+              "approved",
+              "active",
+              "superseded"
+            ]
+          },
+          "stability": {
+            "enum": ["experimental", "beta", "stable", "deprecated"]
+          },
+          "files": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["path", "mimeType", "theme"],
+              "properties": {
+                "path": { "type": "string", "minLength": 1 },
+                "mimeType": { "type": "string", "minLength": 1 },
+                "theme": { "enum": ["light", "dark", "all"] },
+                "bytes": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "readOnly": true
+                },
+                "sha256": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{64}$",
+                  "readOnly": true
+                },
+                "publicUrl": {
+                  "type": ["string", "null"],
+                  "readOnly": true
+                }
+              }
+            }
+          },
+          "usage": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["allowed", "forbidden", "clearspace", "minSize"],
+            "properties": {
+              "allowed": {
+                "type": "array",
+                "minItems": 1,
+                "items": { "type": "string", "minLength": 1 }
+              },
+              "forbidden": {
+                "type": "array",
+                "minItems": 1,
+                "items": { "type": "string", "minLength": 1 }
+              },
+              "clearspace": { "type": ["string", "null"] },
+              "minSize": { "type": ["string", "null"] }
+            }
+          },
+          "rights": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["owner", "license", "expiresAt"],
+            "properties": {
+              "owner": { "type": "string", "minLength": 1 },
+              "license": {
+                "enum": [
+                  "verification_required",
+                  "verified_internal",
+                  "verified_redistributable",
+                  "expired",
+                  "revoked"
+                ]
+              },
+              "expiresAt": {
+                "type": ["string", "null"],
+                "format": "date"
+              }
+            }
+          },
+          "provenance": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["source", "owner", "approvedBy", "approvedAt"],
+            "properties": {
+              "source": { "type": "string", "minLength": 1 },
+              "owner": { "type": "string", "minLength": 1 },
+              "approvedBy": { "type": ["string", "null"] },
+              "approvedAt": {
+                "type": ["string", "null"],
+                "format": "date-time"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

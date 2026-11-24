@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wonka-ai.com/design-system/schemas/channel-catalog.schema.json",
+  "title": "Wonka Design System Channel Catalog",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "$schema",
+    "schemaVersion",
+    "version",
+    "brandVersionId",
+    "channels"
+  ],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schemaVersion": { "const": "1.0.0" },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "brandVersionId": { "type": "string", "minLength": 1 },
+    "channels": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "./channel.schema.json" }
+    }
+  }
+}

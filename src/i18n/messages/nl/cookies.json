@@ -1,0 +1,35 @@
+{
+  "banner": {
+    "label": "Cookietoestemming",
+    "text": "We gebruiken cookies om de site te laten werken en om te meten hoe onze marketing presteert.",
+    "policyLink": "Lees ons cookiebeleid",
+    "essentialOnly": "Alleen essentiële cookies",
+    "acceptAll": "Alles accepteren",
+    "rejectAll": "Alles weigeren",
+    "managePreferences": "Voorkeuren beheren"
+  },
+  "preferences": {
+    "title": "Cookievoorkeuren",
+    "close": "Sluiten",
+    "closeLabel": "Voorkeuren sluiten",
+    "intro": "Kies welke categorieën cookies u toestaat. U kunt dit altijd wijzigen via de footer.",
+    "alwaysOn": "(altijd aan)",
+    "save": "Voorkeuren opslaan",
+    "acceptAll": "Alles accepteren",
+    "categories": {
+      "essential": {
+        "label": "Essentieel",
+        "description": "Nodig om de site te laten werken. Bewaren uw toestemmingskeuze en vergelijkbare basisgegevens. Altijd aan."
+      },
+      "analytics": {
+        "label": "Analyse",
+        "description": "Helpen ons te begrijpen welke pagina's goed presteren. Geaggregeerd, nooit gebruikt om u te identificeren."
+      },
+      "marketing": {
+        "label": "Marketing",
+        "description": "Gebruikt door advertentieplatformen om campagneprestaties te meten en advertenties op verschillende sites te personaliseren."
+      }
+    }
+  },
+  "settingsLink": "Cookie-instellingen"
+}

@@ -1,0 +1,308 @@
+{
+  "_id": "homepageContent-nl",
+  "_type": "homepageContent",
+  "cta": {
+    "body": "Laten we samen bekijken waar Wonka AI het verschil kan maken.",
+    "heading": "Uw team is te goed voor dit werk."
+  },
+  "hero": {
+    "awardBadge": "#1 AI-START-UP VAN HET JAAR - BELGIUM STARTUP AWARDS 2026",
+    "subtitle": "Uw team is te goed voor repetitief werk. Wij ontwerpen uw AI-strategie en bouwen daarna de applicaties en agents die dat werk overnemen.",
+    "title": "Uw AI-partner voor repetitief werk."
+  },
+  "howToStart": {
+    "body": "Precies daarom praten we met u.\nPlan een gesprek van 30 minuten. Vertel ons hoe u werkt, en wij vertellen u waar AI echt het verschil maakt, en waar niet.",
+    "calloutHeading": "30 minuten.\nEn u weet of het zinvol is.",
+    "eyebrow": "Hoe beginnen",
+    "heading": "Weet u niet goed hoe u moet beginnen?",
+    "outcomes": [
+      "Een beeld van wat realistisch haalbaar is, en hoe snel.",
+      "Een duidelijke volgende stap, of dat nu Start AI, Wonka Build of WonkaChat is.",
+      "Antwoorden op uw specifieke vragen over AI.",
+      "Vrijblijvend, zonder druk. Gewoon een helderder beeld van AI."
+    ],
+    "outcomesHeading": "Wat u eraan overhoudt"
+  },
+  "security": {
+    "heading": "Uw data blijft altijd van u."
+  },
+  "seo": {
+    "_type": "seo",
+    "metaDescription": "Private AI in uw bedrijf, gekoppeld aan SharePoint, Salesforce en Slack. Geen data verlaat uw omgeving. Volledig AVG-conform. #1 AI-start-up België 2026.",
+    "metaTitle": "Wonka AI - AI-agents en private AI voor bedrijven"
+  },
+  "solution": {
+    "body": "De meeste AI ziet er schitterend uit op de lanceringsdag en verstoft tegen week drie. Wij vertrekken van uw huidige processen, werken terug vanuit het dagelijkse gebruik en blijven tot uw hele team het echt gebruikt.",
+    "eyebrow": "Hoe we werken",
+    "heading": "Wonka AI laat AI werken voor uw hele organisatie.",
+    "steps": [
+      {
+        "_key": "0d5b5cd10e35",
+        "_type": "solutionStep",
+        "body": "Sommige bedrijven komen met een duidelijke use case, andere weten alleen dat AI belangrijk is, maar niet waar het past. Hoe dan ook, wij weten hoe we verder moeten.",
+        "title": "We starten waar u staat."
+      },
+      {
+        "_key": "a72af3430e7b",
+        "_type": "solutionStep",
+        "body": "We droppen geen generieke tool in de hoop dat die blijft plakken. We bouwen alles rond hoe uw bedrijf vandaag draait, zodat het er vanaf dag één bij hoort.",
+        "title": "We bouwen rond hoe u echt werkt."
+      },
+      {
+        "_key": "2bd732e13f76",
+        "_type": "solutionStep",
+        "body": "Een roadmap, een maatwerkoplossing of een AI-chat die iedereen dagelijks gebruikt. We leveren precies wat uw situatie nodig heeft, en zorgen dat het landt bij de mensen die erop zullen rekenen.\n",
+        "title": "We leggen het in handen van uw team."
+      },
+      {
+        "_key": "d89e619fbc58",
+        "_type": "solutionStep",
+        "body": "De meeste AI-projecten mislukken op adoptie, niet op technologie. We werken mee in uw team en blijven tot mensen het echt gebruiken, niet alleen tot het live staat.",
+        "title": "We blijven tot iedereen mee is."
+      }
+    ]
+  },
+  "useCases": {
+    "industries": [
+      {
+        "_key": "fd62c78f",
+        "_type": "industry",
+        "label": "Sales",
+        "workflows": [
+          {
+            "_key": "77c2d0b3",
+            "_type": "workflow",
+            "bullets": [
+              "Opgevangen via formulier of e-mail",
+              "Opportuniteit aangemaakt in het CRM",
+              "Opvolging verstuurd met de juiste info of vergaderlink"
+            ],
+            "description": "Er komt een lead binnen. Die wordt gelogd en beantwoord voor hij afkoelt.",
+            "title": "Leadopvolging"
+          },
+          {
+            "_key": "32997dae",
+            "_type": "workflow",
+            "bullets": [
+              "Gegevens gehaald uit e-mail of bijlage",
+              "Order aangemaakt in het ERP, planning bijgewerkt",
+              "Team verwittigd, bevestiging verstuurd"
+            ],
+            "description": "Er komt een order binnen. Die wordt ingevoerd en bevestigd zonder overtypen.",
+            "title": "Verwerking van verkooporders"
+          },
+          {
+            "_key": "51540e89",
+            "_type": "workflow",
+            "bullets": [
+              "Gebouwd rond uw CRM en databronnen",
+              "Brengt prioritaire accounts en signalen naar boven",
+              "Toegankelijk voor het hele team, niet alleen voor analisten"
+            ],
+            "description": "Een maatwerkapplicatie die het salesteam live inzicht geeft in pipeline, accountactiviteit en volgende beste acties, zonder te schakelen tussen vijf tools.",
+            "title": "Sales intelligence-dashboard"
+          }
+        ]
+      },
+      {
+        "_key": "a5e98867",
+        "_type": "industry",
+        "label": "Operations",
+        "workflows": [
+          {
+            "_key": "3f4d7c08",
+            "_type": "workflow",
+            "bullets": [
+              "Opgepikt uit inbox of bijlage",
+              "ERP bijgewerkt met de ordergegevens",
+              "Planning of magazijn verwittigd"
+            ],
+            "description": "Er komt een order binnen. Operations ziet wat er moet gebeuren.",
+            "title": "Orderverwerking"
+          },
+          {
+            "_key": "181a6f96",
+            "_type": "workflow",
+            "bullets": [
+              "Gecontroleerd tegen klant-, voorraad- of prijsgegevens",
+              "Problemen meteen gesignaleerd",
+              "Doorgestuurd met volledige context"
+            ],
+            "description": "Iets klopt niet. Het wordt gesignaleerd voor het vertraging veroorzaakt.",
+            "title": "Afhandeling van uitzonderingen"
+          },
+          {
+            "_key": "95bca9a2",
+            "_type": "workflow",
+            "bullets": [
+              "Geconfigureerd voor uw processen en uitzonderingen",
+              "Gekoppeld aan uw bestaande systemen",
+              "Uitgerold voor uw volledige operations-team"
+            ],
+            "description": "Een doelgerichte tool voor complexe operationele workflows die niet in standaardsoftware passen, gebouwd rond hoe uw team echt werkt.",
+            "title": "Operationeel portaal op maat"
+          }
+        ]
+      },
+      {
+        "_key": "7cb80fe5",
+        "_type": "industry",
+        "label": "HR",
+        "workflows": [
+          {
+            "_key": "ef4e00ab",
+            "_type": "workflow",
+            "bullets": [
+              "Accounts aangemaakt in alle tools",
+              "Documenten verstuurd ter review of ondertekening",
+              "Manager verwittigd, checklist gestart"
+            ],
+            "description": "Een nieuwe medewerker start. Alles staat klaar voor dag één.",
+            "title": "Onboarding van medewerkers"
+          },
+          {
+            "_key": "0de3a90c",
+            "_type": "workflow",
+            "bullets": [
+              "Antwoorden uit het interne beleid",
+              "Meertalige ondersteuning",
+              "Enkel geëscaleerd wanneer nodig"
+            ],
+            "description": "Vragen meteen beantwoord, zonder de HR-inbox te vullen.",
+            "title": "HR-helpdesk"
+          },
+          {
+            "_key": "97ef5528",
+            "_type": "workflow",
+            "bullets": [
+              "Gebouwd rond uw beleid en systemen",
+              "Werkt voor elke medewerker, van kantoor tot werkvloer",
+              "Op schaal uitgerold zonder licentie per gebruiker"
+            ],
+            "description": "Een HR-assistent op maat, uitgerold over uw volledige personeelsbestand.",
+            "title": "HR-agent voor grote teams"
+          }
+        ]
+      },
+      {
+        "_key": "d8a209bf",
+        "_type": "industry",
+        "label": "Support",
+        "workflows": [
+          {
+            "_key": "5be7f2ac",
+            "_type": "workflow",
+            "bullets": [
+              "Ingedeeld per onderwerp en urgentie",
+              "Ticket aangemaakt met context",
+              "De juiste persoon verwittigd"
+            ],
+            "description": "Er komt een klacht binnen. Die wordt meteen gelogd en doorgestuurd.",
+            "title": "Klachtenafhandeling"
+          },
+          {
+            "_key": "8ed1c1f1",
+            "_type": "workflow",
+            "bullets": [
+              "Probleem geclassificeerd",
+              "Doorgestuurd naar het juiste team",
+              "Context meegegeven"
+            ],
+            "description": "Wanneer iets een mens nodig heeft, komt het snel bij de juiste terecht.",
+            "title": "Routering van escalaties"
+          },
+          {
+            "_key": "b0a77365",
+            "_type": "workflow",
+            "bullets": [
+              "Gebouwd rond uw kennisbank en processen",
+              "Handelt eerstelijnsvragen automatisch af",
+              "Escaleert met volledige context wanneer nodig"
+            ],
+            "description": "Een supporttool op maat, gebouwd rond uw product, uw klanten en de workflows van uw team.",
+            "title": "Supportapplicatie op maat"
+          }
+        ]
+      },
+      {
+        "_key": "a84d2649",
+        "_type": "industry",
+        "label": "Finance",
+        "workflows": [
+          {
+            "_key": "d7c15bb7",
+            "_type": "workflow",
+            "bullets": [
+              "Gekoppeld aan leverancier of bestelbon",
+              "Fouten gesignaleerd",
+              "Geldige facturen verwerkt"
+            ],
+            "description": "Facturen komen binnen. Correcte gaan door. Problemen worden gesignaleerd.",
+            "title": "Factuurverwerking"
+          },
+          {
+            "_key": "24dd7789",
+            "_type": "workflow",
+            "bullets": [
+              "Gevalideerd tegen het beleid",
+              "Goedgekeurd binnen de limieten",
+              "Uitzonderingen doorgestuurd"
+            ],
+            "description": "Onkosten gecontroleerd voordat finance ze nakijkt.",
+            "title": "Onkostenafstemming"
+          },
+          {
+            "_key": "2fa44b6b",
+            "_type": "workflow",
+            "bullets": [
+              "Gekoppeld aan uw ERP en databronnen",
+              "Rapporten automatisch volgens planning opgemaakt",
+              "Afgestemd op raad van bestuur, management of operationele teams"
+            ],
+            "description": "Een rapportagetool op maat die live data ophaalt, de juiste output opbouwt en die bij de juiste mensen aflevert. Geen paniek meer op vrijdagnamiddag.",
+            "title": "Applicatie voor financiële rapportering"
+          }
+        ]
+      }
+    ]
+  },
+  "whatWeDo": {
+    "cards": [
+      {
+        "_key": "1698d49ae4cd",
+        "_type": "whatWeDoCard",
+        "body": "We analyseren uw processen, brengen in kaart waar AI echte waarde creëert en bouwen uw roadmap met concrete acties.",
+        "cta": {
+          "_type": "ctaButton",
+          "href": "/nl/start-ai",
+          "label": "Ontdek Start AI"
+        },
+        "tagline": "U weet dat AI belangrijk is, maar niet waar te beginnen?"
+      },
+      {
+        "_key": "09ca3bc6d441",
+        "_type": "whatWeDoCard",
+        "body": "We bouwen AI-applicaties op maat die passen bij uw systemen en draaien in uw dagelijkse werk.",
+        "cta": {
+          "_type": "ctaButton",
+          "href": "/nl/wonka-build",
+          "label": "Ontdek Wonka Build"
+        },
+        "tagline": "Repetitief werk dat geen enkele tool lijkt op te lossen?"
+      },
+      {
+        "_key": "3744f9234a87",
+        "_type": "whatWeDoCard",
+        "body": "Eén plek waar iedereen met AI werkt, gekoppeld aan de tools en data van uw bedrijf.",
+        "cta": {
+          "_type": "ctaButton",
+          "href": "/nl/wonka-chat",
+          "label": "Ontdek WonkaChat"
+        },
+        "tagline": "Klaar om uw hele team AI te geven?"
+      }
+    ],
+    "eyebrow": "Wat we doen",
+    "heading": "Alles wat u nodig hebt\nom AI te laten werken."
+  }
+}
