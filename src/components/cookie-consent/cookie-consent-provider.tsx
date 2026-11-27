@@ -12,21 +12,25 @@ import { CookieBanner } from "./cookie-banner";
 import { CookiePreferencesModal } from "./cookie-preferences-modal";
 
 const STORAGE_KEY = "wonka:cookie-consent";
-const CONSENT_VERSION = 1;
+const CONSENT_VERSION = 2;
 
 export type ConsentCategories = {
   analytics: boolean;
   marketing: boolean;
 };
 
+export type ConsentChoice = "essential" | "all" | "rejected";
+
 type ConsentRecord = {
   version: number;
   timestamp: string;
+  choice: ConsentChoice;
   categories: ConsentCategories;
 };
 
 type CookieConsentContextValue = {
   consent: ConsentRecord | null;
+  acceptEssentialOnly: () => void;
   acceptAll: () => void;
   rejectAll: () => void;
   savePreferences: (categories: ConsentCategories) => void;
@@ -37,6 +41,7 @@ type CookieConsentContextValue = {
 
 const CookieConsentContext = createContext<CookieConsentContextValue>({
   consent: null,
+  acceptEssentialOnly: () => {},
   acceptAll: () => {},
   rejectAll: () => {},
   savePreferences: () => {},
@@ -49,26 +54,52 @@ export function useCookieConsent() {
   return useContext(CookieConsentContext);
 }
 
+/** Audience measurement (PostHog, analytics_storage). */
+export function allowsAnalytics(consent: ConsentRecord | null): boolean {
+  return consent?.categories.analytics === true;
+}
+
+/** Ad platforms (Google Ads, Meta Pixel, Apollo, ad_* consent signals). */
+export function allowsMarketing(consent: ConsentRecord | null): boolean {
+  return consent?.categories.marketing === true;
+}
+
+function deriveChoice(categories: ConsentCategories): ConsentChoice {
+  if (categories.analytics && categories.marketing) return "all";
+  if (!categories.analytics && !categories.marketing) return "rejected";
+  return "essential";
+}
+
 function readStored(): ConsentRecord | null {
   if (typeof window === "undefined") return null;
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (!raw) return null;
-    const parsed = JSON.parse(raw) as ConsentRecord;
-    if (parsed.version !== CONSENT_VERSION) return null;
+    const parsed = JSON.parse(raw) as ConsentRecord & { choice?: ConsentChoice };
+    if (parsed.version === 1) {
+      return {
+        version: CONSENT_VERSION,
+        timestamp: parsed.timestamp,
+        choice: deriveChoice(parsed.categories),
+        categories: parsed.categories,
+      };
+    }
+    if (parsed.version !== CONSENT_VERSION || !parsed.choice) return null;
     return parsed;
   } catch {
     return null;
   }
 }
 
-function pushConsentUpdate(categories: ConsentCategories) {
+function pushConsentUpdate(record: ConsentRecord) {
   if (typeof window === "undefined") return;
+  const analytics = record.categories.analytics ? ("granted" as const) : ("denied" as const);
+  const marketing = record.categories.marketing ? ("granted" as const) : ("denied" as const);
   const consentState = {
-    analytics_storage: categories.analytics ? "granted" : "denied",
-    ad_storage: categories.marketing ? "granted" : "denied",
-    ad_user_data: categories.marketing ? "granted" : "denied",
-    ad_personalization: categories.marketing ? "granted" : "denied",
+    analytics_storage: analytics,
+    ad_storage: marketing,
+    ad_user_data: marketing,
+    ad_personalization: marketing,
   };
 
   if (typeof window.gtag === "function") {
@@ -94,16 +125,17 @@ export function CookieConsentProvider({
     if (stored) {
       // eslint-disable-next-line react-hooks/set-state-in-effect
       setConsent(stored);
-      pushConsentUpdate(stored.categories);
+      pushConsentUpdate(stored);
     } else {
       setBannerVisible(true);
     }
   }, []);
 
-  const persist = useCallback((categories: ConsentCategories) => {
+  const persist = useCallback((choice: ConsentChoice, categories: ConsentCategories) => {
     const record: ConsentRecord = {
       version: CONSENT_VERSION,
       timestamp: new Date().toISOString(),
+      choice,
       categories,
     };
     try {
@@ -112,24 +144,30 @@ export function CookieConsentProvider({
       // localStorage may be unavailable; consent still pushed to GTM for this session
     }
     setConsent(record);
-    pushConsentUpdate(categories);
+    pushConsentUpdate(record);
   }, []);
 
+  const acceptEssentialOnly = useCallback(() => {
+    persist("essential", { analytics: false, marketing: false });
+    setBannerVisible(false);
+    setIsPreferencesOpen(false);
+  }, [persist]);
+
   const acceptAll = useCallback(() => {
-    persist({ analytics: true, marketing: true });
+    persist("all", { analytics: true, marketing: true });
     setBannerVisible(false);
     setIsPreferencesOpen(false);
   }, [persist]);
 
   const rejectAll = useCallback(() => {
-    persist({ analytics: false, marketing: false });
+    persist("rejected", { analytics: false, marketing: false });
     setBannerVisible(false);
     setIsPreferencesOpen(false);
   }, [persist]);
 
   const savePreferences = useCallback(
     (categories: ConsentCategories) => {
-      persist(categories);
+      persist(deriveChoice(categories), categories);
       setBannerVisible(false);
       setIsPreferencesOpen(false);
     },
@@ -143,6 +181,7 @@ export function CookieConsentProvider({
     <CookieConsentContext.Provider
       value={{
         consent,
+        acceptEssentialOnly,
         acceptAll,
         rejectAll,
         savePreferences,

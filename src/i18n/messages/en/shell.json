@@ -1,0 +1,134 @@
+{
+  "logoLabel": "Wonka",
+  "mainNavLabel": "Main",
+  "headerCta": "Login",
+  "toggleMenu": "Toggle menu",
+  "expandSection": "Expand {label}",
+  "collapseSection": "Collapse {label}",
+  "language": {
+    "label": "Language",
+    "en": "English",
+    "fr": "Français",
+    "nl": "Nederlands"
+  },
+  "footer": {
+    "taglineLine1": "Most companies have AI.",
+    "taglineLine2": "Few have it working for everyone.",
+    "copyright": "{year} Wonka, all rights reserved.",
+    "legal": {
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "cookies": "Cookies"
+    },
+    "linksPage": "Links"
+  },
+  "nav": {
+    "ai-workspace": {
+      "label": "AI Workspace",
+      "children": {
+        "overview": {
+          "label": "Overview",
+          "description": "Discover Wonka Workspace"
+        },
+        "ai-chat": {
+          "label": "AI Chat",
+          "description": "Chat with your data, safely"
+        },
+        "ai-agents": {
+          "label": "AI Agents",
+          "description": "Delegate recurring tasks to AI"
+        },
+        "ai-apps": {
+          "label": "AI Apps",
+          "description": "Complex workflows as simple applications"
+        },
+        "ai-automations": {
+          "label": "AI Automations",
+          "description": "Let AI start and finish the job"
+        },
+        "governance": {
+          "label": "Governance",
+          "description": "Users, agents, usage and access control"
+        },
+        "integrations": {
+          "label": "Integrations",
+          "description": "Connect Wonka to your company stack"
+        }
+      }
+    },
+    "ai-services": {
+      "label": "AI Services",
+      "children": {
+        "ai-strategy": {
+          "label": "AI Strategy",
+          "description": "Become AI native in four weeks"
+        },
+        "flemish-ai-strategy": {
+          "label": "Flemish AI Strategy subsidy",
+          "description": "Up to 70% subsidy for Flemish SMEs"
+        },
+        "ai-agent-development": {
+          "label": "AI Agent Development",
+          "description": "We build your agents and ship them"
+        },
+        "ai-app-development": {
+          "label": "AI App Development",
+          "description": "Custom AI applications on your systems"
+        },
+        "ai-training": {
+          "label": "AI Training",
+          "description": "For your developers and your teams"
+        }
+      }
+    },
+    "resources": {
+      "label": "Resources",
+      "children": {
+        "agent-blueprint": {
+          "label": "Design your agent team",
+          "description": "Get three tailored AI agent ideas for your company"
+        },
+        "use-cases": {
+          "label": "Use cases",
+          "description": "The work AI already takes over"
+        },
+        "clients": {
+          "label": "Clients",
+          "description": "What we built at 200 organisations"
+        },
+        "blog": {
+          "label": "Blog",
+          "description": "Guides on enterprise AI and agents"
+        },
+        "glossary": {
+          "label": "Glossary",
+          "description": "AI terms explained simply"
+        },
+        "comparisons": {
+          "label": "Comparisons",
+          "description": "Wonka AI compared with other tools"
+        }
+      }
+    },
+    "company": {
+      "label": "Company",
+      "children": {
+        "about": {
+          "label": "About Wonka"
+        },
+        "team": {
+          "label": "Meet the team"
+        },
+        "jobs": {
+          "label": "Jobs"
+        },
+        "contact": {
+          "label": "Contact"
+        }
+      }
+    },
+    "pricing": {
+      "label": "Pricing"
+    }
+  }
+}

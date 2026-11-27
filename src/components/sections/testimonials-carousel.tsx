@@ -6,6 +6,7 @@ import { AnimatePresence, motion } from "motion/react";
 import { urlFor } from "@sanity/lib/image";
 import { BulletIcon } from "@/components/ui/icons/bullet";
 import { cn } from "@/lib/utils";
+import { useT } from "@/i18n/use-t";
 import type { Testimonial } from "@/lib/types";
 
 function ArrowPrevIcon({ className }: { className?: string }) {
@@ -129,6 +130,7 @@ interface TestimonialsCarouselProps {
 }
 
 export function TestimonialsCarousel({ testimonials }: TestimonialsCarouselProps) {
+  const t = useT();
   const [activeIndex, setActiveIndex] = useState(0);
   const total = testimonials.length;
 
@@ -203,7 +205,7 @@ export function TestimonialsCarousel({ testimonials }: TestimonialsCarouselProps
               <button
                 type="button"
                 onClick={prev}
-                aria-label="Previous testimonial"
+                aria-label={t("sections.testimonials.previous")}
                 className="cursor-pointer text-text transition-opacity hover:opacity-60"
               >
                 <ArrowPrevIcon className="h-3 w-[1.125rem]" />
@@ -211,7 +213,7 @@ export function TestimonialsCarousel({ testimonials }: TestimonialsCarouselProps
               <button
                 type="button"
                 onClick={next}
-                aria-label="Next testimonial"
+                aria-label={t("sections.testimonials.next")}
                 className="cursor-pointer text-text transition-opacity hover:opacity-60"
               >
                 <ArrowNextIcon className="h-3 w-[1.125rem]" />
@@ -258,11 +260,12 @@ export function TestimonialsCarousel({ testimonials }: TestimonialsCarouselProps
 }
 
 function CompanyLogo({ testimonial }: { testimonial: Testimonial }) {
+  const t = useT();
   const logo = testimonial.companyLogo;
   if (!logo?.asset) {
     return (
       <div className="flex h-6 w-[4.3rem] items-center justify-center self-start rounded-xs border border-dashed border-border text-[0.625rem] font-medium tracking-[0.07em] text-text uppercase opacity-60">
-        Logo
+        {t("sections.testimonials.logoPlaceholder")}
       </div>
     );
   }

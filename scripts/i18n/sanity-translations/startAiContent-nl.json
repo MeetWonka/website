@@ -1,0 +1,49 @@
+{
+  "_id": "startAiContent-nl",
+  "_type": "startAiContent",
+  "contact": {
+    "_type": "contactSection",
+    "header": {
+      "_type": "sectionHeader",
+      "body": "Plan een kennismakingsgesprek van 30 minuten. Geen slides, geen pitch, gewoon een echt gesprek over uw bedrijf.",
+      "eyebrow": "Spreek ons aan",
+      "heading": "Klaar om met AI aan de slag te gaan?\n"
+    },
+    "personName": "Jordy Callens",
+    "personRole": "Start AI Lead",
+    "portrait": {
+      "_type": "imageWithAlt",
+      "alt": "Jordy Callens - Wonka AI",
+      "asset": {
+        "_ref": "image-d866d95a48e0a0a53a8f86dcfa2f0ac2c32ca57c-2191x2920-jpg",
+        "_type": "reference"
+      },
+      "crop": {
+        "_type": "sanity.imageCrop",
+        "bottom": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0.21349170907142967
+      },
+      "hotspot": {
+        "_type": "sanity.imageHotspot",
+        "height": 0.7865082909285703,
+        "width": 1,
+        "x": 0.5,
+        "y": 0.6067458545357148
+      }
+    }
+  },
+  "hero": {
+    "_type": "productHero",
+    "eyebrow": "Start AI",
+    "subtitle": "We evalueren uw werking, ontwerpen uw AI-strategie en geven u het uitvoeringsplan, zodat uw hele team op volle kracht kan werken.",
+    "theme": "dark",
+    "title": "Een duidelijke AI-strategie voor uw bedrijf."
+  },
+  "promo": {
+    "_type": "promoPanel",
+    "showCta": true,
+    "variant": "gradient"
+  }
+}

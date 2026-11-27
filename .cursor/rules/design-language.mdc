@@ -1,0 +1,48 @@
+---
+description: Homepage design system — typography, radius, section patterns
+alwaysApply: true
+---
+
+# Design language — homepage is source of truth
+
+When building or refactoring marketing pages, match the homepage. Use shared primitives; do not invent one-off radius or heading styles.
+
+## Primitives
+
+| Import | Use for |
+|--------|---------|
+| `@/lib/design-tokens` | `headingClass`, `radius` |
+| `@/components/ui/section` | Page width + padding (`max-w-[84rem]`) |
+| `@/components/ui/section-header` | Eyebrow + section title + optional body |
+| `@/components/ui/surface` | Cards (`card`), banners (`panel`), callouts (`callout`), pills (`pill`) |
+| `@/components/ui/eyebrow` | Section labels |
+
+## Typography roles
+
+| Role | Token | Use |
+|------|-------|-----|
+| Hero title | `headingClass.hero` (`type-h3`) | Page heroes |
+| Section title | `headingClass.section` (`type-h4`) | Eyebrow-led sections |
+| Subsection | `headingClass.subsection` (`type-h5`) | Callouts, sticky sidebar titles |
+| Card title | `headingClass.card` (`type-h6`) | Cards, feature items |
+
+Section headings are always full `text-text` (black). Never split a title into black + grey spans. Line breaks via `\n` + `MultilineText` or `<SectionHeader>`.
+
+## Border radius
+
+Use `radius` from design-tokens — not `rounded-lg`, `rounded-2xl`, or `rounded-3xl`.
+
+| Token | Class | Use |
+|-------|-------|-----|
+| `radius.xs` | `rounded-xs` | Dark callout cards |
+| `radius.sm` | `rounded-sm` | Cards, panels, wide banners |
+| `radius.full` | `rounded-full` | Pills, chips, avatars |
+
+Wide colored banners: `<Section wide>` + `<Surface variant="panel">` (stats / security pattern).
+
+## New pages checklist
+
+1. Wrap sections in `<Section>` (not raw `max-w-[1200px] px-6`)
+2. Section intros via `<SectionHeader>` with `headingRole="section"`
+3. Cards via `<Surface variant="card">`
+4. Booking CTAs via `meetingUrl` + `meetingLabel` from `siteSettings.sharedLinks`

@@ -1,0 +1,34 @@
+{
+  "emailLabel": "E-mailadres",
+  "emailPlaceholder": "naam@bedrijf.be",
+  "sending": "Verzenden…",
+  "errors": {
+    "generic": "Er ging iets mis. Probeer het opnieuw.",
+    "verificationRequired": "Voltooi eerst de verificatie.",
+    "verification_failed": "Verificatie mislukt. Probeer het opnieuw.",
+    "invalid_email": "Vul een geldig e-mailadres in.",
+    "invalid_source": "Er ging iets mis. Probeer het opnieuw.",
+    "invalid_body": "Er ging iets mis. Probeer het opnieuw.",
+    "rate_limited": "Te veel aanvragen. Probeer het later opnieuw.",
+    "not_configured": "Er ging iets mis. Probeer het opnieuw.",
+    "server_error": "Er ging iets mis. Probeer het opnieuw."
+  },
+  "sources": {
+    "start-ai-hero": {
+      "submitLabel": "Meer info ontvangen",
+      "successMessage": "Bedankt — we nemen contact met u op met meer info over Start AI."
+    },
+    "start-ai-flanders-hero": {
+      "submitLabel": "Check uw subsidierecht",
+      "successMessage": "Bedankt — we nemen contact met u op over Start AI en de KMO-portefeuille."
+    },
+    "wonka-chat-hero": {
+      "submitLabel": "Probeer WonkaChat",
+      "successMessage": "Bedankt — we nemen contact met u op om WonkaChat uit te proberen."
+    },
+    "wonka-chat-odoo-hero": {
+      "submitLabel": "Probeer WonkaChat",
+      "successMessage": "Bedankt — we nemen contact met u op om WonkaChat voor Odoo uit te proberen."
+    }
+  }
+}

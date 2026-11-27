@@ -1,0 +1,130 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wonka-ai.com/design-system/schemas/channel.schema.json",
+  "title": "Wonka Design System Channel Contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "id",
+    "name",
+    "description",
+    "aliases",
+    "lifecycle",
+    "stability",
+    "introducedIn",
+    "allowedThemes",
+    "tokenSets",
+    "compatibleAssetIds",
+    "constraints",
+    "exportTargets",
+    "provenance"
+  ],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schemaVersion": { "const": "1.0.0" },
+    "id": {
+      "type": "string",
+      "pattern": "^channel\\.[a-z0-9-]+$"
+    },
+    "name": { "type": "string", "minLength": 1 },
+    "description": { "type": "string", "minLength": 1 },
+    "aliases": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9-]+$"
+      }
+    },
+    "lifecycle": {
+      "enum": ["draft", "active", "review_required", "deprecated", "retired"]
+    },
+    "stability": {
+      "enum": ["experimental", "beta", "stable"]
+    },
+    "introducedIn": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "allowedThemes": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "distribution": {
+      "enum": ["internal", "external"]
+    },
+    "tokenSets": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "compatibleComponentIds": {
+      "type": "array",
+      "uniqueItems": true,
+      "readOnly": true,
+      "items": {
+        "type": "string",
+        "pattern": "^component(?:\\.[a-z0-9-]+)+$"
+      }
+    },
+    "compatibleAssetIds": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^asset(?:\\.[a-z0-9-]+)+$"
+      }
+    },
+    "constraints": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "value", "level", "enforcement"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "value": { "type": "string", "minLength": 1 },
+          "level": { "enum": ["required", "recommended"] },
+          "enforcement": {
+            "enum": ["automated", "contract", "human_review"]
+          },
+          "ruleId": {
+            "type": "string",
+            "pattern": "^rule\\.[a-z0-9-]+$"
+          }
+        }
+      }
+    },
+    "exportTargets": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": ["react", "css", "html", "png", "jpg", "mp4", "pptx", "pdf"]
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source", "owner", "approvedBy", "approvedAt"],
+      "properties": {
+        "source": { "type": "string", "minLength": 1 },
+        "owner": { "type": "string", "minLength": 1 },
+        "approvedBy": { "type": ["string", "null"] },
+        "approvedAt": {
+          "type": ["string", "null"],
+          "format": "date-time"
+        }
+      }
+    }
+  }
+}

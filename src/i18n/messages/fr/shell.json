@@ -1,0 +1,134 @@
+{
+  "logoLabel": "Wonka",
+  "mainNavLabel": "Navigation principale",
+  "headerCta": "Connexion",
+  "toggleMenu": "Ouvrir ou fermer le menu",
+  "expandSection": "Déplier {label}",
+  "collapseSection": "Replier {label}",
+  "language": {
+    "label": "Langue",
+    "en": "English",
+    "fr": "Français",
+    "nl": "Nederlands"
+  },
+  "footer": {
+    "taglineLine1": "La plupart des entreprises ont l'IA.",
+    "taglineLine2": "Peu la mettent au service de tous.",
+    "copyright": "{year} Wonka, tous droits réservés.",
+    "legal": {
+      "terms": "Conditions",
+      "privacy": "Confidentialité",
+      "cookies": "Cookies"
+    },
+    "linksPage": "Liens"
+  },
+  "nav": {
+    "ai-workspace": {
+      "label": "Workspace IA",
+      "children": {
+        "overview": {
+          "label": "Présentation",
+          "description": "Découvrez Wonka Workspace"
+        },
+        "ai-chat": {
+          "label": "Chat IA",
+          "description": "Échangez avec vos données, en sécurité"
+        },
+        "ai-agents": {
+          "label": "Agents IA",
+          "description": "Confiez vos tâches récurrentes à l'IA"
+        },
+        "ai-apps": {
+          "label": "Applications IA",
+          "description": "Des workflows complexes en applications simples"
+        },
+        "ai-automations": {
+          "label": "Automatisations IA",
+          "description": "Laissez l'IA mener le travail de bout en bout"
+        },
+        "governance": {
+          "label": "Gouvernance",
+          "description": "Utilisateurs, agents, usage et accès"
+        },
+        "integrations": {
+          "label": "Intégrations",
+          "description": "Connectez Wonka à votre stack entreprise"
+        }
+      }
+    },
+    "ai-services": {
+      "label": "Services IA",
+      "children": {
+        "ai-strategy": {
+          "label": "Stratégie IA",
+          "description": "Devenez AI native en quatre semaines"
+        },
+        "flemish-ai-strategy": {
+          "label": "Stratégie IA en Flandre (subvention)",
+          "description": "Start AI subventionné jusqu'à 70 % pour les PME flamandes"
+        },
+        "ai-agent-development": {
+          "label": "Développement d'agents IA",
+          "description": "Nous créons et déployons vos agents"
+        },
+        "ai-app-development": {
+          "label": "Développement d'apps IA",
+          "description": "Des applications IA sur mesure, sur vos systèmes"
+        },
+        "ai-training": {
+          "label": "Formation IA",
+          "description": "Pour vos développeurs et vos équipes"
+        }
+      }
+    },
+    "resources": {
+      "label": "Ressources",
+      "children": {
+        "agent-blueprint": {
+          "label": "Concevez votre équipe d’agents IA",
+          "description": "Identifiez trois agents adaptés à votre entreprise"
+        },
+        "use-cases": {
+          "label": "Cas d'usage",
+          "description": "Le travail que l'IA prend déjà en charge"
+        },
+        "clients": {
+          "label": "Clients",
+          "description": "Ce que nous avons construit pour 200 organisations"
+        },
+        "blog": {
+          "label": "Blog",
+          "description": "Guides sur l'IA et les agents en entreprise"
+        },
+        "glossary": {
+          "label": "Glossaire",
+          "description": "Les termes de l'IA expliqués simplement"
+        },
+        "comparisons": {
+          "label": "Comparatifs",
+          "description": "Wonka AI face aux autres outils"
+        }
+      }
+    },
+    "company": {
+      "label": "Entreprise",
+      "children": {
+        "about": {
+          "label": "À propos de Wonka"
+        },
+        "team": {
+          "label": "Rencontrer l'équipe"
+        },
+        "jobs": {
+          "label": "Carrières"
+        },
+        "contact": {
+          "label": "Contact"
+        }
+      }
+    },
+    "pricing": {
+      "label": "Tarifs"
+    }
+  }
+}

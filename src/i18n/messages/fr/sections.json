@@ -1,0 +1,38 @@
+{
+  "problem": {
+    "ariaLabel": "Problème"
+  },
+  "clientProof": {
+    "ariaLabel": "Témoignages clients"
+  },
+  "logoStrip": {
+    "ariaLabel": "Logos clients"
+  },
+  "useCases": {
+    "industriesLabel": "Secteurs",
+    "workflowTag": "Workflow {number}"
+  },
+  "testimonials": {
+    "previous": "Témoignage précédent",
+    "next": "Témoignage suivant",
+    "logoPlaceholder": "Logo",
+    "header": {
+      "eyebrow": "Ce que disent nos clients",
+      "heading": "Des retours sincères\nde personnes de confiance.",
+      "body": "Les retours de dirigeants qui ont confié à Wonka la mission de transformer leur ambition IA en un plan concret, directement actionnable par leurs équipes."
+    }
+  },
+  "industryTabs": {
+    "clientsLabel": "Clients dans ce secteur"
+  },
+  "workflowSteps": {
+    "stepTag": "Étape {number}",
+    "previous": "Étape précédente",
+    "next": "Étape suivante",
+    "voicePrompt": "Crée une opportunité dans Odoo."
+  },
+  "workspaceTrialCta": {
+    "title": "Voyez si Wonka Workspace convient à vos équipes.",
+    "body": "Réservez un appel avec notre équipe pour une démo sur un cas d'usage réel."
+  }
+}

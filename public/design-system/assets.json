@@ -1,0 +1,2184 @@
+{
+  "$schema": "/design-system/schemas/asset-catalog.schema.json",
+  "schemaVersion": "1.0.0",
+  "version": "0.4.0",
+  "assets": [
+    {
+      "id": "asset.logo.wordmark",
+      "name": "Wonka wordmark",
+      "kind": "logo",
+      "lifecycle": "review_required",
+      "stability": "beta",
+      "files": [
+        {
+          "path": "public/images/brand/wonka-logo-black.svg",
+          "mimeType": "image/svg+xml",
+          "theme": "light",
+          "bytes": 11341,
+          "sha256": "811546cbed088bfde9d3d8230b4c02fdfcccfee503766278c3411e77a1713617",
+          "publicUrl": "/images/brand/wonka-logo-black.svg"
+        },
+        {
+          "path": "public/images/brand/wonka-logo-white.svg",
+          "mimeType": "image/svg+xml",
+          "theme": "dark",
+          "bytes": 10349,
+          "sha256": "281a3917a791fe580f5b8c5d0636279f2673e4e70daee14336a1299e36fe0ee5",
+          "publicUrl": "/images/brand/wonka-logo-white.svg"
+        },
+        {
+          "path": "public/images/brand/wonka-logo-mask.png",
+          "mimeType": "image/png",
+          "theme": "all",
+          "bytes": 3811,
+          "sha256": "7df7742feb18bb3d20f75b17f5dc3ed1045e6f7af15786b1633b026323e1e9d8",
+          "publicUrl": "/images/brand/wonka-logo-mask.png"
+        },
+        {
+          "path": "public/brand/logos/svg/wonka-wordmark-wonka-black.svg",
+          "mimeType": "image/svg+xml",
+          "theme": "light",
+          "bytes": 2284,
+          "sha256": "26a82534b143c4d110274bfb3b6f4ba649de4104838bfc08746b916a19731b33",
+          "publicUrl": "/brand/logos/svg/wonka-wordmark-wonka-black.svg"
+        },
+        {
+          "path": "public/brand/logos/svg/wonka-wordmark-wonka-cloud-blue.svg",
+          "mimeType": "image/svg+xml",
+          "theme": "dark",
+          "bytes": 2284,
+          "sha256": "239e45c81ac13e645c5a66b79602f467110ab2ea84a9721978c827911ee2d3f8",
+          "publicUrl": "/brand/logos/svg/wonka-wordmark-wonka-cloud-blue.svg"
+        },
+        {
+          "path": "public/brand/logos/svg/wonka-wordmark-wonka-forest-green.svg",
+          "mimeType": "image/svg+xml",
+          "theme": "light",
+          "bytes": 2284,
+          "sha256": "29172476aa3ba6ab297893df290598da1695c7910e0df789f36f902c2b244ac0",
+          "publicUrl": "/brand/logos/svg/wonka-wordmark-wonka-forest-green.svg"
+        },
+        {
+          "path": "public/brand/logos/svg/wonka-wordmark-wonka-water-blue.svg",
+          "mimeType": "image/svg+xml",
+          "theme": "all",
+          "bytes": 2284,
+          "sha256": "0178cdaa9a664599dc94d7c92a5a0e159ad7fc7f88274792f28c39839cc41081",
+          "publicUrl": "/brand/logos/svg/wonka-wordmark-wonka-water-blue.svg"
+        },
+        {
+          "path": "public/brand/logos/svg/wonka-wordmark-wonka-white.svg",
+          "mimeType": "image/svg+xml",
+          "theme": "dark",
+          "bytes": 2284,
+          "sha256": "fabff4f6c0cf2901cca959860e46fa8ee0d7a384cbe79b9dbb0680f7eb7230d0",
+          "publicUrl": "/brand/logos/svg/wonka-wordmark-wonka-white.svg"
+        },
+        {
+          "path": "public/brand/logos/png/wonka-wordmark-wonka-black.png",
+          "mimeType": "image/png",
+          "theme": "light",
+          "bytes": 63867,
+          "sha256": "111cc0f21b21c525215fa9858e2bbc696a52fbbd41a8bcd9c6746fb39472480a",
+          "publicUrl": "/brand/logos/png/wonka-wordmark-wonka-black.png"
+        },
+        {
+          "path": "public/brand/logos/png/wonka-wordmark-wonka-cloud-blue.png",
+          "mimeType": "image/png",
+          "theme": "dark",
+          "bytes": 62837,
+          "sha256": "a94023bb8e6de80feded0af5cfff6641a5b1cb10b4d91078794abd4e1c06ae09",
+          "publicUrl": "/brand/logos/png/wonka-wordmark-wonka-cloud-blue.png"
+        },
+        {
+          "path": "public/brand/logos/png/wonka-wordmark-wonka-forest-green.png",
+          "mimeType": "image/png",
+          "theme": "light",
+          "bytes": 64905,
+          "sha256": "0fee81006f9efbf70b61bf368f4df356a3c0040644fac2edc02630a34fe00535",
+          "publicUrl": "/brand/logos/png/wonka-wordmark-wonka-forest-green.png"
+        },
+        {
+          "path": "public/brand/logos/png/wonka-wordmark-wonka-water-blue.png",
+          "mimeType": "image/png",
+          "theme": "all",
+          "bytes": 63794,
+          "sha256": "3ade285d32be4ec64692cb9ce1c941c157b47bed24a180bf46923995c38c239b",
+          "publicUrl": "/brand/logos/png/wonka-wordmark-wonka-water-blue.png"
+        },
+        {
+          "path": "public/brand/logos/png/wonka-wordmark-wonka-white.png",
+          "mimeType": "image/png",
+          "theme": "dark",
+          "bytes": 57356,
+          "sha256": "094dc50fae9c386ec9d2dd2ed4bb04142027a9bafc7875a84ee54593e2a66171",
+          "publicUrl": "/brand/logos/png/wonka-wordmark-wonka-white.png"
+        }
+      ],
+      "usage": {
+        "allowed": [
+          "Primary brand identification on approved light or dark backgrounds.",
+          "The monochrome mask may inherit an approved semantic foreground token.",
+          "Brand-pack vector files exist in the five official brand colors; pick the ink that matches the background theme."
+        ],
+        "forbidden": [
+          "Stretching, rotating, outlining, or reconstructing the wordmark.",
+          "Applying colors outside approved semantic foreground tokens."
+        ],
+        "clearspace": "Keep clear space equal to at least the height of the lowercase o.",
+        "minSize": "120px wide for digital use."
+      },
+      "rights": {
+        "owner": "Wonka AI",
+        "license": "verification_required",
+        "expiresAt": null
+      },
+      "provenance": {
+        "source": "Existing website brand assets",
+        "owner": "Wonka AI",
+        "approvedBy": null,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "asset.logo.mark",
+      "name": "Wonka logo mark",
+      "kind": "logo",
+      "lifecycle": "review_required",
+      "stability": "beta",
+      "files": [
+        {
+          "path": "public/images/brand/wonka-logo-mark-transparent.png",
+          "mimeType": "image/png",
+          "theme": "light",
+          "bytes": 1566,
+          "sha256": "55024d5a34ba18e77a4701309de60d64f1107d77fc7e6b3c32ce4936ebc496a9",
+          "publicUrl": "/images/brand/wonka-logo-mark-transparent.png"
+        },
+        {
+          "path": "public/images/brand/wonka-logo-mark-white-transparent.png",
+          "mimeType": "image/png",
+          "theme": "dark",
+          "bytes": 1519,
+          "sha256": "dfae2485d2c61c2c0436c0da94476b6f25eff09c11f1a2f5a8eae53d52faadf4",
+          "publicUrl": "/images/brand/wonka-logo-mark-white-transparent.png"
+        },
+        {
+          "path": "public/brand/logos/svg/wonka-icon-black.svg",
+          "mimeType": "image/svg+xml",
+          "theme": "all",
+          "bytes": 860,
+          "sha256": "e92abf6a549bdc3ba931a677a34a952623c2e5a85de4de3f0266fa81355c8722",
+          "publicUrl": "/brand/logos/svg/wonka-icon-black.svg"
+        },
+        {
+          "path": "public/brand/logos/svg/wonka-icon-cloud-blue.svg",
+          "mimeType": "image/svg+xml",
+          "theme": "dark",
+          "bytes": 860,
+          "sha256": "ecae9b16f6fb62eee9ad67ead3376c1337b6166bce19c8ab6a05eba0092dbf46",
+          "publicUrl": "/brand/logos/svg/wonka-icon-cloud-blue.svg"
+        },
+        {
+          "path": "public/brand/logos/svg/wonka-icon-forest-green.svg",
+          "mimeType": "image/svg+xml",
+          "theme": "light",
+          "bytes": 860,
+          "sha256": "7bafaa1b5d3e8c2232017362d1ee77b1a51e093c7fdbb8ecb6eb352063e9cb61",
+          "publicUrl": "/brand/logos/svg/wonka-icon-forest-green.svg"
+        },
+        {
+          "path": "public/brand/logos/svg/wonka-icon-water-blue.svg",
+          "mimeType": "image/svg+xml",
+          "theme": "all",
+          "bytes": 860,
+          "sha256": "c939ec461a407b01133af29cbcea0164d5f529bf0d1413fc3b13c31bbbbb5ead",
+          "publicUrl": "/brand/logos/svg/wonka-icon-water-blue.svg"
+        },
+        {
+          "path": "public/brand/logos/svg/wonka-icon-white.svg",
+          "mimeType": "image/svg+xml",
+          "theme": "all",
+          "bytes": 860,
+          "sha256": "bba6160833227e67fe9af421b1a09ea7098a787fa7d00b4f7045fa6d52c58c6a",
+          "publicUrl": "/brand/logos/svg/wonka-icon-white.svg"
+        },
+        {
+          "path": "public/brand/logos/png/wonka-icon-black.png",
+          "mimeType": "image/png",
+          "theme": "all",
+          "bytes": 24898,
+          "sha256": "cc9a5bdfb79e5c60b9eb3dcd34e1cbd8d4b204588dbbc9751acb8ad3184af445",
+          "publicUrl": "/brand/logos/png/wonka-icon-black.png"
+        },
+        {
+          "path": "public/brand/logos/png/wonka-icon-cloud-blue.png",
+          "mimeType": "image/png",
+          "theme": "dark",
+          "bytes": 24598,
+          "sha256": "5b60136c450d8b3976caf9f4e36e858be93d738c858ba5c553f0794192afd5b4",
+          "publicUrl": "/brand/logos/png/wonka-icon-cloud-blue.png"
+        },
+        {
+          "path": "public/brand/logos/png/wonka-icon-forest-green.png",
+          "mimeType": "image/png",
+          "theme": "light",
+          "bytes": 25258,
+          "sha256": "e3c4ad6a83b0a6a299db73f91c3c505a0b78ce8693c5af8beb8bb9a9eeff8dea",
+          "publicUrl": "/brand/logos/png/wonka-icon-forest-green.png"
+        },
+        {
+          "path": "public/brand/logos/png/wonka-icon-water-blue.png",
+          "mimeType": "image/png",
+          "theme": "all",
+          "bytes": 24700,
+          "sha256": "16082d2f013873871ccf083077eda42f4f2a33ae4ce67fdfbc7d0c96d19d31d1",
+          "publicUrl": "/brand/logos/png/wonka-icon-water-blue.png"
+        },
+        {
+          "path": "public/brand/logos/png/wonka-icon-white.png",
+          "mimeType": "image/png",
+          "theme": "all",
+          "bytes": 24099,
+          "sha256": "b0262067dfbb535a1ff385cff41e1fe6869ebbb16203062e3989bc7188b53910",
+          "publicUrl": "/brand/logos/png/wonka-icon-white.png"
+        }
+      ],
+      "usage": {
+        "allowed": [
+          "Compact brand identification when the full wordmark does not fit.",
+          "Brand-pack vector icon (four bars) in the five official brand colors."
+        ],
+        "forbidden": [
+          "Using the mark as a decorative pattern without brand approval."
+        ],
+        "clearspace": "Keep clear space equal to one quarter of the mark width.",
+        "minSize": "24px wide for digital use."
+      },
+      "rights": {
+        "owner": "Wonka AI",
+        "license": "verification_required",
+        "expiresAt": null
+      },
+      "provenance": {
+        "source": "Existing website brand assets",
+        "owner": "Wonka AI",
+        "approvedBy": null,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "asset.font.inter-display",
+      "name": "Inter Display",
+      "kind": "font",
+      "lifecycle": "review_required",
+      "stability": "beta",
+      "files": [
+        {
+          "path": "public/fonts/InterDisplay-Regular.woff2",
+          "mimeType": "font/woff2",
+          "theme": "all",
+          "bytes": 115508,
+          "sha256": "16fda8d13112b7f74eb435c61c1ae08685483a8be46701e2ef065cd77885be9b",
+          "publicUrl": "/fonts/InterDisplay-Regular.woff2"
+        },
+        {
+          "path": "public/fonts/InterDisplay-Medium.woff2",
+          "mimeType": "font/woff2",
+          "theme": "all",
+          "bytes": 125492,
+          "sha256": "f18b8e6a63e604e535ac00713e2f2101b87ddddbb2ec48c34c6a0aa02411f76b",
+          "publicUrl": "/fonts/InterDisplay-Medium.woff2"
+        }
+      ],
+      "usage": {
+        "allowed": [
+          "Wonka product, web, campaign, and presentation typography after license verification."
+        ],
+        "forbidden": [
+          "Redistribution outside approved Wonka artifacts before license verification."
+        ],
+        "clearspace": null,
+        "minSize": null
+      },
+      "rights": {
+        "owner": "External type foundry",
+        "license": "verification_required",
+        "expiresAt": null
+      },
+      "provenance": {
+        "source": "Existing website font files",
+        "owner": "Wonka AI",
+        "approvedBy": null,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "asset.font.gt-sectra",
+      "name": "GT Sectra",
+      "kind": "font",
+      "lifecycle": "review_required",
+      "stability": "beta",
+      "files": [
+        {
+          "path": "public/fonts/GT-Sectra-Regular.woff2",
+          "mimeType": "font/woff2",
+          "theme": "all",
+          "bytes": 74340,
+          "sha256": "f20b0f05ac042c757322d311eb739a52941004989d6427eb389d2d25e0ac4aba",
+          "publicUrl": "/fonts/GT-Sectra-Regular.woff2"
+        }
+      ],
+      "usage": {
+        "allowed": [
+          "Restrained editorial display typography after license verification."
+        ],
+        "forbidden": [
+          "Redistribution or embedding in external templates before license verification."
+        ],
+        "clearspace": null,
+        "minSize": null
+      },
+      "rights": {
+        "owner": "Grilli Type",
+        "license": "verification_required",
+        "expiresAt": null
+      },
+      "provenance": {
+        "source": "Existing website font file",
+        "owner": "Wonka AI",
+        "approvedBy": null,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "asset.logo.full",
+      "name": "Wonka full logo (icon + wonka AI)",
+      "kind": "logo",
+      "lifecycle": "review_required",
+      "stability": "beta",
+      "files": [
+        {
+          "path": "public/brand/logos/svg/wonka-logo-full-black.svg",
+          "mimeType": "image/svg+xml",
+          "theme": "light",
+          "bytes": 3582,
+          "sha256": "9ec2100e9ccace1811ec1286289f332b8479b994537a29a595ad48a89ff15db1",
+          "publicUrl": "/brand/logos/svg/wonka-logo-full-black.svg"
+        },
+        {
+          "path": "public/brand/logos/svg/wonka-logo-full-cloud-blue.svg",
+          "mimeType": "image/svg+xml",
+          "theme": "dark",
+          "bytes": 3582,
+          "sha256": "b48def88359589dd8084b2c255ca9b3ab76f04a59b08545e44dd1e9892dfef80",
+          "publicUrl": "/brand/logos/svg/wonka-logo-full-cloud-blue.svg"
+        },
+        {
+          "path": "public/brand/logos/svg/wonka-logo-full-forest-green.svg",
+          "mimeType": "image/svg+xml",
+          "theme": "light",
+          "bytes": 3582,
+          "sha256": "c8ff5082d5dafab78e2c0502be45518dea1a4887a955a06439471aa03d3b583c",
+          "publicUrl": "/brand/logos/svg/wonka-logo-full-forest-green.svg"
+        },
+        {
+          "path": "public/brand/logos/svg/wonka-logo-full-water-blue.svg",
+          "mimeType": "image/svg+xml",
+          "theme": "all",
+          "bytes": 3582,
+          "sha256": "004b3bbb2fc81a1168069ad0b84811793dec7fa04232bc261e9823ff82269f9f",
+          "publicUrl": "/brand/logos/svg/wonka-logo-full-water-blue.svg"
+        },
+        {
+          "path": "public/brand/logos/svg/wonka-logo-full-white.svg",
+          "mimeType": "image/svg+xml",
+          "theme": "dark",
+          "bytes": 3582,
+          "sha256": "ca1e0c8eabce4f933736ef2d5e196223c72951335d6bfbb4bd0b15601541f822",
+          "publicUrl": "/brand/logos/svg/wonka-logo-full-white.svg"
+        },
+        {
+          "path": "public/brand/logos/png/wonka-logo-full-black.png",
+          "mimeType": "image/png",
+          "theme": "light",
+          "bytes": 64976,
+          "sha256": "bee5d3ab5ce5da677f7feda406d96dd382f35d03d4777e9672491e724f400015",
+          "publicUrl": "/brand/logos/png/wonka-logo-full-black.png"
+        },
+        {
+          "path": "public/brand/logos/png/wonka-logo-full-cloud-blue.png",
+          "mimeType": "image/png",
+          "theme": "dark",
+          "bytes": 64088,
+          "sha256": "9e5c10e9ad989111b0d4a2c7100cef871377bfb120227f7cf9ae86ad2e2ca82f",
+          "publicUrl": "/brand/logos/png/wonka-logo-full-cloud-blue.png"
+        },
+        {
+          "path": "public/brand/logos/png/wonka-logo-full-forest-green.png",
+          "mimeType": "image/png",
+          "theme": "light",
+          "bytes": 66165,
+          "sha256": "c9f6ceb0c56837f21c42bc509cba6f47c61d547c336590d3da6876cb55fb8655",
+          "publicUrl": "/brand/logos/png/wonka-logo-full-forest-green.png"
+        },
+        {
+          "path": "public/brand/logos/png/wonka-logo-full-water-blue.png",
+          "mimeType": "image/png",
+          "theme": "all",
+          "bytes": 64774,
+          "sha256": "324c215ee9debcf28f166893c0308c5bbc6268f449738483189cec2bf0e53ba6",
+          "publicUrl": "/brand/logos/png/wonka-logo-full-water-blue.png"
+        },
+        {
+          "path": "public/brand/logos/png/wonka-logo-full-white.png",
+          "mimeType": "image/png",
+          "theme": "dark",
+          "bytes": 58584,
+          "sha256": "458555715640089f179588c88db2bc2e73997ceee472be084c270bdc90ac1675",
+          "publicUrl": "/brand/logos/png/wonka-logo-full-white.png"
+        }
+      ],
+      "usage": {
+        "allowed": [
+          "Primary lockup when the product name \"wonka AI\" must be explicit: website headers, decks, partner material."
+        ],
+        "forbidden": [
+          "Stretching, rotating, outlining, or reconstructing the lockup.",
+          "Recoloring outside the five official brand colors (color.brand.*).",
+          "Placing white or Cloud Blue ink on light backgrounds, or black or Forest Green ink on dark backgrounds."
+        ],
+        "clearspace": "Keep clear space equal to at least the icon height on every side.",
+        "minSize": "140px wide for digital use."
+      },
+      "rights": {
+        "owner": "Wonka AI",
+        "license": "verification_required",
+        "expiresAt": null
+      },
+      "provenance": {
+        "source": "Wonka brand pack (Branding Assets, received 2026-10-02)",
+        "owner": "Wonka AI",
+        "approvedBy": null,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "asset.logo.lockup",
+      "name": "Wonka logo (icon + wonka)",
+      "kind": "logo",
+      "lifecycle": "review_required",
+      "stability": "beta",
+      "files": [
+        {
+          "path": "public/brand/logos/svg/wonka-logo-wonka-black.svg",
+          "mimeType": "image/svg+xml",
+          "theme": "light",
+          "bytes": 3030,
+          "sha256": "bc4fd2c02830fc5745da0eec7ddfe31551b9683b87639e82e61cdfc2d2aadbef",
+          "publicUrl": "/brand/logos/svg/wonka-logo-wonka-black.svg"
+        },
+        {
+          "path": "public/brand/logos/svg/wonka-logo-wonka-cloud-blue.svg",
+          "mimeType": "image/svg+xml",
+          "theme": "dark",
+          "bytes": 3030,
+          "sha256": "600ec279cc83ec92180d17b8a47e784a78f8ff9bb062966c47409f740d550fcc",
+          "publicUrl": "/brand/logos/svg/wonka-logo-wonka-cloud-blue.svg"
+        },
+        {
+          "path": "public/brand/logos/svg/wonka-logo-wonka-forest-green.svg",
+          "mimeType": "image/svg+xml",
+          "theme": "light",
+          "bytes": 3030,
+          "sha256": "b8fde1efa87842120dc8d4c6ccca93c5cdd2da255589c501fd2d1b11f0ea44ad",
+          "publicUrl": "/brand/logos/svg/wonka-logo-wonka-forest-green.svg"
+        },
+        {
+          "path": "public/brand/logos/svg/wonka-logo-wonka-water-blue.svg",
+          "mimeType": "image/svg+xml",
+          "theme": "all",
+          "bytes": 3030,
+          "sha256": "36b82d4a41e51594e0cf3c842b3fdfa8fe6cf9c50b9d00d103f5e47387546f35",
+          "publicUrl": "/brand/logos/svg/wonka-logo-wonka-water-blue.svg"
+        },
+        {
+          "path": "public/brand/logos/svg/wonka-logo-wonka-white.svg",
+          "mimeType": "image/svg+xml",
+          "theme": "dark",
+          "bytes": 3030,
+          "sha256": "afad08595f34d4d07304438cb11c32c7533b3b61d47e7eb2065b975c74dbd920",
+          "publicUrl": "/brand/logos/svg/wonka-logo-wonka-white.svg"
+        },
+        {
+          "path": "public/brand/logos/png/wonka-logo-wonka-black.png",
+          "mimeType": "image/png",
+          "theme": "light",
+          "bytes": 67835,
+          "sha256": "3dddeec356216729168c5ab181ef31eeb0c4bea422480e11874d95f41378579a",
+          "publicUrl": "/brand/logos/png/wonka-logo-wonka-black.png"
+        },
+        {
+          "path": "public/brand/logos/png/wonka-logo-wonka-cloud-blue.png",
+          "mimeType": "image/png",
+          "theme": "dark",
+          "bytes": 67331,
+          "sha256": "c4d0a4fda9071053787c6d437206bb7e81a8366c9279d4ab50176b742abd28e7",
+          "publicUrl": "/brand/logos/png/wonka-logo-wonka-cloud-blue.png"
+        },
+        {
+          "path": "public/brand/logos/png/wonka-logo-wonka-forest-green.png",
+          "mimeType": "image/png",
+          "theme": "light",
+          "bytes": 69671,
+          "sha256": "b594e8e7bf1e660573e47b86f67dabafcde0e4d6a47321bc0f130365677c0ce1",
+          "publicUrl": "/brand/logos/png/wonka-logo-wonka-forest-green.png"
+        },
+        {
+          "path": "public/brand/logos/png/wonka-logo-wonka-water-blue.png",
+          "mimeType": "image/png",
+          "theme": "all",
+          "bytes": 68270,
+          "sha256": "0edc03d3ed04528c1dbc49bc3697b8f040c505a084cd7954b49a11173e0f4712",
+          "publicUrl": "/brand/logos/png/wonka-logo-wonka-water-blue.png"
+        },
+        {
+          "path": "public/brand/logos/png/wonka-logo-wonka-white.png",
+          "mimeType": "image/png",
+          "theme": "dark",
+          "bytes": 61510,
+          "sha256": "7557db1980f337eff8fe40929d43b8b6e1dacc63b643c18432059b83d6eee296",
+          "publicUrl": "/brand/logos/png/wonka-logo-wonka-white.png"
+        }
+      ],
+      "usage": {
+        "allowed": [
+          "Compact horizontal lockup as used in the launch video; social, motion, and campaign surfaces."
+        ],
+        "forbidden": [
+          "Stretching, rotating, outlining, or reconstructing the lockup.",
+          "Recoloring outside the five official brand colors (color.brand.*).",
+          "Placing white or Cloud Blue ink on light backgrounds, or black or Forest Green ink on dark backgrounds."
+        ],
+        "clearspace": "Keep clear space equal to at least the icon height on every side.",
+        "minSize": "120px wide for digital use."
+      },
+      "rights": {
+        "owner": "Wonka AI",
+        "license": "verification_required",
+        "expiresAt": null
+      },
+      "provenance": {
+        "source": "Wonka brand pack (Branding Assets, received 2026-10-02)",
+        "owner": "Wonka AI",
+        "approvedBy": null,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "asset.logo.wordmark-ai",
+      "name": "Wonka AI wordmark",
+      "kind": "logo",
+      "lifecycle": "review_required",
+      "stability": "beta",
+      "files": [
+        {
+          "path": "public/brand/logos/svg/wonka-wordmark-wonka-ai-black.svg",
+          "mimeType": "image/svg+xml",
+          "theme": "light",
+          "bytes": 2834,
+          "sha256": "7cfed613d5a5aec07893b1e96fe5f551a8ef5280acbac5246cbb1e64cef84a7f",
+          "publicUrl": "/brand/logos/svg/wonka-wordmark-wonka-ai-black.svg"
+        },
+        {
+          "path": "public/brand/logos/svg/wonka-wordmark-wonka-ai-cloud-blue.svg",
+          "mimeType": "image/svg+xml",
+          "theme": "dark",
+          "bytes": 2834,
+          "sha256": "0cd95dc24cefc149ebd4efde58c78e03f0d4dda37fdaf1e0ce5e31ff1136a247",
+          "publicUrl": "/brand/logos/svg/wonka-wordmark-wonka-ai-cloud-blue.svg"
+        },
+        {
+          "path": "public/brand/logos/svg/wonka-wordmark-wonka-ai-forest-green.svg",
+          "mimeType": "image/svg+xml",
+          "theme": "light",
+          "bytes": 2834,
+          "sha256": "1ab785e526410f5fcb96feb0b99c46e8edbdd367af3daf48eeabd357a003c03e",
+          "publicUrl": "/brand/logos/svg/wonka-wordmark-wonka-ai-forest-green.svg"
+        },
+        {
+          "path": "public/brand/logos/svg/wonka-wordmark-wonka-ai-water-blue.svg",
+          "mimeType": "image/svg+xml",
+          "theme": "all",
+          "bytes": 2834,
+          "sha256": "698d80d2f2ef094e240b6bc02f5fd6b46cdf137599132e280437a020ef102895",
+          "publicUrl": "/brand/logos/svg/wonka-wordmark-wonka-ai-water-blue.svg"
+        },
+        {
+          "path": "public/brand/logos/svg/wonka-wordmark-wonka-ai-white.svg",
+          "mimeType": "image/svg+xml",
+          "theme": "dark",
+          "bytes": 2834,
+          "sha256": "c1b9c1d843793803b2e4f64c0f342238752d6ecb3cd6bbebe6c813aac8e92abf",
+          "publicUrl": "/brand/logos/svg/wonka-wordmark-wonka-ai-white.svg"
+        },
+        {
+          "path": "public/brand/logos/png/wonka-wordmark-wonka-ai-black.png",
+          "mimeType": "image/png",
+          "theme": "light",
+          "bytes": 70966,
+          "sha256": "4bf9c899dd1ce46c3494fe00a8eaf9323153e3dba8dff51b2b03f935c9e576d0",
+          "publicUrl": "/brand/logos/png/wonka-wordmark-wonka-ai-black.png"
+        },
+        {
+          "path": "public/brand/logos/png/wonka-wordmark-wonka-ai-cloud-blue.png",
+          "mimeType": "image/png",
+          "theme": "dark",
+          "bytes": 70067,
+          "sha256": "4a43440870a5533fdc183610dd1b28f5362c330f55136ccc21b208751e751efa",
+          "publicUrl": "/brand/logos/png/wonka-wordmark-wonka-ai-cloud-blue.png"
+        },
+        {
+          "path": "public/brand/logos/png/wonka-wordmark-wonka-ai-forest-green.png",
+          "mimeType": "image/png",
+          "theme": "light",
+          "bytes": 72767,
+          "sha256": "2cca34cd146559327de2cbdb7dc5348f4bcd89641302a434fffc44fc0846f50b",
+          "publicUrl": "/brand/logos/png/wonka-wordmark-wonka-ai-forest-green.png"
+        },
+        {
+          "path": "public/brand/logos/png/wonka-wordmark-wonka-ai-water-blue.png",
+          "mimeType": "image/png",
+          "theme": "all",
+          "bytes": 71256,
+          "sha256": "4038aac0ea37a55b04713b7bdee81ed5cc46ffdfd6ecf9e902d4b4a870b8d1ef",
+          "publicUrl": "/brand/logos/png/wonka-wordmark-wonka-ai-water-blue.png"
+        },
+        {
+          "path": "public/brand/logos/png/wonka-wordmark-wonka-ai-white.png",
+          "mimeType": "image/png",
+          "theme": "dark",
+          "bytes": 63435,
+          "sha256": "f4f05e4e88486ebc276c132255afd87af41877910306addf984e040acacb564f",
+          "publicUrl": "/brand/logos/png/wonka-wordmark-wonka-ai-white.png"
+        }
+      ],
+      "usage": {
+        "allowed": [
+          "Text-only identification when the icon is already present nearby or space is horizontal."
+        ],
+        "forbidden": [
+          "Stretching, rotating, outlining, or reconstructing the lockup.",
+          "Recoloring outside the five official brand colors (color.brand.*).",
+          "Placing white or Cloud Blue ink on light backgrounds, or black or Forest Green ink on dark backgrounds."
+        ],
+        "clearspace": "Keep clear space equal to at least the height of the lowercase o.",
+        "minSize": "120px wide for digital use."
+      },
+      "rights": {
+        "owner": "Wonka AI",
+        "license": "verification_required",
+        "expiresAt": null
+      },
+      "provenance": {
+        "source": "Wonka brand pack (Branding Assets, received 2026-10-02)",
+        "owner": "Wonka AI",
+        "approvedBy": null,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "asset.image.color-palette",
+      "name": "Wonka color palette sheet",
+      "kind": "image",
+      "lifecycle": "review_required",
+      "stability": "beta",
+      "files": [
+        {
+          "path": "public/brand/palette/wonka-color-palette.svg",
+          "mimeType": "image/svg+xml",
+          "theme": "all",
+          "bytes": 3062,
+          "sha256": "09dea2e0fe9ddf792827447f94b6751374f4609c811e5f961f91c7c441080af7",
+          "publicUrl": "/brand/palette/wonka-color-palette.svg"
+        },
+        {
+          "path": "public/brand/palette/wonka-color-palette.txt",
+          "mimeType": "text/plain",
+          "theme": "all",
+          "bytes": 440,
+          "sha256": "396f281965cb8e16703080bdd690557b9559a5e9e80becf046de64accab32f11",
+          "publicUrl": "/brand/palette/wonka-color-palette.txt"
+        }
+      ],
+      "usage": {
+        "allowed": [
+          "Reference sheet of the five official brand colors; tokens under color.brand.* are authoritative for implementation."
+        ],
+        "forbidden": [
+          "Sampling colors from the sheet instead of using color.brand.* tokens."
+        ],
+        "clearspace": null,
+        "minSize": null
+      },
+      "rights": {
+        "owner": "Wonka AI",
+        "license": "verification_required",
+        "expiresAt": null
+      },
+      "provenance": {
+        "source": "Wonka brand pack (Branding Assets, received 2026-10-02)",
+        "owner": "Wonka AI",
+        "approvedBy": null,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "asset.image.color-plate",
+      "name": "Solid brand color plates",
+      "kind": "image",
+      "lifecycle": "review_required",
+      "stability": "beta",
+      "files": [
+        {
+          "path": "public/brand/plates/plate-cloud-blue-1080x1920.png",
+          "mimeType": "image/png",
+          "theme": "all",
+          "bytes": 10389,
+          "sha256": "6332aa81b8a21c537f17db323dd8addca0515390b83dbfcf58e14b54d2cfbeee",
+          "publicUrl": "/brand/plates/plate-cloud-blue-1080x1920.png"
+        },
+        {
+          "path": "public/brand/plates/plate-cloud-blue-1920x1080.png",
+          "mimeType": "image/png",
+          "theme": "all",
+          "bytes": 8612,
+          "sha256": "101a2a0a67068dfeb5f2419084fe2a7bfbdf3b1e5807a5b04abf19d0af65f4ff",
+          "publicUrl": "/brand/plates/plate-cloud-blue-1920x1080.png"
+        },
+        {
+          "path": "public/brand/plates/plate-forest-green-1080x1920.png",
+          "mimeType": "image/png",
+          "theme": "all",
+          "bytes": 10388,
+          "sha256": "404483af652abf0b418edfff372462001e0fefdb9d68a02a41aa7d208c2fc727",
+          "publicUrl": "/brand/plates/plate-forest-green-1080x1920.png"
+        },
+        {
+          "path": "public/brand/plates/plate-forest-green-1920x1080.png",
+          "mimeType": "image/png",
+          "theme": "all",
+          "bytes": 8609,
+          "sha256": "685281a739c7f5da593fd1e2388e95312468ec82536cf47ce14fb1f324822139",
+          "publicUrl": "/brand/plates/plate-forest-green-1920x1080.png"
+        },
+        {
+          "path": "public/brand/plates/plate-water-blue-1080x1920.png",
+          "mimeType": "image/png",
+          "theme": "all",
+          "bytes": 10388,
+          "sha256": "37626762d2d1ee37da504fd26bf192bc1fbb3903c2448c34c8a8f00584270075",
+          "publicUrl": "/brand/plates/plate-water-blue-1080x1920.png"
+        },
+        {
+          "path": "public/brand/plates/plate-water-blue-1920x1080.png",
+          "mimeType": "image/png",
+          "theme": "all",
+          "bytes": 8611,
+          "sha256": "a991b8f26d12a4c77ca4e7a869d14299bb15d6ebb159dbc14e63291fb2b2a3c7",
+          "publicUrl": "/brand/plates/plate-water-blue-1920x1080.png"
+        },
+        {
+          "path": "public/brand/plates/plate-wonka-black-1080x1920.png",
+          "mimeType": "image/png",
+          "theme": "all",
+          "bytes": 10388,
+          "sha256": "9cb646d919ea8a8ba9c2adc2d65fc769823e6a3de54d6e694d8569e1a8e13d4c",
+          "publicUrl": "/brand/plates/plate-wonka-black-1080x1920.png"
+        },
+        {
+          "path": "public/brand/plates/plate-wonka-black-1920x1080.png",
+          "mimeType": "image/png",
+          "theme": "all",
+          "bytes": 8611,
+          "sha256": "c0228527aa2f7ea788ae7be69d368286092515b4b9fe74ebf8ebc7e7e0ece121",
+          "publicUrl": "/brand/plates/plate-wonka-black-1920x1080.png"
+        },
+        {
+          "path": "public/brand/plates/plate-wonka-white-1080x1920.png",
+          "mimeType": "image/png",
+          "theme": "all",
+          "bytes": 10386,
+          "sha256": "af0797abe055af595f00f54df46ad8f96db7be3abac93884b918d2873f6763ac",
+          "publicUrl": "/brand/plates/plate-wonka-white-1080x1920.png"
+        },
+        {
+          "path": "public/brand/plates/plate-wonka-white-1920x1080.png",
+          "mimeType": "image/png",
+          "theme": "all",
+          "bytes": 8609,
+          "sha256": "8d86c09aa2a8a5e6bb08cf7a7697f2f298f8ddbb0f023c4a9db7507c1135399d",
+          "publicUrl": "/brand/plates/plate-wonka-white-1920x1080.png"
+        }
+      ],
+      "usage": {
+        "allowed": [
+          "Full-bleed solid backgrounds for video edits and campaign frames in 16:9 and 9:16."
+        ],
+        "forbidden": [
+          "Using plates as interface surfaces; use semantic color tokens in code."
+        ],
+        "clearspace": null,
+        "minSize": null
+      },
+      "rights": {
+        "owner": "Wonka AI",
+        "license": "verification_required",
+        "expiresAt": null
+      },
+      "provenance": {
+        "source": "Wonka brand pack (Branding Assets, received 2026-10-02)",
+        "owner": "Wonka AI",
+        "approvedBy": null,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "asset.image.watermark",
+      "name": "Corner watermarks (70% opacity)",
+      "kind": "image",
+      "lifecycle": "review_required",
+      "stability": "beta",
+      "files": [
+        {
+          "path": "public/brand/watermarks/watermark-icon-black-70pct.png",
+          "mimeType": "image/png",
+          "theme": "all",
+          "bytes": 11216,
+          "sha256": "f670639587e4467704b58a879e824ba2a8e02e98fd74b607cf5097ea7b7b5359",
+          "publicUrl": "/brand/watermarks/watermark-icon-black-70pct.png"
+        },
+        {
+          "path": "public/brand/watermarks/watermark-icon-white-70pct.png",
+          "mimeType": "image/png",
+          "theme": "all",
+          "bytes": 13643,
+          "sha256": "72f84ef45a3705e8a346a5d52b04b5a25ae801468c366c8cf98ec4343fd5e6b7",
+          "publicUrl": "/brand/watermarks/watermark-icon-white-70pct.png"
+        },
+        {
+          "path": "public/brand/watermarks/watermark-wordmark-wonka-black-70pct.png",
+          "mimeType": "image/png",
+          "theme": "light",
+          "bytes": 24564,
+          "sha256": "cf4c764a6bf262f1b4018da5783d7a8b32257aa9895cbe4970e430848d511489",
+          "publicUrl": "/brand/watermarks/watermark-wordmark-wonka-black-70pct.png"
+        },
+        {
+          "path": "public/brand/watermarks/watermark-wordmark-wonka-white-70pct.png",
+          "mimeType": "image/png",
+          "theme": "dark",
+          "bytes": 31141,
+          "sha256": "baf73bf20f6e01b95b8b59eec4a6b5c90664dff14bd0733afa0701792b98f08e",
+          "publicUrl": "/brand/watermarks/watermark-wordmark-wonka-white-70pct.png"
+        }
+      ],
+      "usage": {
+        "allowed": [
+          "Corner watermark on videos and social stills: white on dark or photographic footage, black on light."
+        ],
+        "forbidden": [
+          "Placing watermarks over faces, captions, or key product UI.",
+          "Combining a watermark with another full logo in the same frame."
+        ],
+        "clearspace": "Keep at least 4% of the frame width from the edges.",
+        "minSize": null
+      },
+      "rights": {
+        "owner": "Wonka AI",
+        "license": "verification_required",
+        "expiresAt": null
+      },
+      "provenance": {
+        "source": "Wonka brand pack (Branding Assets, received 2026-10-02)",
+        "owner": "Wonka AI",
+        "approvedBy": null,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "asset.image.background",
+      "name": "Wonka painted backgrounds",
+      "kind": "image",
+      "lifecycle": "review_required",
+      "stability": "beta",
+      "files": [
+        {
+          "path": "public/brand/backgrounds/16x9/wonka-bg-hero-1920x1080.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 201552,
+          "sha256": "93092b6fffeeabd88750b6a0a3939f8a84521de9c1b96d78ef3239c5a722475c",
+          "publicUrl": "/brand/backgrounds/16x9/wonka-bg-hero-1920x1080.webp"
+        },
+        {
+          "path": "public/brand/backgrounds/16x9/wonka-bg-hills-1920x1080.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 201504,
+          "sha256": "16070f9ecd37bdad9e15538a8ab254b70c5ae97efd57658d751c3c34dc179521",
+          "publicUrl": "/brand/backgrounds/16x9/wonka-bg-hills-1920x1080.webp"
+        },
+        {
+          "path": "public/brand/backgrounds/16x9/wonka-bg-mountain-range-1920x1080.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 72146,
+          "sha256": "e9647c78f4ebbe22d397cfe1f9c5d320534035f7e76024f248d41e639f1c5a0a",
+          "publicUrl": "/brand/backgrounds/16x9/wonka-bg-mountain-range-1920x1080.webp"
+        },
+        {
+          "path": "public/brand/backgrounds/16x9/wonka-bg-river-1920x1080.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 161804,
+          "sha256": "eb66e155f9131898816068dc0ed685d0b5e7e1334194d3060ff2c2661aaa208b",
+          "publicUrl": "/brand/backgrounds/16x9/wonka-bg-river-1920x1080.webp"
+        },
+        {
+          "path": "public/brand/backgrounds/16x9/wonka-bg-snowy-mountain-1920x1080.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 91134,
+          "sha256": "5bb662496f7f5e00c97ed32af6ec872afcdea98ec774f99be2dc501900ccef71",
+          "publicUrl": "/brand/backgrounds/16x9/wonka-bg-snowy-mountain-1920x1080.webp"
+        },
+        {
+          "path": "public/brand/backgrounds/16x9/wonka-bg-waterfall-1920x1080.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 158848,
+          "sha256": "cf0b9010d3dfe32877b8b424234af87eb2e3837bd63b2b0104db90f3b03290b6",
+          "publicUrl": "/brand/backgrounds/16x9/wonka-bg-waterfall-1920x1080.webp"
+        },
+        {
+          "path": "public/brand/backgrounds/16x9/wonka-bg-wheatfield-1920x1080.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 128356,
+          "sha256": "bffce3e77f5e2a516a3f7eeace7bb1fc1bfc83b81e88db6e470a91658e06c2eb",
+          "publicUrl": "/brand/backgrounds/16x9/wonka-bg-wheatfield-1920x1080.webp"
+        },
+        {
+          "path": "public/brand/backgrounds/9x16/wonka-bg-hero-1080x1920.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 156154,
+          "sha256": "d4acdf15456714b610da336e267f241f06dd48c2e47bc246f17abb3f991915c9",
+          "publicUrl": "/brand/backgrounds/9x16/wonka-bg-hero-1080x1920.webp"
+        },
+        {
+          "path": "public/brand/backgrounds/9x16/wonka-bg-hills-1080x1920.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 156156,
+          "sha256": "ccf64f7517258ea5ccd0062d988cdafa5cf973be041f8a02b7c8987efaa78796",
+          "publicUrl": "/brand/backgrounds/9x16/wonka-bg-hills-1080x1920.webp"
+        },
+        {
+          "path": "public/brand/backgrounds/9x16/wonka-bg-river-1080x1920.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 123872,
+          "sha256": "adf2f9838c8b2e033f9293475bb557edf61c10d626e18efe5b16f6f40997d771",
+          "publicUrl": "/brand/backgrounds/9x16/wonka-bg-river-1080x1920.webp"
+        },
+        {
+          "path": "public/brand/backgrounds/9x16/wonka-bg-waterfall-1080x1920.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 117050,
+          "sha256": "2960e8c82a972be4e011261458caee7cb229fb40682c04b8cf93664df4e93949",
+          "publicUrl": "/brand/backgrounds/9x16/wonka-bg-waterfall-1080x1920.webp"
+        }
+      ],
+      "usage": {
+        "allowed": [
+          "Painterly brand imagery (hero, hills, river, waterfall, wheatfield, mountains) for hero sections, video backgrounds, slide covers, and social posts."
+        ],
+        "forbidden": [
+          "Cropping into unrecognizable textures, recoloring, or overlaying with off-brand gradients.",
+          "Placing body text over busy areas without a legible overlay."
+        ],
+        "clearspace": null,
+        "minSize": null
+      },
+      "rights": {
+        "owner": "Wonka AI",
+        "license": "verification_required",
+        "expiresAt": null
+      },
+      "provenance": {
+        "source": "Wonka brand pack (Branding Assets, received 2026-10-02)",
+        "owner": "Wonka AI",
+        "approvedBy": null,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "asset.image.avatar",
+      "name": "Profile avatars on painted backgrounds",
+      "kind": "image",
+      "lifecycle": "review_required",
+      "stability": "beta",
+      "files": [
+        {
+          "path": "public/brand/avatars/wonka-avatar-hero-circle.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 101118,
+          "sha256": "94f4d01005f0871e2517f13f338cbd0d0dc089bd4a93fdd6b510087e9b139f9d",
+          "publicUrl": "/brand/avatars/wonka-avatar-hero-circle.webp"
+        },
+        {
+          "path": "public/brand/avatars/wonka-avatar-hero-rounded-app-icon.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 98694,
+          "sha256": "506b1843b0eb7c1510b05cf820cf515df77fba4a1b82c05cde8bea33eab03c50",
+          "publicUrl": "/brand/avatars/wonka-avatar-hero-rounded-app-icon.webp"
+        },
+        {
+          "path": "public/brand/avatars/wonka-avatar-hero-square.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 93946,
+          "sha256": "7e4be1ec5b6985e945d6bb63a944755a9f90d4d4ca1b2f5ee318d8249783aadc",
+          "publicUrl": "/brand/avatars/wonka-avatar-hero-square.webp"
+        },
+        {
+          "path": "public/brand/avatars/wonka-avatar-hills-circle.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 100136,
+          "sha256": "012b8e7bcaad022f1f006a62b7c4189f97d0c70182a590016fc5e067c3d76534",
+          "publicUrl": "/brand/avatars/wonka-avatar-hills-circle.webp"
+        },
+        {
+          "path": "public/brand/avatars/wonka-avatar-hills-rounded-app-icon.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 98784,
+          "sha256": "7d0aa929f4d1c3741ae70bd3b58a2791da47ecca617667cdcb1f31a67945de97",
+          "publicUrl": "/brand/avatars/wonka-avatar-hills-rounded-app-icon.webp"
+        },
+        {
+          "path": "public/brand/avatars/wonka-avatar-hills-square.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 94064,
+          "sha256": "82bb16dc55b0803cbe6cda07f2f0bd4ff5e259c9f122b31bd8f74bb28fb85ee5",
+          "publicUrl": "/brand/avatars/wonka-avatar-hills-square.webp"
+        },
+        {
+          "path": "public/brand/avatars/wonka-avatar-mountain-range-circle.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 58160,
+          "sha256": "b32e5555454259147f8cdea541134ab1e0f3612ccada783ef94dce7da49098b8",
+          "publicUrl": "/brand/avatars/wonka-avatar-mountain-range-circle.webp"
+        },
+        {
+          "path": "public/brand/avatars/wonka-avatar-mountain-range-square.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 49132,
+          "sha256": "3acdf5f98deada749cba006ff389c90c7bfe7708748a5cacab2bde93a299b5a5",
+          "publicUrl": "/brand/avatars/wonka-avatar-mountain-range-square.webp"
+        },
+        {
+          "path": "public/brand/avatars/wonka-avatar-river-circle.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 96958,
+          "sha256": "41abbe5ea4b769693cf661d77d3d9cff478dba49861aa490b3ca14847411bc73",
+          "publicUrl": "/brand/avatars/wonka-avatar-river-circle.webp"
+        },
+        {
+          "path": "public/brand/avatars/wonka-avatar-river-rounded-app-icon.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 109042,
+          "sha256": "8de98cdfb4e0b3f70d5741415b5c479555c689d8c6c3cd1e78e7afd86cc8b6cd",
+          "publicUrl": "/brand/avatars/wonka-avatar-river-rounded-app-icon.webp"
+        },
+        {
+          "path": "public/brand/avatars/wonka-avatar-river-square.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 97624,
+          "sha256": "e50a88641337983238590b3677d4674010b83afe4d1c269b6d8dde7ce3b27c80",
+          "publicUrl": "/brand/avatars/wonka-avatar-river-square.webp"
+        },
+        {
+          "path": "public/brand/avatars/wonka-avatar-snowy-mountain-circle.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 72084,
+          "sha256": "7a7b315cb8a8d9df8212c34bf1b1d831292c27e24d361719c045a4c3e267f307",
+          "publicUrl": "/brand/avatars/wonka-avatar-snowy-mountain-circle.webp"
+        },
+        {
+          "path": "public/brand/avatars/wonka-avatar-snowy-mountain-square.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 63054,
+          "sha256": "828983b6b981401ee2ddb55d7d46468ec434dae6c0a6c835bd2f62f1bcdcd63e",
+          "publicUrl": "/brand/avatars/wonka-avatar-snowy-mountain-square.webp"
+        },
+        {
+          "path": "public/brand/avatars/wonka-avatar-waterfall-circle.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 100980,
+          "sha256": "13e8820dbb561c2b56f31b6405b2322be392ae4ea6d54fd6989b68cca0bdd70b",
+          "publicUrl": "/brand/avatars/wonka-avatar-waterfall-circle.webp"
+        },
+        {
+          "path": "public/brand/avatars/wonka-avatar-waterfall-rounded-app-icon.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 108856,
+          "sha256": "a3050642cbf55be03b07a0c4885207abef3646f3c78ca14cb603d716a6e04c77",
+          "publicUrl": "/brand/avatars/wonka-avatar-waterfall-rounded-app-icon.webp"
+        },
+        {
+          "path": "public/brand/avatars/wonka-avatar-waterfall-square.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 106346,
+          "sha256": "e5c40bfdf8df221a3ac0d11bacca00250cfe0157a4b57916109dc9325b171c4d",
+          "publicUrl": "/brand/avatars/wonka-avatar-waterfall-square.webp"
+        },
+        {
+          "path": "public/brand/avatars/wonka-avatar-wheatfield-circle.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 91124,
+          "sha256": "27a1d7a18c28fcc4686f99fe1ab8a108b37503e8ba346a364752a988841def30",
+          "publicUrl": "/brand/avatars/wonka-avatar-wheatfield-circle.webp"
+        },
+        {
+          "path": "public/brand/avatars/wonka-avatar-wheatfield-square.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 93772,
+          "sha256": "880f736fe3c85a39662a9a7593a014f233bd917a2e78f19a14fe29ce9f613e65",
+          "publicUrl": "/brand/avatars/wonka-avatar-wheatfield-square.webp"
+        }
+      ],
+      "usage": {
+        "allowed": [
+          "Social profile pictures, app icons, and agent avatars (square, circle, rounded app-icon)."
+        ],
+        "forbidden": [
+          "Adding extra text or badges inside the avatar."
+        ],
+        "clearspace": null,
+        "minSize": "32px for digital use."
+      },
+      "rights": {
+        "owner": "Wonka AI",
+        "license": "verification_required",
+        "expiresAt": null
+      },
+      "provenance": {
+        "source": "Wonka brand pack (Branding Assets, received 2026-10-02)",
+        "owner": "Wonka AI",
+        "approvedBy": null,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "asset.image.logo-card",
+      "name": "Logo cards on painted backgrounds",
+      "kind": "image",
+      "lifecycle": "review_required",
+      "stability": "beta",
+      "files": [
+        {
+          "path": "public/brand/logo-cards/wonka-logo-card-hero-16x9-with-tagline.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 139282,
+          "sha256": "dba897a701280299d9bd6d9989e6f5bada9c850143c38162ea3e4151542ebfc8",
+          "publicUrl": "/brand/logo-cards/wonka-logo-card-hero-16x9-with-tagline.webp"
+        },
+        {
+          "path": "public/brand/logo-cards/wonka-logo-card-hero-16x9.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 147912,
+          "sha256": "b5c47ba3af4deea6032fbb62a98011a48430473c8c7fd124ca122fdabc2056c7",
+          "publicUrl": "/brand/logo-cards/wonka-logo-card-hero-16x9.webp"
+        },
+        {
+          "path": "public/brand/logo-cards/wonka-logo-card-hero-1x1-with-tagline.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 55502,
+          "sha256": "7935145dec9808d3104cc2d6c95f2fec6c3c2a8571570fa8aca7bb3405d55f1d",
+          "publicUrl": "/brand/logo-cards/wonka-logo-card-hero-1x1-with-tagline.webp"
+        },
+        {
+          "path": "public/brand/logo-cards/wonka-logo-card-hero-1x1.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 51112,
+          "sha256": "bc217b465b13f84951f6a04e1189b84d7e27a7860e863755142952c807b2924e",
+          "publicUrl": "/brand/logo-cards/wonka-logo-card-hero-1x1.webp"
+        },
+        {
+          "path": "public/brand/logo-cards/wonka-logo-card-hero-9x16-with-tagline.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 79164,
+          "sha256": "937a6c223c8dd558fa7869a2b0d03c8b6e7f84240324db397e972c9f04532837",
+          "publicUrl": "/brand/logo-cards/wonka-logo-card-hero-9x16-with-tagline.webp"
+        },
+        {
+          "path": "public/brand/logo-cards/wonka-logo-card-hero-9x16.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 74884,
+          "sha256": "f343dab74b1ee2038b03304fc0cc02d8c4657985fc75f346c1e0852ff3ee2880",
+          "publicUrl": "/brand/logo-cards/wonka-logo-card-hero-9x16.webp"
+        },
+        {
+          "path": "public/brand/logo-cards/wonka-logo-card-hills-16x9-with-tagline.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 138196,
+          "sha256": "d3301d46b40e9c01a517c2fc19c40bebb99510c2d9e03a5bc450fd29f52d57b1",
+          "publicUrl": "/brand/logo-cards/wonka-logo-card-hills-16x9-with-tagline.webp"
+        },
+        {
+          "path": "public/brand/logo-cards/wonka-logo-card-hills-16x9.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 147836,
+          "sha256": "f20366f2c95b1bd2a712cf2da2ad24e9a675573b1eb0188d618bcf38df84a752",
+          "publicUrl": "/brand/logo-cards/wonka-logo-card-hills-16x9.webp"
+        },
+        {
+          "path": "public/brand/logo-cards/wonka-logo-card-hills-1x1-with-tagline.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 55506,
+          "sha256": "b5efe40562f20d60e9b1e2112c31bdae35bdd6436f096928dc8527bc6a4b2dcf",
+          "publicUrl": "/brand/logo-cards/wonka-logo-card-hills-1x1-with-tagline.webp"
+        },
+        {
+          "path": "public/brand/logo-cards/wonka-logo-card-hills-1x1.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 51008,
+          "sha256": "60efb2481c6c5ee3895d0bdf3ae560c54474bba82572a290959f139e5470a42b",
+          "publicUrl": "/brand/logo-cards/wonka-logo-card-hills-1x1.webp"
+        },
+        {
+          "path": "public/brand/logo-cards/wonka-logo-card-hills-9x16-with-tagline.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 78974,
+          "sha256": "c5d297a5d077296f32c45e8d76e9f7d4ae656d1afd749b946393ff33a84efac5",
+          "publicUrl": "/brand/logo-cards/wonka-logo-card-hills-9x16-with-tagline.webp"
+        },
+        {
+          "path": "public/brand/logo-cards/wonka-logo-card-hills-9x16.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 74770,
+          "sha256": "dee6c3d44aab776f12bb8ec2a88254c53bc7466e90361fb41908854f789869bb",
+          "publicUrl": "/brand/logo-cards/wonka-logo-card-hills-9x16.webp"
+        },
+        {
+          "path": "public/brand/logo-cards/wonka-logo-card-mountain-range-16x9.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 53430,
+          "sha256": "b034df1e88195bb8a7290c86c645009bb9544122110518b08e70b0bb0ce5ac36",
+          "publicUrl": "/brand/logo-cards/wonka-logo-card-mountain-range-16x9.webp"
+        },
+        {
+          "path": "public/brand/logo-cards/wonka-logo-card-mountain-range-1x1.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 28774,
+          "sha256": "7f8c725e5a84767b97c8460a4fe738a6507d873ade4da74cf02cece8c1b06a10",
+          "publicUrl": "/brand/logo-cards/wonka-logo-card-mountain-range-1x1.webp"
+        },
+        {
+          "path": "public/brand/logo-cards/wonka-logo-card-mountain-range-9x16.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 36886,
+          "sha256": "f41cac93bdd239b237da0b0bdff92db752718b2809deca972edb87800a73732a",
+          "publicUrl": "/brand/logo-cards/wonka-logo-card-mountain-range-9x16.webp"
+        },
+        {
+          "path": "public/brand/logo-cards/wonka-logo-card-river-16x9-with-tagline.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 92962,
+          "sha256": "a7253fdf6586ac461c0cc511719a67ac94b5b3d5b8a27e7e7840233e22ef3434",
+          "publicUrl": "/brand/logo-cards/wonka-logo-card-river-16x9-with-tagline.webp"
+        },
+        {
+          "path": "public/brand/logo-cards/wonka-logo-card-river-16x9.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 90486,
+          "sha256": "e0b571d99664e14d2f5dd2ab93ec6fbe94013c23a3faf98e2bf8aa7e159d3e49",
+          "publicUrl": "/brand/logo-cards/wonka-logo-card-river-16x9.webp"
+        },
+        {
+          "path": "public/brand/logo-cards/wonka-logo-card-river-1x1-with-tagline.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 59490,
+          "sha256": "18b83964d2ff082245629cf6bddc1285d2948564646863e45f412e530f77ca7c",
+          "publicUrl": "/brand/logo-cards/wonka-logo-card-river-1x1-with-tagline.webp"
+        },
+        {
+          "path": "public/brand/logo-cards/wonka-logo-card-river-1x1.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 59516,
+          "sha256": "6b189f7670a5244fa1c09059102e0eb9969fe1354f1fbf1283b9dcfbfd2657fc",
+          "publicUrl": "/brand/logo-cards/wonka-logo-card-river-1x1.webp"
+        },
+        {
+          "path": "public/brand/logo-cards/wonka-logo-card-river-9x16-with-tagline.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 78442,
+          "sha256": "513b5e48c5b443636165e8f76ecd54f6f948010eb031a62591f4311d05f11e21",
+          "publicUrl": "/brand/logo-cards/wonka-logo-card-river-9x16-with-tagline.webp"
+        },
+        {
+          "path": "public/brand/logo-cards/wonka-logo-card-river-9x16.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 74886,
+          "sha256": "dce96f8ac064d778b2deb540c210f6238cf966b477140cb5557337240368eb0b",
+          "publicUrl": "/brand/logo-cards/wonka-logo-card-river-9x16.webp"
+        },
+        {
+          "path": "public/brand/logo-cards/wonka-logo-card-snowy-mountain-16x9.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 58148,
+          "sha256": "3b1430de13d710e859156bb77a9ada3f7f940e928c46a94055a92fcbf70c23da",
+          "publicUrl": "/brand/logo-cards/wonka-logo-card-snowy-mountain-16x9.webp"
+        },
+        {
+          "path": "public/brand/logo-cards/wonka-logo-card-snowy-mountain-1x1.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 39792,
+          "sha256": "33f56c77ac01f98f4b3b71bd297c38d6785ec16719d6eccfad0c9227be89d6b5",
+          "publicUrl": "/brand/logo-cards/wonka-logo-card-snowy-mountain-1x1.webp"
+        },
+        {
+          "path": "public/brand/logo-cards/wonka-logo-card-snowy-mountain-9x16.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 51934,
+          "sha256": "153c50d2c1113e8d66f075b352b0b9aa5baf4c8d502c215001daa38b2a21772f",
+          "publicUrl": "/brand/logo-cards/wonka-logo-card-snowy-mountain-9x16.webp"
+        },
+        {
+          "path": "public/brand/logo-cards/wonka-logo-card-waterfall-16x9-with-tagline.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 101910,
+          "sha256": "894bca6d7cffd6fc602840e749379215ff4ab402acede24c77e75e7df47248c8",
+          "publicUrl": "/brand/logo-cards/wonka-logo-card-waterfall-16x9-with-tagline.webp"
+        },
+        {
+          "path": "public/brand/logo-cards/wonka-logo-card-waterfall-16x9.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 103504,
+          "sha256": "6da6236d9e889c2f5f7c35ded08e64d1fa7a36f08d8502811b99c6745f79afdc",
+          "publicUrl": "/brand/logo-cards/wonka-logo-card-waterfall-16x9.webp"
+        },
+        {
+          "path": "public/brand/logo-cards/wonka-logo-card-waterfall-1x1-with-tagline.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 66772,
+          "sha256": "cdc858305ae7b89a9fa2602bf6fa7770e113f0ab8c3dde90f74bb63083d1d722",
+          "publicUrl": "/brand/logo-cards/wonka-logo-card-waterfall-1x1-with-tagline.webp"
+        },
+        {
+          "path": "public/brand/logo-cards/wonka-logo-card-waterfall-1x1.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 61696,
+          "sha256": "907dd11168d7c771d2b1953b0a43708947a460af45dbed3c52da09c14c260df1",
+          "publicUrl": "/brand/logo-cards/wonka-logo-card-waterfall-1x1.webp"
+        },
+        {
+          "path": "public/brand/logo-cards/wonka-logo-card-waterfall-9x16-with-tagline.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 78906,
+          "sha256": "ad7974f441b0026e13e03d71285cacbdb9732f0026de3c72cb2c30de3b00b38d",
+          "publicUrl": "/brand/logo-cards/wonka-logo-card-waterfall-9x16-with-tagline.webp"
+        },
+        {
+          "path": "public/brand/logo-cards/wonka-logo-card-waterfall-9x16.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 74368,
+          "sha256": "db97ea8ed87dbde94f47f5e37eb60ca3ce104dae21b2a700074fc07ce08bcb43",
+          "publicUrl": "/brand/logo-cards/wonka-logo-card-waterfall-9x16.webp"
+        },
+        {
+          "path": "public/brand/logo-cards/wonka-logo-card-wheatfield-16x9.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 84596,
+          "sha256": "118acd46db81e40e83ba8180be90844264bfcd7eb0b8d9f1c16038e84c43e48b",
+          "publicUrl": "/brand/logo-cards/wonka-logo-card-wheatfield-16x9.webp"
+        },
+        {
+          "path": "public/brand/logo-cards/wonka-logo-card-wheatfield-1x1.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 54202,
+          "sha256": "a929522c3cc04d87c1f1be05d15715ec8984c688de64cc073d03d73ca41101e2",
+          "publicUrl": "/brand/logo-cards/wonka-logo-card-wheatfield-1x1.webp"
+        },
+        {
+          "path": "public/brand/logo-cards/wonka-logo-card-wheatfield-9x16.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 70076,
+          "sha256": "7116e1d0e9bb1a5a9b5211f56a84f2041a7500475d022d1648c13de50b29e446",
+          "publicUrl": "/brand/logo-cards/wonka-logo-card-wheatfield-9x16.webp"
+        }
+      ],
+      "usage": {
+        "allowed": [
+          "Stills for first or last frames, covers, and social posts in 16:9, 9:16, and 1:1, with or without tagline."
+        ],
+        "forbidden": [
+          "Cropping the logo or tagline out of the safe area."
+        ],
+        "clearspace": null,
+        "minSize": null
+      },
+      "rights": {
+        "owner": "Wonka AI",
+        "license": "verification_required",
+        "expiresAt": null
+      },
+      "provenance": {
+        "source": "Wonka brand pack (Branding Assets, received 2026-10-02)",
+        "owner": "Wonka AI",
+        "approvedBy": null,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "asset.image.window-icon",
+      "name": "Window icon (painting through the bars)",
+      "kind": "image",
+      "lifecycle": "review_required",
+      "stability": "beta",
+      "files": [
+        {
+          "path": "public/brand/window-icon/wonka-window-icon-hero-on-black.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 92618,
+          "sha256": "1adb748c16f5409c7580aad8ce46a3231a7b8dcda874f059d266072ff696cced",
+          "publicUrl": "/brand/window-icon/wonka-window-icon-hero-on-black.webp"
+        },
+        {
+          "path": "public/brand/window-icon/wonka-window-icon-hero-on-white.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 92608,
+          "sha256": "4a73c3c8ec69d2da9218f548c2b42568620eab839bc9e6e3f77db48f819385c0",
+          "publicUrl": "/brand/window-icon/wonka-window-icon-hero-on-white.webp"
+        },
+        {
+          "path": "public/brand/window-icon/wonka-window-icon-hero-transparent.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 143326,
+          "sha256": "928e4478fd96f95ba57e6222d6fb3bb0a7ce4c99f5342899a3ed9e42e8379653",
+          "publicUrl": "/brand/window-icon/wonka-window-icon-hero-transparent.webp"
+        },
+        {
+          "path": "public/brand/window-icon/wonka-window-icon-hills-on-black.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 92532,
+          "sha256": "6b72c2002ee2945f58607771302d644621d2bf8032c19f27ba06a51c188df2c3",
+          "publicUrl": "/brand/window-icon/wonka-window-icon-hills-on-black.webp"
+        },
+        {
+          "path": "public/brand/window-icon/wonka-window-icon-hills-on-white.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 91986,
+          "sha256": "f038faa5a3a4e4b63045586318e72c851f5dce56c51a06c1de9e1a41beaa4732",
+          "publicUrl": "/brand/window-icon/wonka-window-icon-hills-on-white.webp"
+        },
+        {
+          "path": "public/brand/window-icon/wonka-window-icon-hills-transparent.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 144292,
+          "sha256": "72db75a4b5e8c6daadf8841b799e864ab7e4ce2ff18df768dc1280f104ca37d2",
+          "publicUrl": "/brand/window-icon/wonka-window-icon-hills-transparent.webp"
+        },
+        {
+          "path": "public/brand/window-icon/wonka-window-icon-river-on-black.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 85078,
+          "sha256": "6cbaee87e4986877d224fcaa0d07d6d5a8c675a3ae45dbca0508f0a1e3a981ec",
+          "publicUrl": "/brand/window-icon/wonka-window-icon-river-on-black.webp"
+        },
+        {
+          "path": "public/brand/window-icon/wonka-window-icon-river-on-white.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 83504,
+          "sha256": "0b344d961ee3962a89e22d03ea00508f8915d9a52c91d9e6eadee505f2dd8b97",
+          "publicUrl": "/brand/window-icon/wonka-window-icon-river-on-white.webp"
+        },
+        {
+          "path": "public/brand/window-icon/wonka-window-icon-river-transparent.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 129266,
+          "sha256": "ef4ec9e41d74508d5955abd8cb08ea42e9cc360c91688df364c2a0c58d0d2bc6",
+          "publicUrl": "/brand/window-icon/wonka-window-icon-river-transparent.webp"
+        },
+        {
+          "path": "public/brand/window-icon/wonka-window-icon-waterfall-on-black.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 89024,
+          "sha256": "ca382890e1ab711d8a46e0bbb0a88b62bfbfaf41b0c962e0704f05b4e6789b25",
+          "publicUrl": "/brand/window-icon/wonka-window-icon-waterfall-on-black.webp"
+        },
+        {
+          "path": "public/brand/window-icon/wonka-window-icon-waterfall-on-white.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 85552,
+          "sha256": "244e27e0fd783ac7f8b97b4203c523ded7001cc7662e435628de8182d729085e",
+          "publicUrl": "/brand/window-icon/wonka-window-icon-waterfall-on-white.webp"
+        },
+        {
+          "path": "public/brand/window-icon/wonka-window-icon-waterfall-transparent.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 130808,
+          "sha256": "8a286f1336478450610c310eb09f978335e1c0777730257dff7e3cb09a028140",
+          "publicUrl": "/brand/window-icon/wonka-window-icon-waterfall-transparent.webp"
+        }
+      ],
+      "usage": {
+        "allowed": [
+          "Expressive icon treatment for campaign, social, and motion; transparent versions drop onto any color."
+        ],
+        "forbidden": [
+          "Using the window icon below 48px, where the painting no longer reads; use asset.logo.mark instead."
+        ],
+        "clearspace": null,
+        "minSize": null
+      },
+      "rights": {
+        "owner": "Wonka AI",
+        "license": "verification_required",
+        "expiresAt": null
+      },
+      "provenance": {
+        "source": "Wonka brand pack (Branding Assets, received 2026-10-02)",
+        "owner": "Wonka AI",
+        "approvedBy": null,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "asset.image.window-wordmark",
+      "name": "Window wordmark (painting through the letters)",
+      "kind": "image",
+      "lifecycle": "review_required",
+      "stability": "beta",
+      "files": [
+        {
+          "path": "public/brand/window-wordmark/wonka-window-logo-hero-on-black.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 57634,
+          "sha256": "c4338727e3e7881de2a62b1bc410cfb51ad099e89101ec620ff376df8cc2c993",
+          "publicUrl": "/brand/window-wordmark/wonka-window-logo-hero-on-black.webp"
+        },
+        {
+          "path": "public/brand/window-wordmark/wonka-window-logo-hero-on-white.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 50778,
+          "sha256": "166759ac72609fc18827fda7b45675f0932e9ae7b30544944d34a4cc5887054c",
+          "publicUrl": "/brand/window-wordmark/wonka-window-logo-hero-on-white.webp"
+        },
+        {
+          "path": "public/brand/window-wordmark/wonka-window-logo-hero-transparent.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 73644,
+          "sha256": "2b0feb279caf13784ec878cd0e29df8104174b0ba679d717ba3b2bb06855c944",
+          "publicUrl": "/brand/window-wordmark/wonka-window-logo-hero-transparent.webp"
+        },
+        {
+          "path": "public/brand/window-wordmark/wonka-window-logo-hills-on-black.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 57672,
+          "sha256": "3397986065a0d25fdaec5254ae7f6e6c945ecd4922b2a74f7eb406988905287f",
+          "publicUrl": "/brand/window-wordmark/wonka-window-logo-hills-on-black.webp"
+        },
+        {
+          "path": "public/brand/window-wordmark/wonka-window-logo-hills-on-white.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 50930,
+          "sha256": "268e2f5dc46d875416d1d0bf0442fcf32079db8becaa59c57fdcc9ffe15824ef",
+          "publicUrl": "/brand/window-wordmark/wonka-window-logo-hills-on-white.webp"
+        },
+        {
+          "path": "public/brand/window-wordmark/wonka-window-logo-hills-transparent.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 70942,
+          "sha256": "a53069d3bb27f5ccec62a118b4b775a922799372532596846d8297f8c588aa77",
+          "publicUrl": "/brand/window-wordmark/wonka-window-logo-hills-transparent.webp"
+        },
+        {
+          "path": "public/brand/window-wordmark/wonka-window-logo-river-on-black.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 58772,
+          "sha256": "e833b4edc3deefb62b760f9037fb16ffe29df4927eeb3e855af8cb9fe6e7e9ef",
+          "publicUrl": "/brand/window-wordmark/wonka-window-logo-river-on-black.webp"
+        },
+        {
+          "path": "public/brand/window-wordmark/wonka-window-logo-river-on-white.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 48496,
+          "sha256": "48f20d5e15bc90094154ea2f077a4f9a90e33d57d60f489f7161206388b9bf1c",
+          "publicUrl": "/brand/window-wordmark/wonka-window-logo-river-on-white.webp"
+        },
+        {
+          "path": "public/brand/window-wordmark/wonka-window-logo-river-transparent.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 72564,
+          "sha256": "2a9cd4168fdbab76394866d91f8c24c8138aca50c2ca62f81029eacaf1076f19",
+          "publicUrl": "/brand/window-wordmark/wonka-window-logo-river-transparent.webp"
+        }
+      ],
+      "usage": {
+        "allowed": [
+          "Expressive wordmark for covers, hero visuals, and campaign headers."
+        ],
+        "forbidden": [
+          "Using in navigation or small UI; use asset.logo.wordmark instead."
+        ],
+        "clearspace": null,
+        "minSize": null
+      },
+      "rights": {
+        "owner": "Wonka AI",
+        "license": "verification_required",
+        "expiresAt": null
+      },
+      "provenance": {
+        "source": "Wonka brand pack (Branding Assets, received 2026-10-02)",
+        "owner": "Wonka AI",
+        "approvedBy": null,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "asset.image.glass-icon",
+      "name": "Frosted-glass icon",
+      "kind": "image",
+      "lifecycle": "review_required",
+      "stability": "beta",
+      "files": [
+        {
+          "path": "public/brand/glass-icon/wonka-glass-icon-hero-square.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 120458,
+          "sha256": "a51632d2c325d3cd3bc2e06e06ddbe573851a689af1fd3dc87d7972623840f8c",
+          "publicUrl": "/brand/glass-icon/wonka-glass-icon-hero-square.webp"
+        },
+        {
+          "path": "public/brand/glass-icon/wonka-glass-icon-hills-square.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 120476,
+          "sha256": "55973b6e002d39a1de665a961198777be24a4fea7a0f8696d2f4fc7d97a40b5f",
+          "publicUrl": "/brand/glass-icon/wonka-glass-icon-hills-square.webp"
+        },
+        {
+          "path": "public/brand/glass-icon/wonka-glass-icon-river-square.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 123246,
+          "sha256": "c32acea1e54b96def0bb3e9c65f5e0e61d96594f3a1ac298e8d12efae995174a",
+          "publicUrl": "/brand/glass-icon/wonka-glass-icon-river-square.webp"
+        },
+        {
+          "path": "public/brand/glass-icon/wonka-glass-icon-waterfall-square.webp",
+          "mimeType": "image/webp",
+          "theme": "all",
+          "bytes": 122960,
+          "sha256": "4918b0016ce3edd573b9995dac6c83143d2f146200072665474bb34f42ea9cc5",
+          "publicUrl": "/brand/glass-icon/wonka-glass-icon-waterfall-square.webp"
+        }
+      ],
+      "usage": {
+        "allowed": [
+          "Premium square icon for covers, social, and launch visuals."
+        ],
+        "forbidden": [
+          "Using as a favicon or below 64px."
+        ],
+        "clearspace": null,
+        "minSize": null
+      },
+      "rights": {
+        "owner": "Wonka AI",
+        "license": "verification_required",
+        "expiresAt": null
+      },
+      "provenance": {
+        "source": "Wonka brand pack (Branding Assets, received 2026-10-02)",
+        "owner": "Wonka AI",
+        "approvedBy": null,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "asset.image.caption-styles",
+      "name": "Video caption styles",
+      "kind": "image",
+      "lifecycle": "review_required",
+      "stability": "beta",
+      "files": [
+        {
+          "path": "public/brand/captions/wonka-caption-styles-preview.png",
+          "mimeType": "image/png",
+          "theme": "all",
+          "bytes": 729415,
+          "sha256": "86f4e6d8c97df5b40cce2745e88a40589224c2c68f770836629ffc899436f9c8",
+          "publicUrl": "/brand/captions/wonka-caption-styles-preview.png"
+        },
+        {
+          "path": "public/brand/captions/wonka-caption-styles.json",
+          "mimeType": "application/json",
+          "theme": "all",
+          "bytes": 1929,
+          "sha256": "766c167272db7a52b4c34fd57b4a0fa9ddf406a257cca859d401a2a6a1f9a7ff",
+          "publicUrl": "/brand/captions/wonka-caption-styles.json"
+        }
+      ],
+      "usage": {
+        "allowed": [
+          "Five caption presets for short-form video (CapCut setup). Preview and machine-readable style spec."
+        ],
+        "forbidden": [
+          "Treating the caption font (Charter) as a brand font; web and product typography stay on font.family.sans and font.family.serif."
+        ],
+        "clearspace": null,
+        "minSize": null
+      },
+      "rights": {
+        "owner": "Wonka AI",
+        "license": "verification_required",
+        "expiresAt": null
+      },
+      "provenance": {
+        "source": "Wonka brand pack (Branding Assets, received 2026-10-02)",
+        "owner": "Wonka AI",
+        "approvedBy": null,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "asset.video.logo-reveal",
+      "name": "Logo reveal (3 s, transparent)",
+      "kind": "video",
+      "lifecycle": "review_required",
+      "stability": "beta",
+      "files": [
+        {
+          "path": "public/brand/motion/wonka-logo-reveal-black-landscape.webm",
+          "mimeType": "video/webm",
+          "theme": "light",
+          "bytes": 62999,
+          "sha256": "d27006b5f938e6969bc9db1a413f4b44e243890c5ffc5ee5b5f2e65ae67dea60",
+          "publicUrl": "/brand/motion/wonka-logo-reveal-black-landscape.webm"
+        },
+        {
+          "path": "public/brand/motion/wonka-logo-reveal-black-vertical.webm",
+          "mimeType": "video/webm",
+          "theme": "light",
+          "bytes": 60000,
+          "sha256": "4cf30023209440be01e91616a2fbe56d1eee94330bf4acbe615cbdc1bbbca893",
+          "publicUrl": "/brand/motion/wonka-logo-reveal-black-vertical.webm"
+        },
+        {
+          "path": "public/brand/motion/wonka-logo-reveal-white-landscape.webm",
+          "mimeType": "video/webm",
+          "theme": "dark",
+          "bytes": 116114,
+          "sha256": "6f74a9166192e5f087f2d72dbe758831e6079eaf306c2cd133fbf8af3230dac2",
+          "publicUrl": "/brand/motion/wonka-logo-reveal-white-landscape.webm"
+        },
+        {
+          "path": "public/brand/motion/wonka-logo-reveal-white-vertical.webm",
+          "mimeType": "video/webm",
+          "theme": "dark",
+          "bytes": 107175,
+          "sha256": "ba8088be97eb64c695b19542c7e2d200f3f4714dc59416efd58e9c0dd0e247d3",
+          "publicUrl": "/brand/motion/wonka-logo-reveal-white-vertical.webm"
+        }
+      ],
+      "usage": {
+        "allowed": [
+          "Opening or closing reveal on video: white ink on dark or photographic footage, black ink on light."
+        ],
+        "forbidden": [
+          "Speeding up, reversing, or re-timing the animation.",
+          "Using without a reduced-motion fallback on the web."
+        ],
+        "clearspace": null,
+        "minSize": null
+      },
+      "rights": {
+        "owner": "Wonka AI",
+        "license": "verification_required",
+        "expiresAt": null
+      },
+      "provenance": {
+        "source": "Wonka brand pack (Branding Assets, received 2026-10-02)",
+        "owner": "Wonka AI",
+        "approvedBy": null,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "asset.video.icon-loop",
+      "name": "Icon loop (4 s, seamless, transparent)",
+      "kind": "video",
+      "lifecycle": "review_required",
+      "stability": "beta",
+      "files": [
+        {
+          "path": "public/brand/motion/wonka-icon-loop-black-square.webm",
+          "mimeType": "video/webm",
+          "theme": "light",
+          "bytes": 78264,
+          "sha256": "a11643149100e8e1c49860e8407ad3705fc6cd061e8686ebbdcd5e36b8fce299",
+          "publicUrl": "/brand/motion/wonka-icon-loop-black-square.webm"
+        },
+        {
+          "path": "public/brand/motion/wonka-icon-loop-water-blue-square.webm",
+          "mimeType": "video/webm",
+          "theme": "all",
+          "bytes": 111832,
+          "sha256": "b6def6230a46125c3897bce267a61bc9a7654687eea1540fb492717ca5b7de4a",
+          "publicUrl": "/brand/motion/wonka-icon-loop-water-blue-square.webm"
+        },
+        {
+          "path": "public/brand/motion/wonka-icon-loop-white-square.webm",
+          "mimeType": "video/webm",
+          "theme": "dark",
+          "bytes": 118297,
+          "sha256": "dbcaa7a8315078d02123784ba33b81420fe18ad5a36352407cc06076289ac915",
+          "publicUrl": "/brand/motion/wonka-icon-loop-white-square.webm"
+        }
+      ],
+      "usage": {
+        "allowed": [
+          "Loading and idle states in video or web surfaces that respect reduced motion."
+        ],
+        "forbidden": [
+          "Autoplaying with sound or without a reduced-motion fallback."
+        ],
+        "clearspace": null,
+        "minSize": null
+      },
+      "rights": {
+        "owner": "Wonka AI",
+        "license": "verification_required",
+        "expiresAt": null
+      },
+      "provenance": {
+        "source": "Wonka brand pack (Branding Assets, received 2026-10-02)",
+        "owner": "Wonka AI",
+        "approvedBy": null,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "asset.video.bar-wipe",
+      "name": "Bar-wipe transition (1.8 s, transparent)",
+      "kind": "video",
+      "lifecycle": "review_required",
+      "stability": "beta",
+      "files": [
+        {
+          "path": "public/brand/motion/wonka-bar-wipe-transition-black-landscape.webm",
+          "mimeType": "video/webm",
+          "theme": "all",
+          "bytes": 25506,
+          "sha256": "7f903ea57f701c9cc870d40f7157744dfab1ac18c2df1c9e054db9e7faa0eb2f",
+          "publicUrl": "/brand/motion/wonka-bar-wipe-transition-black-landscape.webm"
+        },
+        {
+          "path": "public/brand/motion/wonka-bar-wipe-transition-black-vertical.webm",
+          "mimeType": "video/webm",
+          "theme": "all",
+          "bytes": 26265,
+          "sha256": "d1ccb77240f02d5eb7ef30d93d552f7abb8fcdf41d738530657e43b631f6972d",
+          "publicUrl": "/brand/motion/wonka-bar-wipe-transition-black-vertical.webm"
+        },
+        {
+          "path": "public/brand/motion/wonka-bar-wipe-transition-cloud-blue-landscape.webm",
+          "mimeType": "video/webm",
+          "theme": "dark",
+          "bytes": 26016,
+          "sha256": "b5effeb59e693c5a1fdb0e9818d05aa614c6911b2cf71defc507c1a407ccb0a2",
+          "publicUrl": "/brand/motion/wonka-bar-wipe-transition-cloud-blue-landscape.webm"
+        },
+        {
+          "path": "public/brand/motion/wonka-bar-wipe-transition-cloud-blue-vertical.webm",
+          "mimeType": "video/webm",
+          "theme": "dark",
+          "bytes": 27358,
+          "sha256": "c7ff1a54758dd9dac117a99684a58034d80112bf2667dca6167130245dd9fe09",
+          "publicUrl": "/brand/motion/wonka-bar-wipe-transition-cloud-blue-vertical.webm"
+        },
+        {
+          "path": "public/brand/motion/wonka-bar-wipe-transition-water-blue-landscape.webm",
+          "mimeType": "video/webm",
+          "theme": "all",
+          "bytes": 26245,
+          "sha256": "3b8e3f0db51a1477f663e793ec6b695306778e3493d980f6cd5d1f9b6045924e",
+          "publicUrl": "/brand/motion/wonka-bar-wipe-transition-water-blue-landscape.webm"
+        },
+        {
+          "path": "public/brand/motion/wonka-bar-wipe-transition-water-blue-vertical.webm",
+          "mimeType": "video/webm",
+          "theme": "all",
+          "bytes": 27606,
+          "sha256": "36606c96c20ee201091fdb9e3dbad3338a1356bd549f059e1c2ac13d3be511b8",
+          "publicUrl": "/brand/motion/wonka-bar-wipe-transition-water-blue-vertical.webm"
+        },
+        {
+          "path": "public/brand/motion/wonka-bar-wipe-transition-white-landscape.webm",
+          "mimeType": "video/webm",
+          "theme": "all",
+          "bytes": 25684,
+          "sha256": "51eb27f1cd7b8965cbd77b46bbba7c532be43f31053fa6e8865d5a83ba3909cf",
+          "publicUrl": "/brand/motion/wonka-bar-wipe-transition-white-landscape.webm"
+        },
+        {
+          "path": "public/brand/motion/wonka-bar-wipe-transition-white-vertical.webm",
+          "mimeType": "video/webm",
+          "theme": "all",
+          "bytes": 26654,
+          "sha256": "93d267c3963538ab7fdedb9a34608f740dbdd83719f8b7fdb51b7b653d3a3b6c",
+          "publicUrl": "/brand/motion/wonka-bar-wipe-transition-white-vertical.webm"
+        }
+      ],
+      "usage": {
+        "allowed": [
+          "Scene transition on an overlay track; the frame is fully covered from about 0.8 s to 1.0 s, so cut at about 0.9 s."
+        ],
+        "forbidden": [
+          "Chaining more than one wipe between two consecutive shots."
+        ],
+        "clearspace": null,
+        "minSize": null
+      },
+      "rights": {
+        "owner": "Wonka AI",
+        "license": "verification_required",
+        "expiresAt": null
+      },
+      "provenance": {
+        "source": "Wonka brand pack (Branding Assets, received 2026-10-02)",
+        "owner": "Wonka AI",
+        "approvedBy": null,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "asset.video.end-card",
+      "name": "Tagline end cards (5 s)",
+      "kind": "video",
+      "lifecycle": "review_required",
+      "stability": "beta",
+      "files": [
+        {
+          "path": "public/brand/motion/wonka-end-card-tagline-on-water-blue-landscape.mp4",
+          "mimeType": "video/mp4",
+          "theme": "all",
+          "bytes": 54587,
+          "sha256": "db75b0768479840c1a03e8984142559cba7722685ad0d35f02ec954fd79e1937",
+          "publicUrl": "/brand/motion/wonka-end-card-tagline-on-water-blue-landscape.mp4"
+        },
+        {
+          "path": "public/brand/motion/wonka-end-card-tagline-on-water-blue-vertical.mp4",
+          "mimeType": "video/mp4",
+          "theme": "all",
+          "bytes": 60372,
+          "sha256": "cf5128be8ff2c048f281dc42649fbd9ebfe2d01887dae3d1c9a42ebd13d314be",
+          "publicUrl": "/brand/motion/wonka-end-card-tagline-on-water-blue-vertical.mp4"
+        },
+        {
+          "path": "public/brand/motion/wonka-end-card-tagline-on-wonka-black-landscape.mp4",
+          "mimeType": "video/mp4",
+          "theme": "all",
+          "bytes": 53392,
+          "sha256": "8bf8ec46ba9cc0578e79ad55ca02fe6bf2b1e0fbe8b4440a673c107b8d65efa1",
+          "publicUrl": "/brand/motion/wonka-end-card-tagline-on-wonka-black-landscape.mp4"
+        },
+        {
+          "path": "public/brand/motion/wonka-end-card-tagline-on-wonka-black-vertical.mp4",
+          "mimeType": "video/mp4",
+          "theme": "all",
+          "bytes": 57893,
+          "sha256": "f3687fcfcf1269744d183bfb6f47a38ba47d90f7664e2566c59f629504998ec2",
+          "publicUrl": "/brand/motion/wonka-end-card-tagline-on-wonka-black-vertical.mp4"
+        },
+        {
+          "path": "public/brand/motion/wonka-end-card-tagline-on-wonka-white-landscape.mp4",
+          "mimeType": "video/mp4",
+          "theme": "all",
+          "bytes": 52937,
+          "sha256": "66577828a4b5f27de036c66fd39209cf1cea6592b4e29037a7402444bb5cdca1",
+          "publicUrl": "/brand/motion/wonka-end-card-tagline-on-wonka-white-landscape.mp4"
+        },
+        {
+          "path": "public/brand/motion/wonka-end-card-tagline-on-wonka-white-vertical.mp4",
+          "mimeType": "video/mp4",
+          "theme": "all",
+          "bytes": 56927,
+          "sha256": "da6b8c0277b625b31fa3012489c11ff37bec3d89af111edb12fbfa0e9debc7b1",
+          "publicUrl": "/brand/motion/wonka-end-card-tagline-on-wonka-white-vertical.mp4"
+        }
+      ],
+      "usage": {
+        "allowed": [
+          "Closing card at the end of an edit, landscape or vertical."
+        ],
+        "forbidden": [
+          "Editing the tagline inside the card; request a new render instead."
+        ],
+        "clearspace": null,
+        "minSize": null
+      },
+      "rights": {
+        "owner": "Wonka AI",
+        "license": "verification_required",
+        "expiresAt": null
+      },
+      "provenance": {
+        "source": "Wonka brand pack (Branding Assets, received 2026-10-02)",
+        "owner": "Wonka AI",
+        "approvedBy": null,
+        "approvedAt": null
+      }
+    },
+    {
+      "id": "asset.video.painted-loop",
+      "name": "Painted logo loops",
+      "kind": "video",
+      "lifecycle": "review_required",
+      "stability": "beta",
+      "files": [
+        {
+          "path": "public/brand/motion/wonka-glass-icon-hills-loop-1080x1080.mp4",
+          "mimeType": "video/mp4",
+          "theme": "all",
+          "bytes": 687255,
+          "sha256": "cf49f7cfd6e4e153ce7958e5183104a715c3a90e572a2bbff3a2645d949d02f2",
+          "publicUrl": "/brand/motion/wonka-glass-icon-hills-loop-1080x1080.mp4"
+        },
+        {
+          "path": "public/brand/motion/wonka-glass-icon-hills-loop-1080x1920.mp4",
+          "mimeType": "video/mp4",
+          "theme": "all",
+          "bytes": 1076303,
+          "sha256": "dff1d6a9b0b73693ebc92b10f22afa49389b1c3af9d94d58650d8cd36f9033ab",
+          "publicUrl": "/brand/motion/wonka-glass-icon-hills-loop-1080x1920.mp4"
+        },
+        {
+          "path": "public/brand/motion/wonka-window-icon-hills-loop-on-black-1080x1080.mp4",
+          "mimeType": "video/mp4",
+          "theme": "all",
+          "bytes": 259014,
+          "sha256": "3ab34095c72a440d2aa6ea5e5276145e042567649bfd72f9222489aba19aaa49",
+          "publicUrl": "/brand/motion/wonka-window-icon-hills-loop-on-black-1080x1080.mp4"
+        },
+        {
+          "path": "public/brand/motion/wonka-window-icon-hills-loop-on-white-1080x1080.mp4",
+          "mimeType": "video/mp4",
+          "theme": "all",
+          "bytes": 255803,
+          "sha256": "506b0350123fe6f7931c237dd9cd9eb2eef36d591dcc4b861620e3b29f622ecb",
+          "publicUrl": "/brand/motion/wonka-window-icon-hills-loop-on-white-1080x1080.mp4"
+        }
+      ],
+      "usage": {
+        "allowed": [
+          "Ambient loops for social posts, covers, and event screens."
+        ],
+        "forbidden": [
+          "Autoplaying on the web without a reduced-motion fallback."
+        ],
+        "clearspace": null,
+        "minSize": null
+      },
+      "rights": {
+        "owner": "Wonka AI",
+        "license": "verification_required",
+        "expiresAt": null
+      },
+      "provenance": {
+        "source": "Wonka brand pack (Branding Assets, received 2026-10-02)",
+        "owner": "Wonka AI",
+        "approvedBy": null,
+        "approvedAt": null
+      }
+    }
+  ]
+}

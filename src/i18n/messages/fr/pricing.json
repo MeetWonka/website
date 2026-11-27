@@ -1,0 +1,78 @@
+{
+  "seo": {
+    "title": "Tarifs AI Workspace : prix par utilisateur | Wonka",
+    "description": "Tarifs transparents par utilisateur pour Wonka AI Workspace : IA privée, modèles hébergés dans l'UE et essai gratuit de 7 jours."
+  },
+  "header": {
+    "heading": "Un seul espace de travail. Des tarifs qui évoluent avec votre équipe.",
+    "body": "Choisissez la taille de votre équipe. Chaque licence payante inclut la sécurité nécessaire pour utiliser l'IA en toute sécurité au travail."
+  },
+  "builder": {
+    "title": "Composez votre offre",
+    "viewBreakdown": "Voir le détail des tarifs",
+    "seats": "Licences"
+  },
+  "billing": {
+    "ariaLabel": "Cycle de facturation",
+    "monthly": "Mensuel",
+    "annual": "Annuel",
+    "save": "-20 %"
+  },
+  "trial": {
+    "title": "Essai gratuit",
+    "badge": "7 JOURS",
+    "price": "Gratuit",
+    "body": "Testez Wonka sur un vrai cas d'usage de votre entreprise. Sans carte de crédit.",
+    "featuresTitle": "Inclus dans votre essai",
+    "features": [
+      "Accès complet à AI Workspace",
+      "Chat IA sécurisé avec les connaissances de l'entreprise",
+      "5 € d'usage IA inclus"
+    ],
+    "cta": "Commencer"
+  },
+  "workspace": {
+    "title": "AI Workspace",
+    "badge": "RECOMMANDÉ",
+    "seatLabel": "Licence standard",
+    "billingNote": "Par utilisateur / mois (HTVA)",
+    "aiModelsToggle": "Modèles IA inclus",
+    "featuresTitle": "Tout ce dont votre équipe a besoin",
+    "features": [
+      "Chat IA sécurisé, ancré dans les connaissances de l'entreprise",
+      "Outils et connexions de données approuvés",
+      "Gouvernance et journaux d'audit"
+    ],
+    "featureModelsIncluded": "Modèles IA hébergés dans l'UE, sans facture à l'usage",
+    "featureOwnModels": "Utilisez votre propre clé API et la facturation de votre fournisseur",
+    "cta": "Commencer"
+  },
+  "enterprise": {
+    "title": "Enterprise",
+    "badge": "1 000+ LICENCES",
+    "price": "Sur mesure",
+    "body": "Infrastructure et déploiement dédiés pour les organisations complexes.",
+    "featuresTitle": "Conçu pour votre environnement",
+    "features": [
+      "Tout ce qu'offre AI Workspace",
+      "Cloud géré, votre propre cloud ou on-premise",
+      "Déploiement adapté à vos exigences de sécurité",
+      "Tarifs dégressifs pour les grandes équipes"
+    ],
+    "cta": "Contacter l'équipe commerciale"
+  },
+  "breakdown": {
+    "closeAriaLabel": "Fermer le détail des tarifs",
+    "title": "Détail des tarifs",
+    "body": "Consultez le détail exact des tarifs pour la taille de votre équipe.",
+    "close": "Fermer",
+    "aiModels": "Modèles IA",
+    "aiModelsTooltip": "Inclut des modèles IA hébergés dans l'UE et 7 € de crédits IA par licence",
+    "included": "Inclus",
+    "notIncluded": "Non inclus",
+    "seatsColumn": "Licences",
+    "priceColumn": "Prix (par licence standard)",
+    "bandFirst": "Pour les premières",
+    "bandNext": "Pour les suivantes"
+  }
+}

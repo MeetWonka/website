@@ -1,0 +1,8 @@
+Wonka Brand Colors
+===================
+
+Wonka Black     #0E1A16   For text and dark backgrounds. Don't use full black.
+Wonka White     #F7F7F7   For text on light backgrounds.
+Wonka Water Blue #75A3FD  Primary accent color for buttons, links, and highlights.
+Wonka Cloud Blue #CADBFD  Secondary accent for soft backgrounds, tags, and subtle highlights.
+Wonka Forest Green #5C7F5D Natural accent for supporting elements and organic touches.
