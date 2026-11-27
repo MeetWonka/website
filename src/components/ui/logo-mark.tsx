@@ -1,20 +1,31 @@
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 
-export function LogoMark({ className }: { className?: string }) {
+type LogoMarkVariant = "dark" | "light";
+
+const MARK_SRC: Record<LogoMarkVariant, string> = {
+  dark: "/images/brand/wonka-logo-mark-transparent.png",
+  light: "/images/brand/wonka-logo-mark-white-transparent.png",
+};
+
+export function LogoMark({
+  className,
+  style,
+  variant = "dark",
+}: {
+  className?: string;
+  style?: React.CSSProperties;
+  variant?: LogoMarkVariant;
+}) {
   return (
-    <svg
-      width="58"
-      height="63"
-      viewBox="0 0 58 63"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className={cn("h-[3.9375rem] w-[3.625rem] shrink-0", className)}
+    <Image
+      src={MARK_SRC[variant]}
+      alt=""
+      width={137}
+      height={150}
+      className={cn("block aspect-[137/150] h-[3.9375rem] w-auto shrink-0", className)}
+      style={style}
       aria-hidden
-    >
-      <path d="M57.75 1.13386C57.75 0.263537 56.8031 -0.2813 56.0437 0.152097L47.0471 5.28655C46.6933 5.48844 46.4752 5.8629 46.4752 6.26832V56.7317C46.4752 57.1372 46.6933 57.5116 47.0471 57.7135L56.0437 62.848C56.8031 63.2814 57.75 62.7365 57.75 61.8662V1.13386Z" fill="currentColor" />
-      <path d="M0 1.1338C0 0.263472 0.946942 -0.281364 1.70634 0.152032L10.7029 5.28649C11.0567 5.48837 11.2748 5.86284 11.2748 6.26825V56.7317C11.2748 57.1371 11.0567 57.5116 10.7029 57.7135L1.70634 62.8479C0.946943 63.2813 0 62.7365 0 61.8661V1.1338Z" fill="currentColor" />
-      <path d="M40.424 2.90093C40.424 1.78224 38.9653 1.34134 38.3386 2.27062L32.093 11.5324C31.9672 11.7188 31.9001 11.9382 31.9001 12.1626V50.8374C31.9001 51.0618 31.9672 51.2812 32.093 51.4677L38.3386 60.7294C38.9653 61.6587 40.424 61.2178 40.424 60.0991V2.90093Z" fill="currentColor" />
-      <path d="M17.3257 2.90086C17.3257 1.78217 18.7844 1.34128 19.411 2.27056L25.6567 11.5323C25.7824 11.7187 25.8496 11.9381 25.8496 12.1626V50.8373C25.8496 51.0618 25.7824 51.2812 25.6567 51.4676L19.411 60.7293C18.7844 61.6586 17.3257 61.2177 17.3257 60.099V2.90086Z" fill="currentColor" />
-    </svg>
+    />
   );
 }

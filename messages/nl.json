@@ -1,0 +1,40 @@
+{
+  "blog": {
+    "title": "Blog",
+    "description": "Inzichten over enterprise AI, automatisering en implementatie.",
+    "readMore": "Lees meer",
+    "publishedOn": "Gepubliceerd op",
+    "allPosts": "Alle artikelen",
+    "category": "Categorie"
+  },
+  "glossary": {
+    "title": "AI Woordenlijst",
+    "description": "Sleutelbegrippen in enterprise AI, duidelijk uitgelegd.",
+    "allTerms": "Alle termen"
+  },
+  "comparisons": {
+    "title": "Vergelijkingen",
+    "description": "Hoe Wonka AI zich verhoudt tot andere enterprise AI-oplossingen.",
+    "allComparisons": "Alle vergelijkingen"
+  },
+  "connectors": {
+    "title": "Connectoren",
+    "description": "Verbind uw tools met Wonka AI. Één platform, al uw data.",
+    "allConnectors": "Alle connectoren",
+    "useCases": "Gebruiksscenario's",
+    "bookDemo": "Demo boeken"
+  },
+  "caseStudies": {
+    "title": "Klantcases",
+    "description": "Hoe onze klanten AI inzetten in hun organisatie.",
+    "allCaseStudies": "Alle klantcases"
+  },
+  "common": {
+    "backToHome": "Terug naar home",
+    "publishedOn": "Gepubliceerd op",
+    "lastUpdated": "Bijgewerkt op",
+    "faq": "Veelgestelde vragen",
+    "bookDemo": "Demo boeken",
+    "learnMore": "Meer informatie"
+  }
+}

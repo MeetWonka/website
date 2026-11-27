@@ -1,0 +1,117 @@
+{
+  "seo": {
+    "metaTitle": "Agents IA pour entreprise, privés et sécurisés | Wonka AI",
+    "metaDescription": "Agents IA privés pour votre entreprise, connectés à Odoo, SharePoint, Salesforce et Slack. Conformes au RGPD, hébergés dans Azure West Europe."
+  },
+  "hero": {
+    "awardBadge": "START-UP IA DE L'ANNÉE N°1 - BELGIUM STARTUP AWARDS 2026",
+    "title": "Votre partenaire IA pour le travail répétitif.",
+    "subtitle": "Votre équipe vaut mieux que le travail répétitif. Nous concevons votre stratégie IA, puis construisons les applications et les agents qui s'en chargent.",
+    "backedBy": "Soutenus par",
+    "backedByNvidia": "Nvidia Inception et",
+    "backedByMicrosoft": "Microsoft for Startups.",
+    "productPreviewAlt": "Interface WonkaChat montrant un assistant IA connecté aux outils métier",
+    "voicePrompt": "Crée une opportunité dans Odoo.",
+    "proofEyebrow": "L'IA en production",
+    "proofHeading": "D'un premier workflow à l'adoption dans toute l'entreprise.",
+    "proof": [
+      {
+        "label": "Ont déployé des agents IA dans tout leur réseau.",
+        "alt": "PWC, Engie, Buildwise et Xerius"
+      },
+      {
+        "label": "Sont passés en accéléré à l'IA native.",
+        "alt": "Luminus, Cambio, Zorgi et ODTH"
+      },
+      {
+        "label": "Ont équipé leurs collaborateurs d'IA en quelques semaines.",
+        "alt": "Luminus, Cambio, Zorgi et ODTH"
+      }
+    ],
+    "marquee": [
+      "Ont déployé des agents IA dans tout leur réseau.",
+      "Sont passés en accéléré à l'IA native.",
+      "Ont équipé tous leurs collaborateurs d'IA en quelques semaines."
+    ]
+  },
+  "problem": {
+    "headingBefore": "Votre IA",
+    "headingAfter": "fonctionne très bien.",
+    "lines": [
+      "Pour les 12 personnes qui savent s'en servir.",
+      "Pour tous les autres, le travail avance comme il y a dix ans.",
+      "À la main. De mémoire. Quand quelqu'un y pense.",
+      "Quelqu'un trouve une meilleure méthode. Mais elle reste chez lui."
+    ]
+  },
+  "solution": {
+    "eyebrow": "Notre méthode",
+    "heading": "Wonka AI fait fonctionner l'IA pour toute votre organisation.",
+    "body": "La plupart des projets IA brillent le jour du lancement et prennent la poussière dès la troisième semaine. Nous partons de vos processus actuels, raisonnons à partir de l'usage quotidien et restons jusqu'à ce que toute votre équipe l'utilise vraiment.",
+    "steps": [
+      {
+        "title": "Nous partons de là où vous en êtes.",
+        "body": "Certaines entreprises arrivent avec un cas d'usage précis, d'autres savent seulement que l'IA compte, sans savoir où elle s'intègre. Dans les deux cas, nous savons prendre le relais."
+      },
+      {
+        "title": "Nous construisons autour de votre façon réelle de travailler.",
+        "body": "Nous n'installons pas un outil générique en espérant qu'il prenne. Nous façonnons tout autour du fonctionnement actuel de votre entreprise, pour qu'il trouve sa place dès le premier jour."
+      },
+      {
+        "title": "Nous le mettons entre les mains de votre équipe.",
+        "body": "Une feuille de route, un développement sur mesure ou un chat IA utilisé au quotidien par tous. Nous livrons exactement ce dont votre situation a besoin, et nous veillons à ce que les personnes qui en dépendent l'adoptent."
+      },
+      {
+        "title": "Nous restons jusqu'à ce que tout le monde suive.",
+        "body": "La plupart des projets IA échouent sur l'adoption, pas sur la technologie. Nous nous intégrons à votre équipe et restons jusqu'à ce que chacun l'utilise vraiment, pas seulement jusqu'à la mise en ligne."
+      }
+    ]
+  },
+  "stats": {
+    "engie": "50 % de temps en moins sur les e-mails de support pour plus de 70 collaborateurs chez N-allo (Engie)",
+    "itzu": "Chaque collaborateur d'Itzu dispose de son propre WonkaChat, qui lui fait gagner plusieurs heures par semaine.",
+    "workday": "Avec Wonka, votre journée de travail habituelle se termine à 15 h."
+  },
+  "howItWorks": {
+    "eyebrow": "Ce que nous faisons",
+    "heading": "Tout ce qu'il vous faut\npour que l'IA fonctionne.",
+    "cards": [
+      {
+        "tagline": "Vous savez que l'IA compte, mais pas par où commencer ?",
+        "body": "Nous analysons vos processus, identifions où l'IA crée une vraie valeur et construisons votre feuille de route avec des actions concrètes.",
+        "ctaLabel": "Découvrir Start AI"
+      },
+      {
+        "tagline": "Des tâches répétitives qu'aucun outil ne semble résoudre ?",
+        "body": "Nous développons des applications IA sur mesure, adaptées à vos systèmes et intégrées à votre travail quotidien.",
+        "ctaLabel": "Découvrir Wonka Build"
+      },
+      {
+        "tagline": "Prêt à donner l'IA à toute votre équipe ?",
+        "body": "Un seul endroit où chacun travaille avec l'IA, connecté aux outils et aux données de votre entreprise.",
+        "ctaLabel": "Découvrir WonkaChat"
+      }
+    ]
+  },
+  "useCases": {
+    "eyebrow": "Cas d'usage",
+    "heading": "Le travail qui attendait n'attend plus. Dans toutes les équipes."
+  },
+  "howToStart": {
+    "eyebrow": "Par où commencer",
+    "heading": "Vous ne savez pas par où commencer ?",
+    "body": "C'est justement pour ça qu'on se parle.\nRéservez un appel de 30 minutes. Expliquez-nous comment vous travaillez, et nous vous dirons où l'IA ferait vraiment la différence, et où elle ne la ferait pas.",
+    "calloutHeading": "30 minutes.\nVous saurez si cela a du sens.",
+    "outcomesHeading": "Vous repartez avec",
+    "outcomes": [
+      "Une idée de ce qui est réaliste, et en combien de temps.",
+      "Une prochaine étape claire, que ce soit Start AI, Wonka Build ou WonkaChat.",
+      "Des réponses à vos questions IA spécifiques.",
+      "Sans engagement, sans pression. Juste une vision plus claire de l'IA."
+    ]
+  },
+  "cta": {
+    "heading": "Votre équipe vaut mieux que ce travail.",
+    "body": "Voyons ensemble où Wonka AI peut faire la différence."
+  }
+}

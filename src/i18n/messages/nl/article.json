@@ -1,0 +1,37 @@
+{
+  "toc": "In dit artikel",
+  "author": "Redactie Wonka AI",
+  "authorBio": "Geschreven door het team dat private AI-agents uitrolt voor Europese bedrijven.",
+  "published": "Gepubliceerd op",
+  "updated": "Bijgewerkt op",
+  "readingTime": "min leestijd",
+  "home": "Home",
+  "proofEyebrow": "In productie",
+  "proofTitle": "Wat bedrijven met Wonka bereiken",
+  "proof": [
+    {
+      "value": "100%",
+      "label": "van de medewerkers van Itzu uitgerust met WonkaChat"
+    },
+    {
+      "value": "−50%",
+      "label": "tijd op support-e-mails bij N-allo (Engie)"
+    },
+    {
+      "value": "+150",
+      "label": "Start AI-trajecten afgerond"
+    },
+    {
+      "value": "ISO 27001",
+      "label": "AVG · NIS 2 · gehost in Azure West Europe"
+    }
+  ],
+  "goFurther": "Verder lezen",
+  "sidebarTitle": "Klaar om te starten?",
+  "sidebarBody": "Gesprek van 30 minuten, zonder slides.",
+  "sidebarCta": "Plan een gesprek",
+  "productCta": "Bekijk hoe het werkt",
+  "trialCta": "Start gratis proefperiode",
+  "midCtaTitle": "Probeer het op uw eigen data",
+  "midCtaBody": "7 dagen gratis, zonder creditcard. Gehost in de EU, gekoppeld aan uw tools."
+}

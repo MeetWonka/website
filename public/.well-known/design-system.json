@@ -1,0 +1,17 @@
+{
+  "$schema": "/design-system/schemas/discovery.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "wonka-design-system",
+  "manifest": "/design-system/manifest.json",
+  "llms": "/design-system/llms.txt",
+  "humanDocs": "/design-system",
+  "catalogs": {
+    "tokens": "/design-system/tokens.json",
+    "components": "/design-system/components.json",
+    "assets": "/design-system/assets.json",
+    "rules": "/design-system/rules.json",
+    "exceptions": "/design-system/exceptions.json",
+    "patterns": "/design-system/patterns.json",
+    "channels": "/design-system/channels.json"
+  }
+}

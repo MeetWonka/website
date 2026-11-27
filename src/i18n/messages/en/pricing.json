@@ -1,0 +1,78 @@
+{
+  "seo": {
+    "title": "AI Workspace pricing | Wonka",
+    "description": "Transparent per-seat pricing for Wonka AI Workspace."
+  },
+  "header": {
+    "heading": "One workspace. Pricing that scales with your team.",
+    "body": "Choose your team size. Every paid seat includes the security needed to use AI safely at work."
+  },
+  "builder": {
+    "title": "Build your plan",
+    "viewBreakdown": "View pricing breakdown",
+    "seats": "Seats"
+  },
+  "billing": {
+    "ariaLabel": "Billing cycle",
+    "monthly": "Monthly",
+    "annual": "Annual",
+    "save": "Save 20%"
+  },
+  "trial": {
+    "title": "Free trial",
+    "badge": "7 DAYS",
+    "price": "Free",
+    "body": "Test Wonka with a real company use case. No credit card required.",
+    "featuresTitle": "Included in your trial",
+    "features": [
+      "Full AI Workspace access",
+      "Secure AI chat with company knowledge",
+      "€5 in included AI usage"
+    ],
+    "cta": "Get started"
+  },
+  "workspace": {
+    "title": "AI Workspace",
+    "badge": "RECOMMENDED",
+    "seatLabel": "Standard seat",
+    "billingNote": "Per user / month (excl. VAT)",
+    "aiModelsToggle": "AI models included",
+    "featuresTitle": "Everything your team needs",
+    "features": [
+      "Secure AI chat grounded in company knowledge",
+      "Approved tools and data connections",
+      "Governance and audit logs"
+    ],
+    "featureModelsIncluded": "EU-hosted AI models with no usage bills",
+    "featureOwnModels": "Use your own model API key and provider billing",
+    "cta": "Get started"
+  },
+  "enterprise": {
+    "title": "Enterprise",
+    "badge": "1,000+ SEATS",
+    "price": "Custom",
+    "body": "Dedicated infrastructure and deployment for complex organisations.",
+    "featuresTitle": "Built for your environment",
+    "features": [
+      "Everything in AI Workspace",
+      "Managed cloud, own cloud, or on-premise",
+      "Deployment tailored to security requirements",
+      "Volume pricing for large teams"
+    ],
+    "cta": "Talk to sales"
+  },
+  "breakdown": {
+    "closeAriaLabel": "Close price breakdown",
+    "title": "Price breakdown",
+    "body": "See the exact price breakdown for your team size.",
+    "close": "Close",
+    "aiModels": "AI Models",
+    "aiModelsTooltip": "Includes EU-hosted AI models and €7 in AI credits per seat",
+    "included": "Included",
+    "notIncluded": "Not included",
+    "seatsColumn": "Seats",
+    "priceColumn": "Price (per standard seat)",
+    "bandFirst": "For the first",
+    "bandNext": "For the next"
+  }
+}

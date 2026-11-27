@@ -1,0 +1,223 @@
+@font-face {
+  font-family: "Inter Display";
+  src: url("/fonts/InterDisplay-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter Display";
+  src: url("/fonts/InterDisplay-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GT Sectra";
+  src: url("/fonts/GT-Sectra-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+.sb-wonka-theme {
+  min-height: 100vh;
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  transition:
+    background-color var(--ds-motion-duration-normal) ease,
+    color var(--ds-motion-duration-normal) ease;
+}
+
+.sb-wonka-page {
+  width: min(100%, 90rem);
+  margin-inline: auto;
+  padding: clamp(2rem, 5vw, 5rem);
+}
+
+.sb-wonka-prose {
+  max-width: 48rem;
+}
+
+.sb-wonka-kicker {
+  color: var(--color-blue-700);
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+[data-theme="dark"] .sb-wonka-kicker {
+  color: var(--color-blue-300);
+}
+
+.sb-wonka-token-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  gap: 1rem;
+}
+
+.sb-wonka-token-card {
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+}
+
+.sb-wonka-token-meta {
+  display: grid;
+  gap: 0.35rem;
+  padding: 0.875rem 1rem 1rem;
+}
+
+.sb-wonka-token-id {
+  overflow-wrap: anywhere;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+}
+
+.sb-wonka-token-value {
+  color: color-mix(in srgb, var(--color-text) 65%, transparent);
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+}
+
+.sb-wonka-signal {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  background: var(--color-black);
+  color: var(--color-white);
+}
+
+.sb-wonka-signal::after {
+  position: absolute;
+  z-index: -1;
+  inset: auto -8% -42% 18%;
+  height: 68%;
+  content: "";
+  background: linear-gradient(
+    104deg,
+    var(--color-blue-900),
+    var(--color-blue-400) 58%,
+    var(--color-green-400)
+  );
+  clip-path: polygon(4% 8%, 100% 0, 94% 100%, 0 86%);
+  opacity: 0.88;
+  transform: rotate(-2deg);
+}
+
+.sb-wonka-os-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+  background: var(--color-black);
+  color: var(--color-white);
+}
+
+.sb-wonka-os-hero::before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background-image:
+    linear-gradient(
+      color-mix(in srgb, var(--color-white) 7%, transparent) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      color-mix(in srgb, var(--color-white) 7%, transparent) 1px,
+      transparent 1px
+    );
+  background-size: 3.5rem 3.5rem;
+  mask-image: linear-gradient(90deg, black, transparent 72%);
+}
+
+.sb-wonka-os-hero::after {
+  position: absolute;
+  z-index: 0;
+  right: -11%;
+  bottom: 11%;
+  width: 58%;
+  height: 24%;
+  content: "";
+  background: linear-gradient(
+    98deg,
+    var(--color-blue-900),
+    var(--color-blue-400) 58%,
+    var(--color-green-400)
+  );
+  clip-path: polygon(3% 17%, 100% 0, 94% 85%, 0 100%);
+  opacity: 0.92;
+  transform: rotate(-3deg);
+  animation: sb-wonka-signal-enter var(--ds-motion-duration-expressive)
+    var(--ds-motion-easing-standard) both;
+}
+
+.sb-wonka-os-console {
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--color-white) 18%, transparent);
+  border-radius: var(--radius-sm);
+  background: color-mix(in srgb, var(--color-black) 84%, transparent);
+  box-shadow: var(--shadow-subtle);
+  backdrop-filter: blur(1rem);
+}
+
+.sb-wonka-trace-panel {
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--color-blue-900) 72%, var(--color-black)),
+    var(--color-black)
+  );
+}
+
+.sb-wonka-stat:not(:last-child) {
+  border-bottom-width: 1px;
+}
+
+@keyframes sb-wonka-signal-enter {
+  from {
+    opacity: 0;
+    transform: translateX(12%) rotate(-3deg);
+  }
+  to {
+    opacity: 0.92;
+    transform: translateX(0) rotate(-3deg);
+  }
+}
+
+@media (width >= 48rem) {
+  .sb-wonka-stat:nth-child(odd) {
+    border-right-width: 1px;
+  }
+
+  .sb-wonka-stat:nth-child(n + 5) {
+    border-bottom-width: 0;
+  }
+}
+
+@media (width >= 64rem) {
+  .sb-wonka-stat {
+    border-bottom-width: 0 !important;
+  }
+
+  .sb-wonka-stat:not(:last-child) {
+    border-right-width: 1px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sb-wonka-theme {
+    transition: none;
+  }
+
+  .sb-wonka-os-hero::after {
+    animation: none;
+  }
+}

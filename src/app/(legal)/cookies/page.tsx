@@ -17,10 +17,14 @@ async function getCookieContent() {
 
 export async function generateMetadata(): Promise<Metadata> {
   const content = await getCookieContent();
-  return buildMetadata(content?.seo ?? null, {
+  const metadata = buildMetadata(content?.seo ?? null, {
     path: "/cookies",
     fallbackTitle: "Cookie Policy",
   });
+  return {
+    ...metadata,
+    robots: { index: false, follow: true },
+  };
 }
 
 export default async function CookiesPage() {

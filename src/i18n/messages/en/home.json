@@ -1,0 +1,117 @@
+{
+  "seo": {
+    "metaTitle": "Wonka AI - Private Enterprise AI Agents",
+    "metaDescription": "Deploy private AI agents inside your company. Connected to Odoo, SharePoint, Salesforce and Slack, with GDPR compliance. Hosted in Azure West Europe (Microsoft Ireland)."
+  },
+  "hero": {
+    "awardBadge": "#1 AI START-UP OF THE YEAR - BELGIUM STARTUP AWARDS 2026",
+    "title": "Your AI partner for repetitive work.",
+    "subtitle": "Your team is too good for repetitive work. We design your AI strategy, then build the applications and agents that handle it.",
+    "backedBy": "Backed by",
+    "backedByNvidia": "Nvidia Inception and",
+    "backedByMicrosoft": "Microsoft for Startups.",
+    "productPreviewAlt": "WonkaChat interface showing an AI assistant connected to business tools",
+    "voicePrompt": "Create an opportunity in Odoo.",
+    "proofEyebrow": "AI in production",
+    "proofHeading": "From a first workflow to company-wide adoption.",
+    "proof": [
+      {
+        "label": "Scaled AI agents across their network.",
+        "alt": "PWC, Engie, Buildwise and Xerius"
+      },
+      {
+        "label": "Got fast-tracked to AI-native.",
+        "alt": "Luminus, Cambio, Zorgi and ODTH"
+      },
+      {
+        "label": "Deployed AI for employees in weeks.",
+        "alt": "Luminus, Cambio, Zorgi and ODTH"
+      }
+    ],
+    "marquee": [
+      "Scaled AI agents across their network.",
+      "Got fast-tracked to AI-native.",
+      "Deployed AI for all of their employees in weeks."
+    ]
+  },
+  "problem": {
+    "headingBefore": "Your AI",
+    "headingAfter": "works great.",
+    "lines": [
+      "For the 12 people who know how to use it.",
+      "For everyone else, work still moves the way it did ten years ago.",
+      "By hand. By memory. When someone remembers.",
+      "One person finds a better way. But it stays with them."
+    ]
+  },
+  "solution": {
+    "eyebrow": "How we work",
+    "heading": "Wonka AI makes AI work for your whole organisation.",
+    "body": "Most AI looks great on launch day and gathers dust by week three. We start with your current processes, work backwards from everyday use, and stay until your whole team is genuinely using it.",
+    "steps": [
+      {
+        "title": "We start where you are.",
+        "body": "Some companies come to us with a clear use case, others just know AI matters but not where it fits. Either way, we know how to take it from there."
+      },
+      {
+        "title": "We build around how you really work.",
+        "body": "We don't drop in a generic tool and hope it sticks. We shape everything around how your business runs today, so it belongs from day one."
+      },
+      {
+        "title": "We put it in your team's hands.",
+        "body": "A roadmap, a custom build, or an AI chat everyone uses day to day. We deliver exactly what your situation needs, and we make sure it lands with the people who'll rely on it."
+      },
+      {
+        "title": "We stay until everyone's on board.",
+        "body": "Most AI projects fail at adoption, not at technology. We embed with your team and stay until people are genuinely using it, not just until it's live."
+      }
+    ]
+  },
+  "stats": {
+    "engie": "50% time reduction on support emails across +70 employees at N-allo (Engie)",
+    "itzu": "Every Itzu employee has access to their personal WonkaChat that saves them multiple hours each week.",
+    "workday": "With Wonka, your usual working day is finished at 3 pm."
+  },
+  "howItWorks": {
+    "eyebrow": "What we do",
+    "heading": "Everything you need\nto make AI work.",
+    "cards": [
+      {
+        "tagline": "Know AI matters, but not where to start?",
+        "body": "We analyze your processes, map where AI creates real value, and build your roadmap with concrete actions.",
+        "ctaLabel": "Discover Start AI"
+      },
+      {
+        "tagline": "Repetitive work no tool seems to solve?",
+        "body": "We build custom AI applications that fit your systems and run in your day-to-day work.",
+        "ctaLabel": "Discover Wonka Build"
+      },
+      {
+        "tagline": "Ready to give your whole team AI?",
+        "body": "One place for everyone to work with AI, connected to your company's tools and data.",
+        "ctaLabel": "Discover WonkaChat"
+      }
+    ]
+  },
+  "useCases": {
+    "eyebrow": "Use cases",
+    "heading": "The work that used to wait now doesn't. Across teams."
+  },
+  "howToStart": {
+    "eyebrow": "How to start",
+    "heading": "Not sure how to get started?",
+    "body": "That's exactly why we talk.\nBook a 30-minute call. Tell us how you work, and we'll tell you where AI would actually make a difference, and where it wouldn't.",
+    "calloutHeading": "30 minutes.\nYou'll know if it makes sense.",
+    "outcomesHeading": "You walk away with",
+    "outcomes": [
+      "A sense of what's realistic to achieve, and how fast.",
+      "A clear next step, whether that's Start AI, Wonka Build, or WonkaChat.",
+      "Answers to your specific AI questions.",
+      "No obligation, no pressure. Just a clearer picture about AI."
+    ]
+  },
+  "cta": {
+    "heading": "Your team is too good for this work.",
+    "body": "Let's find out where Wonka AI can make a difference."
+  }
+}

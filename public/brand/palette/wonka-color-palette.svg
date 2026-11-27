@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620">
+  <rect width="1000" height="620" fill="#ffffff"/>
+  <text x="40" y="55" font-family="Helvetica, Arial, sans-serif" font-size="32" font-weight="700" fill="#0E1A16">Wonka Brand Colors</text>
+
+  <!-- Wonka Black -->
+  <rect x="40" y="90" width="920" height="90" rx="12" fill="#0E1A16"/>
+  <text x="70" y="128" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#F7F7F7">Wonka Black</text>
+  <text x="70" y="155" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#CADBFD">For text and dark backgrounds. Don't use full black.</text>
+  <text x="880" y="140" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="600" fill="#F7F7F7" text-anchor="end">#0E1A16</text>
+
+  <!-- Wonka White -->
+  <rect x="40" y="196" width="920" height="90" rx="12" fill="#F7F7F7" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="70" y="234" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#0E1A16">Wonka White</text>
+  <text x="70" y="261" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#5c7f5d">For text on light backgrounds.</text>
+  <text x="880" y="246" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="600" fill="#0E1A16" text-anchor="end">#F7F7F7</text>
+
+  <!-- Wonka Water Blue -->
+  <rect x="40" y="302" width="920" height="90" rx="12" fill="#75A3FD"/>
+  <text x="70" y="340" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#0E1A16">Wonka Water Blue</text>
+  <text x="70" y="367" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#0E1A16">Primary accent color for buttons, links, and highlights.</text>
+  <text x="880" y="352" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="600" fill="#0E1A16" text-anchor="end">#75A3FD</text>
+
+  <!-- Wonka Cloud Blue -->
+  <rect x="40" y="408" width="920" height="90" rx="12" fill="#CADBFD"/>
+  <text x="70" y="446" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#0E1A16">Wonka Cloud Blue</text>
+  <text x="70" y="473" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#0E1A16">Secondary accent for soft backgrounds, tags, and subtle highlights.</text>
+  <text x="880" y="458" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="600" fill="#0E1A16" text-anchor="end">#CADBFD</text>
+
+  <!-- Wonka Forest Green -->
+  <rect x="40" y="514" width="920" height="90" rx="12" fill="#5C7F5D"/>
+  <text x="70" y="552" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#F7F7F7">Wonka Forest Green</text>
+  <text x="70" y="579" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#CADBFD">Natural accent for supporting elements and organic touches.</text>
+  <text x="880" y="564" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="600" fill="#F7F7F7" text-anchor="end">#5C7F5D</text>
+</svg>

@@ -1,0 +1,38 @@
+{
+  "problem": {
+    "ariaLabel": "Probleem"
+  },
+  "clientProof": {
+    "ariaLabel": "Klantverhalen"
+  },
+  "logoStrip": {
+    "ariaLabel": "Klantlogo's"
+  },
+  "useCases": {
+    "industriesLabel": "Sectoren",
+    "workflowTag": "Workflow {number}"
+  },
+  "testimonials": {
+    "previous": "Vorige getuigenis",
+    "next": "Volgende getuigenis",
+    "logoPlaceholder": "Logo",
+    "header": {
+      "eyebrow": "Wat klanten zeggen",
+      "heading": "Eerlijke feedback\nvan gewaardeerde mensen.",
+      "body": "Echte feedback van leidinggevenden die Wonka vertrouwden om hun AI-ambitie om te zetten in een concreet plan waarmee hun teams aan de slag konden."
+    }
+  },
+  "industryTabs": {
+    "clientsLabel": "Klanten in deze sector"
+  },
+  "workflowSteps": {
+    "stepTag": "Stap {number}",
+    "previous": "Vorige stap",
+    "next": "Volgende stap",
+    "voicePrompt": "Maak een opportuniteit aan in Odoo."
+  },
+  "workspaceTrialCta": {
+    "title": "Probeer Wonka Workspace gratis.",
+    "body": "7 dagen gratis. Geen creditcard nodig."
+  }
+}
