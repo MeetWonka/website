@@ -1,0 +1,12 @@
+{
+  "retrievedAt": "2026-09-24",
+  "url": "https://wonka.chat/api/agents/templates",
+  "publicCount": 70,
+  "sourceTranslationEntries": 50,
+  "localizedMatches": 0,
+  "internalWizardIncluded": false,
+  "sourceCommit": "c662d033d87b647d37385ed34f4fa372b67537c5",
+  "note": "Public list and detail endpoints only. Each template includes its real public instructions; demo cloning is local and never calls the authenticated creation endpoint.",
+  "detailSource": "https://wonka.chat/api/agents/templates/{id}",
+  "templatesWithPublicInstructions": 70
+}

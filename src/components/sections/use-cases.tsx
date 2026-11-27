@@ -8,11 +8,15 @@ import { BulletIcon } from "@/components/ui/icons/bullet";
 import { CheckmarkIcon } from "@/components/ui/icons/checkmark-icon";
 import { FadeIn } from "@/components/animations/fade-in";
 import { cn } from "@/lib/utils";
+import { DEFAULT_USE_CASES, resolveUseCasesSection } from "@/lib/cms-sections";
+import { MultilineText } from "@/lib/cms-text";
+import { useT } from "@/i18n/use-t";
 import type { UseCasesData } from "@/lib/types";
 
 interface UseCasesProps {
-  data: UseCasesData | null;
+  data?: UseCasesData | null;
   id?: string;
+  defaults?: UseCasesData;
 }
 
 const EASE_OUT = [0.215, 0.61, 0.355, 1] as const;
@@ -42,8 +46,12 @@ const swapItem = {
   },
 };
 
-export function UseCases({ data, id }: UseCasesProps) {
-  const industries = data?.industries ?? [];
+export function UseCases({ data, id, defaults = DEFAULT_USE_CASES }: UseCasesProps) {
+  const t = useT();
+  const resolved = resolveUseCasesSection(data, null, defaults);
+  const industries = resolved.industries ?? [];
+  const eyebrow = resolved.eyebrow ?? t("home.useCases.eyebrow");
+  const heading = resolved.heading ?? t("home.useCases.heading");
   const [activeIndex, setActiveIndex] = useState(0);
   const headerRef = useRef<HTMLDivElement>(null);
   const headerInView = useInView(headerRef, { once: true, amount: 0.4 });
@@ -68,21 +76,21 @@ export function UseCases({ data, id }: UseCasesProps) {
         >
           <div className="flex flex-col items-start gap-6">
             <FadeIn play={headerInView}>
-              <Eyebrow>Use cases</Eyebrow>
+              <Eyebrow>{eyebrow}</Eyebrow>
             </FadeIn>
             <FadeIn play={headerInView} delay={0.1}>
-              <h2
+              <MultilineText
+                text={heading}
+                as="h2"
                 id="use-cases-heading"
                 className="type-h4 max-w-[36.625rem] text-text"
-              >
-                The work that used to wait now doesn&apos;t. Across teams.
-              </h2>
+              />
             </FadeIn>
           </div>
 
           <ul
             role="tablist"
-            aria-label="Industries"
+            aria-label={t("sections.useCases.industriesLabel")}
             className="flex flex-wrap items-center gap-2 lg:flex-nowrap lg:gap-0"
           >
             {industries.map((industry, i) => {
@@ -141,7 +149,9 @@ export function UseCases({ data, id }: UseCasesProps) {
         >
           {[0, 1, 2].map((slot) => {
             const workflow = workflows[slot];
-            const tag = `Workflow ${String(slot + 1).padStart(2, "0")}`;
+            const tag = t("sections.useCases.workflowTag", {
+              number: String(slot + 1).padStart(2, "0"),
+            });
             const cardDelay = slot * 0.045;
             const bullets = workflow?.bullets ?? [];
 

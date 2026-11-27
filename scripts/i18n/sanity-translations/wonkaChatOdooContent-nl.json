@@ -1,0 +1,185 @@
+{
+  "_id": "wonkaChatOdooContent-nl",
+  "_type": "wonkaChatOdooContent",
+  "capabilities": {
+    "_type": "iconFeatureGridSection",
+    "header": {
+      "_type": "sectionHeader",
+      "heading": "Maak van Odoo de ruggengraat van uw bedrijf."
+    }
+  },
+  "contact": {
+    "_type": "contactSection",
+    "header": {
+      "_type": "sectionHeader",
+      "body": "Plan een korte demo en we tonen u hoe WonkaChat koppelt met uw tools, uw workflows ondersteunt en AI toegankelijk maakt in uw hele organisatie.",
+      "eyebrow": "Plan een demo",
+      "heading": "Wilt u WonkaChat live aan het werk zien in Odoo?"
+    },
+    "personName": "Florian De Boeck",
+    "personRole": "Chief Product Officer",
+    "portrait": {
+      "_type": "imageWithAlt",
+      "alt": "Florian De Boeck - Wonka AI",
+      "asset": {
+        "_ref": "image-21172446b944d57f63dce641452f4a8f40789348-2048x1153-jpg",
+        "_type": "reference"
+      }
+    }
+  },
+  "features": {
+    "_type": "stickyFeaturesSection",
+    "features": [
+      {
+        "_key": "573252c489e8",
+        "_type": "feature",
+        "description": "WonkaChat koppelt rechtstreeks met uw Odoo-data en helpt u ermee aan de slag te gaan. Via een gesprek.",
+        "image": {
+          "_type": "imageWithAlt",
+          "asset": {
+            "_ref": "image-5046243c8af993779ab81bb5a60fd6e9f60ef5f4-5280x2970-png",
+            "_type": "reference"
+          }
+        },
+        "title": "Odoo-data meteen raadplegen en gebruiken"
+      },
+      {
+        "_key": "fd8df3b8e1fe",
+        "_type": "feature",
+        "description": "Nieuwe medewerkers hoeven niet te onthouden welke module wat doet. Ze vragen wat ze nodig hebben, WonkaChat regelt de navigatie. Ze zijn meteen productief.",
+        "image": {
+          "_type": "imageWithAlt",
+          "asset": {
+            "_ref": "image-507ae3706b3af96cfa069f5e1113792934d98895-5280x2970-png",
+            "_type": "reference"
+          }
+        },
+        "title": "Minder Odoo-opleiding en navigatiecomplexiteit"
+      },
+      {
+        "_key": "78c8f9853045",
+        "_type": "feature",
+        "description": "WonkaChat centraliseert AI rond uw omgeving. Geen 3 verschillende AI-tools meer in uw bedrijf, gewoon WonkaChat + Odoo.",
+        "image": {
+          "_type": "imageWithAlt",
+          "asset": {
+            "_ref": "image-3cd5095442f29844fdde57ef7ac760ed88dd95aa-5280x2970-png",
+            "_type": "reference"
+          }
+        },
+        "title": "Centraliseer AI in uw organisatie"
+      }
+    ],
+    "header": {
+      "_type": "sectionHeader",
+      "body": "WonkaChat begrijpt wat u vraagt, koppelt Odoo met uw favoriete tools en voert uw taken uit. Vraag het gewoon in gewone taal en het is gedaan.",
+      "eyebrow": "De oplossing",
+      "heading": "Zet gesprekken om in afgewerkte taken."
+    },
+    "showCta": true
+  },
+  "hero": {
+    "_type": "productHero",
+    "eyebrow": "WonkaChat voor Odoo",
+    "heroImage": {
+      "_type": "imageWithAlt",
+      "asset": {
+        "_ref": "image-dbdd8be71926c0cc7ad27231dc80975e8f57c2b8-8219x2970-png",
+        "_type": "reference"
+      }
+    },
+    "subtitle": "WonkaChat is een AI-assistent die uw hele team meteen toegang geeft tot alles wat Odoo kan, via een eenvoudig gesprek.",
+    "theme": "light",
+    "title": "De nummer één AI voor bedrijven die Odoo gebruiken."
+  },
+  "logoStrip": {
+    "_type": "logoStrip",
+    "proofLines": [
+      "Vertrouwd door 50+ bedrijven in heel Europa"
+    ]
+  },
+  "problem": {
+    "_type": "problemBentoSection",
+    "header": {
+      "_type": "sectionHeader",
+      "eyebrow": "Het probleem"
+    },
+    "largeCards": [
+      {
+        "_key": "e77c1e77b454",
+        "_type": "problemBentoCard",
+        "body": "Uw magazijnverantwoordelijke kent haar job door en door. Maar voorraad checken betekent navigeren naar Voorraad → Producten → Voorraad → Filteren op locatie. Ze weet wat ze nodig heeft. De interface maakt het gewoon moeilijk.",
+        "image": {
+          "_type": "imageWithAlt",
+          "asset": {
+            "_ref": "image-5f8e9157556aedf96eeff0d1fc985a2ad555fe48-3200x2000-png",
+            "_type": "reference"
+          }
+        },
+        "title": "Navigatie is complex"
+      },
+      {
+        "_key": "c7fd2a45773f",
+        "_type": "problemBentoCard",
+        "body": "Slechts 2-3 mensen begrijpen Odoo echt. Alle anderen onderbreken hen. Een eenvoudige vraag kost 30 minuten en houdt uw IT-manager weg van waardevoller werk.",
+        "image": {
+          "_type": "imageWithAlt",
+          "asset": {
+            "_ref": "image-e8c9d337892165ce60019a876478d0b36ae73185-3200x2000-png",
+            "_type": "reference"
+          }
+        },
+        "title": "Experts als bottleneck"
+      }
+    ],
+    "smallCards": [
+      {
+        "_key": "4eefbebaff57",
+        "_type": "problemBentoCard",
+        "body": "€100-200/uur telkens u een workflow op maat nodig hebt. De kosten stijgen sneller dan de waarde die u krijgt. En niet omdat u complex maatwerk nodig hebt, maar gewoon voor rapporten die eenvoudig zouden moeten zijn.",
+        "image": {
+          "_type": "imageWithAlt",
+          "asset": {
+            "_ref": "image-5ab0dcbdf59c41ef46f357b4c7d906a6ecc3979a-3200x2000-png",
+            "_type": "reference"
+          }
+        },
+        "title": "Afhankelijkheid van consultants"
+      },
+      {
+        "_key": "b720e7bccd20",
+        "_type": "problemBentoCard",
+        "body": "Generieke AI-tools zorgen voor meer verwarring dan waarde. Gevoelige informatie verspreid op plaatsen waar uw IT-directeur geen controle over heeft. En de ingebouwde AI van Odoo is te beperkt voor uw workflows.",
+        "image": {
+          "_type": "imageWithAlt",
+          "asset": {
+            "_ref": "image-6cd1953bc2278ae40373c9a0789d67f21c57ae43-3200x2000-png",
+            "_type": "reference"
+          }
+        },
+        "title": "Te veel AI-tools"
+      },
+      {
+        "_key": "70848b56d81b",
+        "_type": "problemBentoCard",
+        "body": "Iedereen houdt zich aan de basis uit de opleiding. De rest blijft ongebruikt, niet omdat het niet nuttig is, maar omdat het vinden ervan werk is.",
+        "image": {
+          "_type": "imageWithAlt",
+          "asset": {
+            "_ref": "image-a5c8addcd8bb3a0793a03dedb78d658b862b8daf-3200x2000-png",
+            "_type": "reference"
+          }
+        },
+        "title": "Lage adoptiegraad"
+      }
+    ]
+  },
+  "workflowSteps": {
+    "_type": "workflowStepsSection",
+    "header": {
+      "_type": "sectionHeader",
+      "eyebrow": "Hoe het werkt",
+      "heading": "WonkaChat werkt voor uw team in drie eenvoudige stappen."
+    }
+  }
+}

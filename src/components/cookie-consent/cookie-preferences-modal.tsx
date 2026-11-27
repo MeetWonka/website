@@ -2,6 +2,7 @@
 
 import { useEffect, useId, useState } from "react";
 import { motion } from "motion/react";
+import { useT } from "@/i18n/use-t";
 import {
   useCookieConsent,
   type ConsentCategories,
@@ -9,36 +10,19 @@ import {
 
 type Row = {
   key: keyof ConsentCategories | "essential";
-  label: string;
-  description: string;
   required?: boolean;
 };
 
 const ROWS: Row[] = [
-  {
-    key: "essential",
-    label: "Essential",
-    description:
-      "Required for the site to function. Stores your consent choice and similar basics. Always on.",
-    required: true,
-  },
-  {
-    key: "analytics",
-    label: "Analytics",
-    description:
-      "Helps us understand which pages perform. Aggregated, never used to identify you.",
-  },
-  {
-    key: "marketing",
-    label: "Marketing",
-    description:
-      "Used by ad platforms to measure campaign performance and personalise ads across sites.",
-  },
+  { key: "essential", required: true },
+  { key: "analytics" },
+  { key: "marketing" },
 ];
 
 export function CookiePreferencesModal() {
   const { consent, acceptAll, savePreferences, closePreferences } =
     useCookieConsent();
+  const t = useT();
 
   const [draft, setDraft] = useState<ConsentCategories>(() => ({
     analytics: consent?.categories.analytics ?? false,
@@ -87,21 +71,20 @@ export function CookiePreferencesModal() {
       >
         <div className="mb-4 flex items-start justify-between gap-4">
           <h2 id={titleId} className="type-h6 text-text">
-            Cookie preferences
+            {t("cookies.preferences.title")}
           </h2>
           <button
             type="button"
             onClick={closePreferences}
-            aria-label="Close preferences"
+            aria-label={t("cookies.preferences.closeLabel")}
             className="type-paragraph-s text-text/60 underline underline-offset-4 transition-colors hover:text-text"
           >
-            Close
+            {t("cookies.preferences.close")}
           </button>
         </div>
 
         <p className="type-paragraph-s text-text/80 mb-6">
-          Choose which categories of cookies you allow. You can change this any
-          time from the footer.
+          {t("cookies.preferences.intro")}
         </p>
 
         <ul className="mb-6 flex flex-col gap-4">
@@ -131,15 +114,15 @@ export function CookiePreferencesModal() {
                   }
                 >
                   <span className="type-paragraph-m-bold text-text block">
-                    {row.label}
+                    {t(`cookies.preferences.categories.${row.key}.label`)}
                     {isRequired && (
                       <span className="type-paragraph-s text-text/50 ml-2">
-                        (always on)
+                        {t("cookies.preferences.alwaysOn")}
                       </span>
                     )}
                   </span>
                   <span className="type-paragraph-s text-text/60 block">
-                    {row.description}
+                    {t(`cookies.preferences.categories.${row.key}.description`)}
                   </span>
                 </label>
               </li>
@@ -153,14 +136,14 @@ export function CookiePreferencesModal() {
             onClick={() => savePreferences(draft)}
             className="type-paragraph-s rounded-xl bg-text px-4 py-2 text-background transition-opacity hover:opacity-90"
           >
-            Save preferences
+            {t("cookies.preferences.save")}
           </button>
           <button
             type="button"
             onClick={acceptAll}
             className="type-paragraph-s rounded-xl bg-light-gray px-4 py-2 text-text transition-opacity hover:opacity-80"
           >
-            Accept all
+            {t("cookies.preferences.acceptAll")}
           </button>
         </div>
       </motion.div>

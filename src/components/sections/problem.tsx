@@ -3,6 +3,8 @@
 import Image from "next/image";
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { Section } from "@/components/ui/section";
+import { useT } from "@/i18n/use-t";
+import type { UiTranslator } from "@/i18n/ui";
 import { cn } from "@/lib/utils";
 
 const TRIGGER_RATIO = 0.4;
@@ -38,31 +40,28 @@ interface Item {
   content: ReactNode;
 }
 
-const ITEMS: Item[] = [
-  {
-    tag: "h2",
-    content: (
-      <span className="flex flex-wrap items-center gap-x-3 gap-y-2">
-        <span>Your AI</span>
-        <LogoCluster />
-        <span>works great.</span>
-      </span>
-    ),
-  },
-  { tag: "p", content: "For the 12 people who know how to use it." },
-  {
-    tag: "p",
-    content:
-      "For everyone else, work still moves the way it did ten years ago.",
-  },
-  { tag: "p", content: "By hand. By memory. When someone remembers." },
-  {
-    tag: "p",
-    content: "One person finds a better way. But it stays with them.",
-  },
-];
+export type { Item as ProblemItem };
 
-export function Problem({ id }: { id?: string }) {
+function defaultItems(t: UiTranslator): Item[] {
+  const lines = t.raw("home.problem.lines") as string[];
+  return [
+    {
+      tag: "h2",
+      content: (
+        <span className="flex flex-wrap items-center gap-x-3 gap-y-2">
+          <span>{t("home.problem.headingBefore")}</span>
+          <LogoCluster />
+          <span>{t("home.problem.headingAfter")}</span>
+        </span>
+      ),
+    },
+    ...lines.map((line): Item => ({ tag: "p", content: line })),
+  ];
+}
+
+export function Problem({ id, items: itemsProp }: { id?: string; items?: Item[] }) {
+  const t = useT();
+  const items = itemsProp ?? defaultItems(t);
   const [activeIndex, setActiveIndex] = useState(0);
   const itemRefs = useRef<Array<HTMLElement | null>>([]);
 
@@ -99,16 +98,16 @@ export function Problem({ id }: { id?: string }) {
       window.removeEventListener("resize", onScroll);
       cancelAnimationFrame(raf);
     };
-  }, []);
+  }, [items.length]);
 
   return (
     <Section
       id={id}
-      className="bg-background pt-[15vh] pb-[20vh] md:pt-[30vh] md:pb-[25vh]"
+      className="bg-background pt-[15vh] pb-[14vh] md:pt-[30vh] md:pb-[18vh]"
       containerClassName="flex max-w-[42.3125rem] flex-col gap-6 md:gap-8"
-      aria-label="Problem"
+      aria-label={t("sections.problem.ariaLabel")}
     >
-      {ITEMS.map((item, i) => {
+      {items.map((item, i) => {
         const isActive = i === activeIndex;
         const className = cn(
           "type-h2 w-full text-text transition-opacity duration-300 ease-out",

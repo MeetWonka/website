@@ -1,0 +1,71 @@
+{
+  "_id": "contactPageContent-fr",
+  "_type": "contactPageContent",
+  "general": {
+    "details": [
+      {
+        "_key": "email",
+        "_type": "contactDetail",
+        "href": "mailto:info@meetwonka.com",
+        "label": "E-mail",
+        "value": "info@meetwonka.com"
+      },
+      {
+        "_key": "office",
+        "_type": "contactDetail",
+        "label": "Bureau",
+        "value": "(re)space Airport\nDe Kleetlaan 2, 1831 Machelen, Belgique",
+        "href": "https://www.google.com/maps/search/?api=1&query=(re)space+Airport,+De+Kleetlaan+2,+1831+Machelen"
+      }
+    ],
+    "header": {
+      "body": "Des questions sur l'IA pour votre organisation ? Contactez-nous directement, nous vous répondrons dans les plus brefs délais.",
+      "eyebrow": "Contact",
+      "heading": "Contactez-nous"
+    }
+  },
+  "seo": {
+    "metaDescription": "Contactez Wonka : e-mail et interlocuteurs directs pour vos questions sur l'IA et les agents IA pour entreprise.",
+    "metaTitle": "Contact | Wonka - Agents IA pour entreprise",
+    "ogImage": null
+  },
+  "team": {
+    "header": {
+      "body": null,
+      "eyebrow": "Équipe",
+      "heading": "Parlez directement à quelqu'un"
+    },
+    "people": [
+      {
+        "_key": "jordy",
+        "_type": "contactPerson",
+        "email": "c@meetwonka.com",
+        "name": "Cédric Gilissen",
+        "portrait": {
+          "_type": "imageWithAlt",
+          "alt": "Cédric Gilissen - CEO Wonka AI",
+          "asset": {
+            "_ref": "image-556abee83bcbc90a048f26e78bd7e4e34031701d-2048x1142-jpg",
+            "_type": "reference"
+          }
+        },
+        "role": "CEO"
+      },
+      {
+        "_key": "e0b1a0f21c10",
+        "_type": "contactPerson",
+        "email": "a@meetwonka.com",
+        "name": "Antoine Percy",
+        "portrait": {
+          "_type": "imageWithAlt",
+          "alt": "Antoine Percy - CTO Wonka AI",
+          "asset": {
+            "_ref": "image-b57a9d4d515308b9e1f953b4baa2e118de9a6ef2-2048x1247-jpg",
+            "_type": "reference"
+          }
+        },
+        "role": "CTO"
+      }
+    ]
+  }
+}

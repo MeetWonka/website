@@ -1,0 +1,35 @@
+{
+  "banner": {
+    "label": "Consentement aux cookies",
+    "text": "Nous utilisons des cookies pour assurer le bon fonctionnement du site et mesurer la performance de notre marketing.",
+    "policyLink": "Consultez notre politique cookies",
+    "essentialOnly": "Cookies essentiels uniquement",
+    "acceptAll": "Tout accepter",
+    "rejectAll": "Tout refuser",
+    "managePreferences": "Gérer les préférences"
+  },
+  "preferences": {
+    "title": "Préférences cookies",
+    "close": "Fermer",
+    "closeLabel": "Fermer les préférences",
+    "intro": "Choisissez les catégories de cookies que vous autorisez. Vous pouvez modifier ce choix à tout moment depuis le pied de page.",
+    "alwaysOn": "(toujours actifs)",
+    "save": "Enregistrer les préférences",
+    "acceptAll": "Tout accepter",
+    "categories": {
+      "essential": {
+        "label": "Essentiels",
+        "description": "Nécessaires au fonctionnement du site. Enregistrent votre choix de consentement et d'autres éléments de base. Toujours actifs."
+      },
+      "analytics": {
+        "label": "Mesure d'audience",
+        "description": "Nous aident à comprendre quelles pages fonctionnent. Données agrégées, jamais utilisées pour vous identifier."
+      },
+      "marketing": {
+        "label": "Marketing",
+        "description": "Utilisés par les plateformes publicitaires pour mesurer la performance des campagnes et personnaliser les annonces sur différents sites."
+      }
+    }
+  },
+  "settingsLink": "Paramètres des cookies"
+}

@@ -1,0 +1,49 @@
+{
+  "_id": "startAiContent-fr",
+  "_type": "startAiContent",
+  "contact": {
+    "_type": "contactSection",
+    "header": {
+      "_type": "sectionHeader",
+      "body": "Réservez un appel découverte de 30 minutes. Pas de slides, pas de pitch, juste une vraie conversation sur votre activité.",
+      "eyebrow": "Parlons-en",
+      "heading": "Prêt à passer à l'action avec l'IA ?\n"
+    },
+    "personName": "Jordy Callens",
+    "personRole": "Start AI Lead",
+    "portrait": {
+      "_type": "imageWithAlt",
+      "alt": "Jordy Callens - Wonka AI",
+      "asset": {
+        "_ref": "image-d866d95a48e0a0a53a8f86dcfa2f0ac2c32ca57c-2191x2920-jpg",
+        "_type": "reference"
+      },
+      "crop": {
+        "_type": "sanity.imageCrop",
+        "bottom": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0.21349170907142967
+      },
+      "hotspot": {
+        "_type": "sanity.imageHotspot",
+        "height": 0.7865082909285703,
+        "width": 1,
+        "x": 0.5,
+        "y": 0.6067458545357148
+      }
+    }
+  },
+  "hero": {
+    "_type": "productHero",
+    "eyebrow": "Start AI",
+    "subtitle": "Nous évaluons vos opérations, concevons votre stratégie IA et vous remettons le plan d'exécution, pour que toute votre équipe exploite pleinement son potentiel.",
+    "theme": "dark",
+    "title": "Une stratégie IA claire pour votre entreprise."
+  },
+  "promo": {
+    "_type": "promoPanel",
+    "showCta": true,
+    "variant": "gradient"
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "_id": "wonkaBuildContent-fr",
+  "_type": "wonkaBuildContent",
+  "contact": {
+    "header": {
+      "body": "Réservez un appel découverte de 30 minutes. Pas de slides, pas de pitch, juste une vraie conversation sur vos besoins et vos idées IA.",
+      "eyebrow": "Parlons-en",
+      "heading": "Prêt à passer à l'action avec l'IA ?"
+    },
+    "personName": "Antoine Percy",
+    "personRole": "Chief Technology Officer",
+    "portrait": {
+      "_type": "imageWithAlt",
+      "alt": "Antoine Percy - Wonka AI",
+      "asset": {
+        "_ref": "image-b57a9d4d515308b9e1f953b4baa2e118de9a6ef2-2048x1247-jpg",
+        "_type": "reference"
+      }
+    }
+  },
+  "deliverables": {
+    "heading": "Un système qui tourne.",
+    "items": [
+      {
+        "_key": "applications",
+        "body": "Construites autour de vos données et de votre équipe, pas d'un modèle générique.",
+        "title": "Applications IA sur mesure"
+      },
+      {
+        "_key": "agents",
+        "body": "En production dans vos opérations, prenant en charge le vrai travail de bout en bout.",
+        "title": "Agents IA prêts pour la production"
+      },
+      {
+        "_key": "integrations",
+        "body": "Connectées aux outils, données et infrastructures que vous utilisez déjà.",
+        "title": "Intégrations profondes"
+      },
+      {
+        "_key": "owner",
+        "body": "Nous formons une personne en interne jusqu'à ce qu'elle puisse l'exploiter et le faire évoluer.",
+        "title": "Un responsable dans votre équipe"
+      },
+      {
+        "_key": "governance",
+        "body": "Garde-fous, contrôle d'accès et politique IA adaptés à votre organisation.",
+        "title": "Gouvernance intégrée"
+      },
+      {
+        "_key": "hypercare",
+        "body": "Nous restons mobilisés après la mise en production pour stabiliser et affiner.",
+        "title": "Hypercare après le lancement"
+      }
+    ]
+  },
+  "faq": {
+    "header": {
+      "body": null,
+      "eyebrow": "FAQ",
+      "heading": "Questions fréquentes"
+    },
+    "items": [
+      {
+        "_key": "wonka-chat-vs-build",
+        "answer": "WonkaChat est notre plateforme : un espace de travail IA sécurisé que toute votre équipe utilise au quotidien. Wonka Build est notre offre d'ingénierie sur mesure : nous concevons et développons des agents, applications et systèmes propres à votre activité, puis les mettons en production. Beaucoup de clients utilisent les deux.",
+        "question": "Quelle est la différence entre Wonka Build et WonkaChat ?"
+      },
+      {
+        "_key": "agents-or-apps",
+        "answer": "Les deux. Des agents IA ciblés qui gèrent un processus de bout en bout aux applications entièrement sur mesure, avec les intégrations et l'infrastructure sous-jacentes.",
+        "question": "Que pouvez-vous développer : des agents, des applications, ou les deux ?"
+      },
+      {
+        "_key": "strategy-first",
+        "answer": "Non. Si vous connaissez le processus qui vous coûte, c'est suffisant pour commencer. Sinon, Start AI vous apporte d'abord la clarté, et ses business cases deviennent le plan de votre développement.",
+        "question": "Faut-il d'abord une stratégie IA aboutie ?"
+      },
+      {
+        "_key": "on-premise",
+        "answer": "Oui. WonkaBuild peut fonctionner entièrement sur site, au sein de votre réseau, sans que rien ne sorte de vos murs, ou dans un environnement européen sécurisé.",
+        "question": "Peut-il fonctionner sur nos propres serveurs ?"
+      },
+      {
+        "_key": "independence",
+        "answer": "Non. Nous formons une personne de votre équipe pour qu'elle possède, exploite et fasse évoluer ce que nous développons. L'autonomie fait partie du livrable.",
+        "question": "Dépendrons-nous de Wonka pour le faire tourner ?"
+      },
+      {
+        "_key": "after-golive",
+        "answer": "Nous restons mobilisés pendant une période d'hypercare pour stabiliser, affiner et former votre équipe, avant de vous transférer l'entière responsabilité.",
+        "question": "Que se passe-t-il après la mise en production ?"
+      }
+    ]
+  },
+  "hero": {
+    "eyebrow": "Wonka Build",
+    "secondaryText": null,
+    "subtitle": "Quand l'IA dont vous avez besoin n'existe pas sur étagère, nous la développons, conçue autour de votre activité et mise en production.",
+    "theme": "dark",
+    "title": "De l'IA sur mesure. Conçue et livrée par notre équipe."
+  },
+  "industries": {
+    "header": {
+      "body": "Chaque mission WonkaBuild est cadrée sur votre activité. Voici le type de systèmes que nous livrons généralement : agents, applications et l'infrastructure qui leur permet de gérer le vrai travail.",
+      "eyebrow": "Ce que nous développons",
+      "heading": "De votre processus le plus complexe\nà la production."
+    },
+    "industries": [
+      {
+        "_key": "applications",
+        "body": "Tableaux de bord, portails et outils construits autour de vos données, offrant à votre équipe visibilité et contrôle en temps réel, au même endroit.",
+        "bullets": [
+          "Applications",
+          "Chats IA"
+        ],
+        "clients": [],
+        "label": "Applications internes sur mesure"
+      }
+    ]
+  },
+  "logoStrip": {
+    "_type": "logoStrip",
+    "proofLines": [
+      "Nous avons accompagné plus de 200 PME"
+    ]
+  },
+  "phases": {
+    "body": "Une mission de développement se déroule en quatre phases connectées. Cadrée comme de l'ingénierie, pas comme un atelier. Livrée dans vos opérations, pas dans un deck de slides.",
+    "eyebrow": "Comment ça marche",
+    "heading": "De votre processus\nà la production.",
+    "items": [
+      {
+        "_key": "map",
+        "body": "Nous nous immergeons dans vos opérations et cartographions le travail tel qu'il se fait aujourd'hui, puis cadrons précisément quoi développer et pourquoi cela en vaut la peine.",
+        "number": "01",
+        "subtitle": "Partir de vos opérations, pas d'un modèle",
+        "title": "Cartographier"
+      },
+      {
+        "_key": "connect",
+        "body": "Nous nous branchons sur les systèmes que vous utilisez déjà : e-mail, ERP, CRM, documents, bases de données. Le socle sur lequel repose le développement.",
+        "number": "02",
+        "subtitle": "S'appuyer sur les systèmes que vous utilisez déjà",
+        "title": "Connecter"
+      },
+      {
+        "_key": "build-ship",
+        "body": "Nous concevons vos agents et applications et les mettons en production. De vrais processus, de vrais cas limites, gérés de bout en bout. Pas un pilote dans un bac à sable.",
+        "number": "03",
+        "subtitle": "La production, pas un pilote dans un bac à sable",
+        "title": "Développer & livrer"
+      },
+      {
+        "_key": "tune-handover",
+        "body": "Nous restons après la mise en production pour stabiliser, ajuster et former, et faire monter en compétence une personne de votre équipe pour qu'elle en soit responsable. Vous ne dépendez jamais de nous pour le faire tourner.",
+        "number": "04",
+        "subtitle": "L'autonomie fait partie du livrable",
+        "title": "Affiner & transférer"
+      }
+    ]
+  },
+  "promo": {
+    "body": "Wonka est un prestataire agréé du KMO-portefeuille. La plupart des PME flamandes récupèrent jusqu'à 70 % du coût du programme. Nous vous aidons pour les démarches administratives.",
+    "eyebrow": "VLAIO KMO-portefeuille",
+    "heading": "70 % de réduction pour les PME flamandes.",
+    "showCta": true,
+    "variant": "darkImage"
+  },
+  "seo": {
+    "metaDescription": "Nous développons des applications et agents IA sur mesure pour votre entreprise, adaptés à vos systèmes et intégrés à votre quotidien.",
+    "metaTitle": "Wonka Build · Applications IA sur mesure | Wonka",
+    "ogImage": null
+  },
+  "testimonials": {
+    "body": "Des retours concrets de dirigeants qui ont fait confiance à Wonka pour transformer leur ambition IA en un plan concret, directement actionnable par leurs équipes.",
+    "eyebrow": "Ce que disent nos clients",
+    "heading": "Des retours sincères\nde personnes de confiance."
+  },
+  "whyNow": {
+    "cards": [
+      {
+        "_key": "pioneers",
+        "body": "Dans beaucoup d'organisations, la valeur de l'IA reste concentrée chez un petit groupe de pionniers. Ils trouvent de meilleures façons de travailler, mais celles-ci se diffusent rarement entre les équipes.\n\nStart AI crée la structure pour transformer des expériences individuelles en progrès collectif.",
+        "title": "L'IA ne doit pas rester l'affaire des pionniers"
+      },
+      {
+        "_key": "repetitive",
+        "body": "Votre équipe ne devrait pas passer ses meilleures heures à copier des informations, chercher des documents, réécrire les mêmes réponses ou déplacer du travail d'un système à l'autre.\n\nStart AI identifie le travail que vos collaborateurs devraient arrêter de faire — et où l'IA peut les aider en priorité.",
+        "title": "Vos équipes valent mieux que le travail répétitif"
+      },
+      {
+        "_key": "governance",
+        "body": "Si chacun utilise l'IA à sa manière, l'organisation perd le contrôle. Si personne ne l'utilise, elle perd son élan.\n\nStart AI vous aide à trouver l'équilibre : une gouvernance claire, des lignes directrices pratiques et une feuille de route qui rend l'IA accessible à tous.",
+        "title": "Une IA responsable exige des règles communes"
+      }
+    ],
+    "header": {
+      "body": "L'IA ne doit pas servir uniquement ceux qui savent quel prompt écrire ou quel outil ouvrir. Elle doit aider toute l'organisation à travailler plus intelligemment, plus vite et avec plus de focus.",
+      "eyebrow": "Pourquoi maintenant",
+      "heading": "Aucune équipe laissée de côté."
+    }
+  }
+}
