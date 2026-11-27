@@ -1,0 +1,12 @@
+{
+  "font": { "family": "Charter", "weights": ["Roman", "Italic", "Bold", "Bold Italic"], "status": "closest match to the wonka tagline; the real brand font is not named in the brand files", "source": "built into macOS (/System/Library/Fonts/Supplemental/Charter.ttc)" },
+  "colors": { "wonkaBlack": "#0E1A16", "wonkaWhite": "#F7F7F7", "waterBlue": "#75A3FD", "cloudBlue": "#CADBFD", "forestGreen": "#5C7F5D" },
+  "styles": [
+    { "name": "Wonka Clean",     "use": "Default for talking-head / b-roll on any footage", "font": "Charter Bold",        "fill": "#F7F7F7", "shadow": { "color": "#0E1A16", "opacity": 55, "blur": 14, "distance": 4, "angle": -90 } },
+    { "name": "Wonka Highlight", "use": "Word-by-word captions; active word in Water Blue",  "font": "Charter Bold",        "fill": "#F7F7F7", "activeWord": "#75A3FD", "shadow": { "color": "#0E1A16", "opacity": 55, "blur": 14, "distance": 4, "angle": -90 } },
+    { "name": "Wonka Box",       "use": "Busy footage / maximum legibility",                 "font": "Charter Bold",        "fill": "#F7F7F7", "background": { "color": "#0E1A16", "opacity": 86, "radius": "medium-large", "padding": "comfortable" } },
+    { "name": "Wonka Soft",      "use": "Quotes, emphasis, calm brand moments",              "font": "Charter Italic",      "fill": "#CADBFD", "shadow": { "color": "#0E1A16", "opacity": 70, "blur": 16, "distance": 3, "angle": -90 } },
+    { "name": "Wonka Light",     "use": "Dark or moody footage; pill-style captions",        "font": "Charter Bold",        "fill": "#0E1A16", "background": { "color": "#F7F7F7", "opacity": 93, "radius": "medium-large", "padding": "comfortable" } }
+  ],
+  "layout": { "vertical": { "canvas": "1080x1920", "position": "lower-middle, ~58-68% down, clear of platform UI (keep bottom ~20% and right ~12% free)", "maxLines": 2 }, "landscape": { "canvas": "1920x1080", "position": "lower third, ~80-86% down", "maxLines": 2 } }
+}

@@ -1,0 +1,38 @@
+{
+  "problem": {
+    "ariaLabel": "Problem"
+  },
+  "clientProof": {
+    "ariaLabel": "Customer stories"
+  },
+  "logoStrip": {
+    "ariaLabel": "Client logos"
+  },
+  "useCases": {
+    "industriesLabel": "Industries",
+    "workflowTag": "Workflow {number}"
+  },
+  "testimonials": {
+    "previous": "Previous testimonial",
+    "next": "Next testimonial",
+    "logoPlaceholder": "Logo",
+    "header": {
+      "eyebrow": "What clients say",
+      "heading": "Honest feedback\nfrom valued people.",
+      "body": "Real feedback from leaders who trusted Wonka to turn AI ambition into a concrete plan their teams could act on."
+    }
+  },
+  "industryTabs": {
+    "clientsLabel": "Clients in this industry"
+  },
+  "workflowSteps": {
+    "stepTag": "Step {number}",
+    "previous": "Previous step",
+    "next": "Next step",
+    "voicePrompt": "Create an opportunity in Odoo."
+  },
+  "workspaceTrialCta": {
+    "title": "See if Wonka Workspace fits your team.",
+    "body": "Book a call with our team. We'll walk you through a real use case."
+  }
+}

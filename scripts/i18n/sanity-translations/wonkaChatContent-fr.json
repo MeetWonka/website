@@ -1,0 +1,140 @@
+{
+  "_id": "wonkaChatContent-fr",
+  "_type": "wonkaChatContent",
+  "contact": {
+    "_type": "contactSection",
+    "header": {
+      "_type": "sectionHeader",
+      "body": "Réservez une courte démo et nous vous montrerons comment WonkaChat se connecte à vos outils, soutient vos processus et rend l'IA accessible dans toute votre organisation.",
+      "eyebrow": "Réserver une démo",
+      "heading": "Envie de voir ce que WonkaChat peut faire pour votre équipe ?"
+    },
+    "personName": "Florian De Boeck",
+    "personRole": "Chief Product Officer",
+    "portrait": {
+      "_type": "imageWithAlt",
+      "alt": "Florian De Boeck - Wonka AI",
+      "asset": {
+        "_ref": "image-21172446b944d57f63dce641452f4a8f40789348-2048x1153-jpg",
+        "_type": "reference"
+      }
+    }
+  },
+  "features": {
+    "_type": "stickyFeaturesSection",
+    "features": [
+      {
+        "_key": "15c16b014523",
+        "_type": "feature",
+        "description": "Offrez à vos collaborateurs un endroit simple pour poser des questions, trouver des informations et obtenir l'aide de l'IA. Wonka Workspace fonctionne comme un chat familier, avec le contexte de votre entreprise intégré.",
+        "image": {
+          "_type": "imageWithAlt",
+          "asset": {
+            "_ref": "image-9af5db42e08d21eabb819c7bfc203aea8f9dbdad-1920x1080-png",
+            "_type": "reference"
+          }
+        },
+        "title": "Un chat IA pour tous."
+      },
+      {
+        "_key": "42a8e9ef0bc0",
+        "_type": "feature",
+        "description": "Wonka Workspace offre à votre entreprise la flexibilité d'utiliser le modèle d'IA qui correspond à vos besoins, préférences et exigences de sécurité.",
+        "image": {
+          "_type": "imageWithAlt",
+          "asset": {
+            "_ref": "image-3cbc5e4ef7156e0cc09f93a3c227b085709ceaad-1920x1080-png",
+            "_type": "reference"
+          }
+        },
+        "title": "Choisissez votre modèle d'IA."
+      },
+      {
+        "_key": "082f81d39efb",
+        "_type": "feature",
+        "description": "WonkaChat se connecte aux systèmes de votre entreprise, pour que vos collaborateurs accèdent aux informations et déclenchent des actions grâce à l'IA.",
+        "image": {
+          "_type": "imageWithAlt",
+          "asset": {
+            "_ref": "image-6d9eb52ff7b0649500fb6290f333bec13b69d85f-1920x1080-png",
+            "_type": "reference"
+          }
+        },
+        "link": {
+          "_type": "ctaButton",
+          "href": "/fr/integrations",
+          "label": "Découvrir toutes les intégrations"
+        },
+        "title": "Connecté à vos outils."
+      },
+      {
+        "_key": "b8658ba3ed12",
+        "_type": "feature",
+        "description": "Créez des agents IA qui comprennent votre travail quotidien et peuvent le faire à votre place.",
+        "image": {
+          "_type": "imageWithAlt",
+          "asset": {
+            "_ref": "image-5b8b19ef9f726bb45b6fe83aa9a8e64bcb1b64a1-1920x1080-png",
+            "_type": "reference"
+          }
+        },
+        "title": "Créez des agents IA pour des tâches précises."
+      },
+      {
+        "_key": "80d449743aea",
+        "_type": "feature",
+        "description": "Wonka Workspace est conçu pour que toute l'organisation puisse travailler avec l'IA, pas seulement les équipes techniques ou les experts IA.",
+        "image": {
+          "_type": "imageWithAlt",
+          "asset": {
+            "_ref": "image-387baa94ade42b2fb8e32347f2b7a9798bb748a8-1920x1080-png",
+            "_type": "reference"
+          }
+        },
+        "title": "Conçu pour chaque collaborateur."
+      }
+    ],
+    "header": {
+      "_type": "sectionHeader",
+      "body": "Wonka Workspace rend l'IA utile dans toute l'organisation : assez simple pour chaque collaborateur, assez puissant pour les processus complexes.",
+      "eyebrow": "Fonctionnalités",
+      "heading": "Tout ce dont votre équipe a besoin pour travailler avec l'IA."
+    },
+    "showCta": true
+  },
+  "hero": {
+    "_type": "productHero",
+    "eyebrow": "WonkaChat",
+    "heroImage": {
+      "_type": "imageWithAlt",
+      "asset": {
+        "_ref": "image-a78621d2734369c76a6bb9e03223707b2b75e42b-3552x1284-png",
+        "_type": "reference"
+      }
+    },
+    "subtitle": "WonkaChat se connecte aux outils de votre entreprise, comprend vos processus et aide votre équipe à avancer par simple conversation.",
+    "theme": "light",
+    "title": "L'espace de travail IA que toute votre équipe peut vraiment utiliser."
+  },
+  "overview": {
+    "_type": "sectionHeader",
+    "body": "Wonka Workspace vous permet de discuter avec l'IA en toute sécurité, de créer des agents IA pour le travail quotidien, des applications IA pour visualiser vos processus et indicateurs clés, et des automatisations IA pour éliminer les tâches fastidieuses. Le tout dans un environnement sécurisé.",
+    "eyebrow": "Qu'est-ce que Wonka Workspace ?",
+    "heading": "Un seul espace de travail IA\npour toute votre entreprise."
+  },
+  "problem": {
+    "_type": "splitContentSection",
+    "body": "La plupart des outils IA créent de la valeur pour ceux qui savent déjà s'en servir. Les autres continuent à faire le travail répétitif à la main.\n\nWonka Workspace change la donne. Il donne à toute votre équipe accès à l'IA de manière simple, pratique et pensée pour le quotidien.",
+    "eyebrow": "Le problème aujourd'hui",
+    "heading": "Tout le monde ne sait pas travailler avec l'IA."
+  },
+  "security": {
+    "_type": "securitySection",
+    "heading": "Vos données restent toujours les vôtres."
+  },
+  "useCases": {
+    "_type": "useCasesSection",
+    "eyebrow": "Cas d'usage",
+    "heading": "Le travail qui attendait n'attend plus. Dans toutes les équipes."
+  }
+}

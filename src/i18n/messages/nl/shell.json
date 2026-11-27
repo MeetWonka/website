@@ -1,0 +1,134 @@
+{
+  "logoLabel": "Wonka",
+  "mainNavLabel": "Hoofdnavigatie",
+  "headerCta": "Aan de slag",
+  "toggleMenu": "Menu openen of sluiten",
+  "expandSection": "{label} uitklappen",
+  "collapseSection": "{label} inklappen",
+  "language": {
+    "label": "Taal",
+    "en": "English",
+    "fr": "Français",
+    "nl": "Nederlands"
+  },
+  "footer": {
+    "taglineLine1": "De meeste bedrijven hebben AI.",
+    "taglineLine2": "Weinigen laten het voor iedereen werken.",
+    "copyright": "{year} Wonka, alle rechten voorbehouden.",
+    "legal": {
+      "terms": "Voorwaarden",
+      "privacy": "Privacy",
+      "cookies": "Cookies"
+    },
+    "linksPage": "Links"
+  },
+  "nav": {
+    "ai-workspace": {
+      "label": "AI Workspace",
+      "children": {
+        "overview": {
+          "label": "Overzicht",
+          "description": "Ontdek Wonka Workspace"
+        },
+        "ai-chat": {
+          "label": "AI Chat",
+          "description": "Chat veilig met uw data"
+        },
+        "ai-agents": {
+          "label": "AI-agents",
+          "description": "Delegeer terugkerende taken aan AI"
+        },
+        "ai-apps": {
+          "label": "AI-apps",
+          "description": "Complexe workflows als eenvoudige applicaties"
+        },
+        "ai-automations": {
+          "label": "AI-automatiseringen",
+          "description": "Laat AI het werk van begin tot eind doen"
+        },
+        "governance": {
+          "label": "Governance",
+          "description": "Gebruikers, agents, usage en toegang"
+        },
+        "integrations": {
+          "label": "Integraties",
+          "description": "Koppel Wonka aan uw bedrijfsstack"
+        }
+      }
+    },
+    "ai-services": {
+      "label": "AI-diensten",
+      "children": {
+        "ai-strategy": {
+          "label": "AI-strategie",
+          "description": "Word AI-native in vier weken"
+        },
+        "flemish-ai-strategy": {
+          "label": "Vlaamse AI-strategie subsidie",
+          "description": "Tot 70% subsidie voor Vlaamse kmo's"
+        },
+        "ai-agent-development": {
+          "label": "Ontwikkeling van AI-agents",
+          "description": "Wij bouwen en lanceren uw agents"
+        },
+        "ai-app-development": {
+          "label": "Ontwikkeling van AI-apps",
+          "description": "AI-applicaties op maat, op uw systemen"
+        },
+        "ai-training": {
+          "label": "AI-opleiding",
+          "description": "Voor uw developers en uw teams"
+        }
+      }
+    },
+    "resources": {
+      "label": "Resources",
+      "children": {
+        "agent-blueprint": {
+          "label": "Stel uw AI-agentteam samen",
+          "description": "Ontdek drie agents op maat van uw bedrijf"
+        },
+        "use-cases": {
+          "label": "Use cases",
+          "description": "Het werk dat AI nu al overneemt"
+        },
+        "clients": {
+          "label": "Klanten",
+          "description": "Wat we bouwden bij 200 organisaties"
+        },
+        "blog": {
+          "label": "Blog",
+          "description": "Gidsen over AI en agents in bedrijven"
+        },
+        "glossary": {
+          "label": "Woordenlijst",
+          "description": "AI-termen eenvoudig uitgelegd"
+        },
+        "comparisons": {
+          "label": "Vergelijkingen",
+          "description": "Wonka AI naast andere tools"
+        }
+      }
+    },
+    "company": {
+      "label": "Bedrijf",
+      "children": {
+        "about": {
+          "label": "Over Wonka"
+        },
+        "team": {
+          "label": "Ontmoet het team"
+        },
+        "jobs": {
+          "label": "Vacatures"
+        },
+        "contact": {
+          "label": "Contact"
+        }
+      }
+    },
+    "pricing": {
+      "label": "Prijzen"
+    }
+  }
+}

@@ -1,0 +1,308 @@
+{
+  "_id": "homepageContent-fr",
+  "_type": "homepageContent",
+  "cta": {
+    "body": "Voyons ensemble où Wonka AI peut faire la différence.",
+    "heading": "Votre équipe vaut mieux que ces tâches."
+  },
+  "hero": {
+    "awardBadge": "START-UP IA DE L'ANNÉE N°1 - BELGIUM STARTUP AWARDS 2026",
+    "subtitle": "Votre équipe vaut mieux que le travail répétitif. Nous concevons votre stratégie IA, puis développons les applications et agents qui s'en chargent.",
+    "title": "Votre partenaire IA pour le travail répétitif."
+  },
+  "howToStart": {
+    "body": "C'est justement pour cela que nous échangeons.\nRéservez un appel de 30 minutes. Expliquez-nous comment vous travaillez, et nous vous dirons où l'IA ferait vraiment la différence, et où elle ne la ferait pas.",
+    "calloutHeading": "30 minutes.\nPour savoir si cela a du sens.",
+    "eyebrow": "Par où commencer",
+    "heading": "Vous ne savez pas par où commencer ?",
+    "outcomes": [
+      "Une idée de ce qu'il est réaliste d'atteindre, et en combien de temps.",
+      "Une prochaine étape claire : Start AI, Wonka Build ou WonkaChat.",
+      "Des réponses à vos questions spécifiques sur l'IA.",
+      "Sans engagement, sans pression. Simplement une vision plus claire de l'IA."
+    ],
+    "outcomesHeading": "Vous repartez avec"
+  },
+  "security": {
+    "heading": "Vos données restent toujours les vôtres."
+  },
+  "seo": {
+    "_type": "seo",
+    "metaDescription": "IA privée pour votre entreprise, connectée à SharePoint, Salesforce et Slack. Aucune donnée ne sort. Conforme RGPD. Start-up IA n°1 en Belgique 2026.",
+    "metaTitle": "Wonka AI - Agents IA et IA privée pour entreprise"
+  },
+  "solution": {
+    "body": "La plupart des IA brillent le jour du lancement et prennent la poussière dès la troisième semaine. Nous partons de vos processus actuels, raisonnons à partir de l'usage quotidien, et restons jusqu'à ce que toute votre équipe l'utilise vraiment.",
+    "eyebrow": "Notre approche",
+    "heading": "Wonka AI met l'IA au service de toute votre organisation.",
+    "steps": [
+      {
+        "_key": "0d5b5cd10e35",
+        "_type": "solutionStep",
+        "body": "Certaines entreprises arrivent avec un cas d'usage précis, d'autres savent seulement que l'IA compte sans savoir où elle s'intègre. Dans les deux cas, nous savons comment avancer.",
+        "title": "Nous partons de là où vous en êtes."
+      },
+      {
+        "_key": "a72af3430e7b",
+        "_type": "solutionStep",
+        "body": "Nous ne déposons pas un outil générique en espérant qu'il prenne. Nous façonnons tout autour du fonctionnement actuel de votre entreprise, pour qu'il ait sa place dès le premier jour.",
+        "title": "Nous construisons autour de votre façon réelle de travailler."
+      },
+      {
+        "_key": "2bd732e13f76",
+        "_type": "solutionStep",
+        "body": "Une feuille de route, un développement sur mesure ou un chat IA utilisé au quotidien par tous. Nous livrons exactement ce dont votre situation a besoin, et nous veillons à ce que cela prenne auprès de ceux qui s'en serviront.\n",
+        "title": "Nous le mettons entre les mains de votre équipe."
+      },
+      {
+        "_key": "d89e619fbc58",
+        "_type": "solutionStep",
+        "body": "La plupart des projets IA échouent sur l'adoption, pas sur la technologie. Nous nous intégrons à votre équipe et restons jusqu'à ce que chacun l'utilise vraiment, pas seulement jusqu'à la mise en ligne.",
+        "title": "Nous restons jusqu'à ce que tout le monde suive."
+      }
+    ]
+  },
+  "useCases": {
+    "industries": [
+      {
+        "_key": "fd62c78f",
+        "_type": "industry",
+        "label": "Ventes",
+        "workflows": [
+          {
+            "_key": "77c2d0b3",
+            "_type": "workflow",
+            "bullets": [
+              "Capté depuis un formulaire ou un e-mail",
+              "Opportunité créée dans le CRM",
+              "Relance envoyée avec les bonnes infos ou un lien de rendez-vous"
+            ],
+            "description": "Un lead arrive. Il est enregistré et traité avant de refroidir.",
+            "title": "Suivi des leads"
+          },
+          {
+            "_key": "32997dae",
+            "_type": "workflow",
+            "bullets": [
+              "Détails extraits de l'e-mail ou de la pièce jointe",
+              "Commande créée dans l'ERP, planning mis à jour",
+              "Équipe notifiée, confirmation envoyée"
+            ],
+            "description": "Une commande arrive. Elle est saisie et confirmée sans ressaisie.",
+            "title": "Traitement des commandes clients"
+          },
+          {
+            "_key": "51540e89",
+            "_type": "workflow",
+            "bullets": [
+              "Construit autour de votre CRM et de vos sources de données",
+              "Met en avant les comptes prioritaires et les signaux",
+              "Accessible à toute l'équipe, pas seulement aux analystes"
+            ],
+            "description": "Une application sur mesure qui donne à l'équipe commerciale une vue en temps réel sur le pipeline, l'activité des comptes et les prochaines actions, sans jongler entre cinq outils.",
+            "title": "Tableau de bord d'intelligence commerciale"
+          }
+        ]
+      },
+      {
+        "_key": "a5e98867",
+        "_type": "industry",
+        "label": "Opérations",
+        "workflows": [
+          {
+            "_key": "3f4d7c08",
+            "_type": "workflow",
+            "bullets": [
+              "Récupérée depuis la boîte mail ou une pièce jointe",
+              "ERP mis à jour avec les détails de la commande",
+              "Planning ou entrepôt notifié"
+            ],
+            "description": "Une commande arrive. Les opérations voient ce qu'il faut faire.",
+            "title": "Traitement des commandes"
+          },
+          {
+            "_key": "181a6f96",
+            "_type": "workflow",
+            "bullets": [
+              "Vérifié par rapport aux données client, stock ou tarifs",
+              "Problèmes signalés instantanément",
+              "Transmis avec tout le contexte"
+            ],
+            "description": "Quelque chose ne correspond pas. C'est signalé avant de causer des retards.",
+            "title": "Gestion des exceptions"
+          },
+          {
+            "_key": "95bca9a2",
+            "_type": "workflow",
+            "bullets": [
+              "Configuré pour vos processus et vos exceptions",
+              "Connecté à vos systèmes existants",
+              "Déployé pour toute votre équipe opérationnelle"
+            ],
+            "description": "Un outil dédié pour gérer des flux opérationnels complexes qui ne rentrent pas dans les logiciels standards, construit autour de la façon dont votre équipe travaille réellement.",
+            "title": "Portail opérationnel sur mesure"
+          }
+        ]
+      },
+      {
+        "_key": "7cb80fe5",
+        "_type": "industry",
+        "label": "RH",
+        "workflows": [
+          {
+            "_key": "ef4e00ab",
+            "_type": "workflow",
+            "bullets": [
+              "Comptes créés dans tous les outils",
+              "Documents envoyés pour relecture ou signature",
+              "Manager notifié, checklist déclenchée"
+            ],
+            "description": "Une nouvelle recrue arrive. Tout est prêt avant le premier jour.",
+            "title": "Onboarding des collaborateurs"
+          },
+          {
+            "_key": "0de3a90c",
+            "_type": "workflow",
+            "bullets": [
+              "Réponses tirées des politiques internes",
+              "Support multilingue",
+              "Escalade uniquement si nécessaire"
+            ],
+            "description": "Des réponses instantanées, sans encombrer la boîte mail des RH.",
+            "title": "Helpdesk RH"
+          },
+          {
+            "_key": "97ef5528",
+            "_type": "workflow",
+            "bullets": [
+              "Construit autour de vos politiques et systèmes",
+              "Pour chaque collaborateur, du bureau à l'atelier",
+              "Déployé à grande échelle sans licence par utilisateur"
+            ],
+            "description": "Un assistant RH sur mesure déployé auprès de l'ensemble de vos effectifs.",
+            "title": "Agent RH pour grandes équipes"
+          }
+        ]
+      },
+      {
+        "_key": "d8a209bf",
+        "_type": "industry",
+        "label": "Support",
+        "workflows": [
+          {
+            "_key": "5be7f2ac",
+            "_type": "workflow",
+            "bullets": [
+              "Classée par sujet et par urgence",
+              "Ticket créé avec le contexte",
+              "La bonne personne notifiée"
+            ],
+            "description": "Une réclamation arrive. Elle est enregistrée et transmise immédiatement.",
+            "title": "Traitement des réclamations"
+          },
+          {
+            "_key": "8ed1c1f1",
+            "_type": "workflow",
+            "bullets": [
+              "Problème classé",
+              "Transmis à la bonne équipe",
+              "Contexte transmis"
+            ],
+            "description": "Quand une intervention humaine est nécessaire, elle arrive vite à la bonne personne.",
+            "title": "Routage des escalades"
+          },
+          {
+            "_key": "b0a77365",
+            "_type": "workflow",
+            "bullets": [
+              "Construite autour de votre base de connaissances et de vos processus",
+              "Gère automatiquement le niveau 1",
+              "Escalade avec tout le contexte si nécessaire"
+            ],
+            "description": "Un outil de support adapté, construit autour de votre produit, de vos clients et des processus de votre équipe.",
+            "title": "Application de support sur mesure"
+          }
+        ]
+      },
+      {
+        "_key": "a84d2649",
+        "_type": "industry",
+        "label": "Finance",
+        "workflows": [
+          {
+            "_key": "d7c15bb7",
+            "_type": "workflow",
+            "bullets": [
+              "Rapprochée du fournisseur ou du bon de commande",
+              "Erreurs signalées",
+              "Factures valides traitées"
+            ],
+            "description": "Les factures arrivent. Les conformes passent. Les problèmes sont signalés.",
+            "title": "Traitement des factures"
+          },
+          {
+            "_key": "24dd7789",
+            "_type": "workflow",
+            "bullets": [
+              "Validées selon la politique interne",
+              "Approuvées dans les limites",
+              "Exceptions transmises"
+            ],
+            "description": "Les notes de frais sont vérifiées avant la revue par la finance.",
+            "title": "Rapprochement des notes de frais"
+          },
+          {
+            "_key": "2fa44b6b",
+            "_type": "workflow",
+            "bullets": [
+              "Connecté à votre ERP et à vos sources de données",
+              "Rapports générés automatiquement selon un calendrier",
+              "Adaptés au conseil d'administration, à la direction ou aux équipes opérationnelles"
+            ],
+            "description": "Un outil de reporting sur mesure qui récupère les données en temps réel, produit les bons livrables et les transmet aux bonnes personnes. Fini la panique du vendredi après-midi.",
+            "title": "Application de reporting financier"
+          }
+        ]
+      }
+    ]
+  },
+  "whatWeDo": {
+    "cards": [
+      {
+        "_key": "1698d49ae4cd",
+        "_type": "whatWeDoCard",
+        "body": "Nous analysons vos processus, identifions où l'IA crée une réelle valeur et construisons votre feuille de route avec des actions concrètes.",
+        "cta": {
+          "_type": "ctaButton",
+          "href": "/fr/start-ai",
+          "label": "Découvrir Start AI"
+        },
+        "tagline": "L'IA compte, mais vous ne savez pas par où commencer ?"
+      },
+      {
+        "_key": "09ca3bc6d441",
+        "_type": "whatWeDoCard",
+        "body": "Nous développons des applications IA sur mesure, adaptées à vos systèmes et intégrées à votre quotidien.",
+        "cta": {
+          "_type": "ctaButton",
+          "href": "/fr/wonka-build",
+          "label": "Découvrir Wonka Build"
+        },
+        "tagline": "Du travail répétitif qu'aucun outil ne semble résoudre ?"
+      },
+      {
+        "_key": "3744f9234a87",
+        "_type": "whatWeDoCard",
+        "body": "Un seul endroit où chacun travaille avec l'IA, connecté aux outils et aux données de votre entreprise.",
+        "cta": {
+          "_type": "ctaButton",
+          "href": "/fr/wonka-chat",
+          "label": "Découvrir WonkaChat"
+        },
+        "tagline": "Prêt à donner l'IA à toute votre équipe ?"
+      }
+    ],
+    "eyebrow": "Ce que nous faisons",
+    "heading": "Tout ce qu'il vous faut\npour faire fonctionner l'IA."
+  }
+}

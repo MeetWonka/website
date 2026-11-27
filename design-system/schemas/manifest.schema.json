@@ -1,0 +1,148 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wonka-ai.com/design-system/schemas/manifest.schema.json",
+  "title": "Wonka Design System Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "id",
+    "name",
+    "version",
+    "brandVersionId",
+    "status",
+    "approval",
+    "principles",
+    "themes",
+    "channels",
+    "sources",
+    "generated",
+    "interfaces",
+    "governance"
+  ],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schemaVersion": { "const": "1.0.0" },
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "name": { "type": "string", "minLength": 1 },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "brandVersionId": { "type": "string", "minLength": 1 },
+    "status": {
+      "enum": ["draft", "beta", "stable", "deprecated", "retired"]
+    },
+    "approval": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "approvedBy", "approvedAt"],
+      "properties": {
+        "status": {
+          "enum": ["review_required", "approved", "rejected", "revoked"]
+        },
+        "approvedBy": { "type": ["string", "null"] },
+        "approvedAt": {
+          "type": ["string", "null"],
+          "format": "date-time"
+        }
+      }
+    },
+    "releasedAt": { "type": "string", "format": "date" },
+    "description": { "type": "string" },
+    "principles": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "name", "description"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "description": { "type": "string" }
+        }
+      }
+    },
+    "themes": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "label", "selector", "status"],
+        "properties": {
+          "id": { "enum": ["light", "dark"] },
+          "label": { "type": "string" },
+          "selector": { "type": "string" },
+          "status": { "enum": ["beta", "stable", "deprecated"] }
+        }
+      }
+    },
+    "channels": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": ["product", "website", "campaign", "presentation"]
+      }
+    },
+    "sources": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tokens",
+        "components",
+        "assets",
+        "rules",
+        "exceptions",
+        "channels"
+      ],
+      "properties": {
+        "tokens": { "type": "string", "minLength": 1 },
+        "components": { "type": "string", "minLength": 1 },
+        "assets": { "type": "string", "minLength": 1 },
+        "rules": { "type": "string", "minLength": 1 },
+        "exceptions": { "type": "string", "minLength": 1 },
+        "patterns": { "type": "string", "minLength": 1 },
+        "channels": { "type": "string", "minLength": 1 }
+      }
+    },
+    "generated": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "css",
+        "typescript",
+        "tokenCatalog",
+        "componentCatalog",
+        "assetCatalog",
+        "ruleCatalog",
+        "exceptionCatalog",
+        "channelCatalog",
+        "contractTypescript",
+        "manifest",
+        "agentGuide",
+        "discovery"
+      ],
+      "properties": {
+        "css": { "type": "string", "minLength": 1 },
+        "typescript": { "type": "string", "minLength": 1 },
+        "tokenCatalog": { "type": "string", "minLength": 1 },
+        "componentCatalog": { "type": "string", "minLength": 1 },
+        "assetCatalog": { "type": "string", "minLength": 1 },
+        "ruleCatalog": { "type": "string", "minLength": 1 },
+        "exceptionCatalog": { "type": "string", "minLength": 1 },
+        "patternCatalog": { "type": "string", "minLength": 1 },
+        "channelCatalog": { "type": "string", "minLength": 1 },
+        "contractTypescript": { "type": "string", "minLength": 1 },
+        "manifest": { "type": "string", "minLength": 1 },
+        "agentGuide": { "type": "string", "minLength": 1 },
+        "discovery": { "type": "string", "minLength": 1 }
+      }
+    },
+    "interfaces": { "type": "object" },
+    "governance": { "type": "object" }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "size": {
+    "width": 1920,
+    "height": 1080,
+    "scale": 2
+  },
+  "fps": 25,
+  "lastFrame": 150,
+  "colorSpace": "sRGB",
+  "captureSelector": ".lab-capture",
+  "demoData": true,
+  "scenes": {
+    "creation": {
+      "title": "Votre savoir-faire devient un agent.",
+      "layers": [
+        "composer",
+        "builder-header",
+        "builder-basics",
+        "builder-model",
+        "builder-behavior",
+        "builder-conversation",
+        "builder-knowledge",
+        "builder-tools",
+        "builder-schedule",
+        "builder-advanced"
+      ],
+      "capturePath": "/?mode=capture&scenario=creation&frame={frame}&theme={theme}&clean=1",
+      "poses": [
+        {
+          "frame": 0,
+          "label": "before"
+        },
+        {
+          "frame": 60,
+          "label": "action"
+        },
+        {
+          "frame": 150,
+          "label": "after"
+        }
+      ]
+    },
+    "connection": {
+      "title": "Vos outils. Connectés.",
+      "layers": [
+        "connector-outlook",
+        "connector-odoo",
+        "connector-sharepoint"
+      ],
+      "capturePath": "/?mode=capture&scenario=connection&frame={frame}&theme={theme}&clean=1",
+      "poses": [
+        {
+          "frame": 0,
+          "label": "before"
+        },
+        {
+          "frame": 60,
+          "label": "action"
+        },
+        {
+          "frame": 150,
+          "label": "after"
+        }
+      ]
+    },
+    "execution": {
+      "title": "Le contexte se rassemble.",
+      "layers": [
+        "message-demo",
+        "step-crm",
+        "step-emails",
+        "step-method",
+        "deliverable"
+      ],
+      "capturePath": "/?mode=capture&scenario=execution&frame={frame}&theme={theme}&clean=1",
+      "poses": [
+        {
+          "frame": 0,
+          "label": "before"
+        },
+        {
+          "frame": 60,
+          "label": "action"
+        },
+        {
+          "frame": 150,
+          "label": "after"
+        }
+      ]
+    },
+    "sharing": {
+      "title": "Le savoir-faire se partage.",
+      "layers": [
+        "sharing"
+      ],
+      "capturePath": "/?mode=capture&scenario=sharing&frame={frame}&theme={theme}&clean=1",
+      "poses": [
+        {
+          "frame": 0,
+          "label": "before"
+        },
+        {
+          "frame": 60,
+          "label": "action"
+        },
+        {
+          "frame": 150,
+          "label": "after"
+        }
+      ]
+    }
+  },
+  "reducedMotion": "CSS transitions and animations are frozen; frame selects a complete pose.",
+  "compositing": "PNG composites are fidelity references. Rebuild editable type/shapes and use source logos for AE layers."
+}
